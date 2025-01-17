@@ -1,0 +1,836 @@
+{
+	"editor": {
+		"current_page_number": 3,
+		"page_view": 0,
+		"text_size_id": 3
+	},
+	"pages": {
+		"dropdown_dialog_arguments": [
+			"amber-emotion"
+		],
+		"dropdown_title_for_dialog_syntax": "character",
+		"dropdown_titles": [
+			"amber-emotion",
+			"character"
+		],
+		"dropdowns": {
+			"amber-emotion": [
+				"neutral",
+				"happy"
+			],
+			"character": [
+				"narrator",
+				"sophie",
+				"heather"
+			]
+		},
+		"empty_strings_for_l10n": false,
+		"facts": {
+
+		},
+		"file_config": {
+			"evaluator_paths": [
+				"res://sample/inline_eval.gd"
+			]
+		},
+		"head_defaults": [],
+		"instruction_templates": {
+			"black_fade": {
+				"arg_types": [
+					"float",
+					"float",
+					"float",
+					"bool",
+					"string",
+					"string"
+				],
+				"args": [
+					"fade_in",
+					"hold_time",
+					"fade_out",
+					"hide_characters",
+					"new_background",
+					"new_bgm"
+				]
+			},
+			"control_camera": {
+				"arg_types": [
+					"float",
+					"float",
+					"float",
+					"float"
+				],
+				"args": [
+					"zoom",
+					"x",
+					"y",
+					"duration"
+				]
+			},
+			"cum": {
+				"arg_types": [
+					"string"
+				],
+				"args": [
+					"voice"
+				]
+			},
+			"hide_all_characters": {
+				"arg_types": [],
+				"args": []
+			},
+			"hide_cg": {
+				"arg_types": [],
+				"args": []
+			},
+			"move_camera_to": {
+				"arg_types": [
+					"float",
+					"float",
+					"float"
+				],
+				"args": [
+					"x",
+					"y",
+					"duration"
+				]
+			},
+			"play_chapter_intro": {
+				"arg_types": [
+					"string",
+					"string",
+					"string",
+					"float",
+					"string"
+				],
+				"args": [
+					"pov_name",
+					"bottom_text",
+					"new_background",
+					"zoom",
+					"bgm"
+				]
+			},
+			"play_sfx": {
+				"arg_types": [
+					"string"
+				],
+				"args": [
+					"name"
+				]
+			},
+			"roll_credits": {
+				"arg_types": [],
+				"args": []
+			},
+			"set_background": {
+				"arg_types": [
+					"string",
+					"float"
+				],
+				"args": [
+					"name",
+					"fade_time"
+				]
+			},
+			"set_bgm": {
+				"arg_types": [
+					"string",
+					"float"
+				],
+				"args": [
+					"name",
+					"fade_in"
+				]
+			},
+			"set_character_name": {
+				"arg_types": [
+					"string",
+					"string"
+				],
+				"args": [
+					"character",
+					"name"
+				]
+			},
+			"set_emotion": {
+				"arg_types": [
+					"string",
+					"string"
+				],
+				"args": [
+					"actor_name",
+					"emotion_name"
+				]
+			},
+			"set_eye_progress": {
+				"arg_types": [
+					"float"
+				],
+				"args": [
+					"value"
+				]
+			},
+			"set_fade_out": {
+				"arg_types": [
+					"float",
+					"float"
+				],
+				"args": [
+					"lod",
+					"mix"
+				]
+			},
+			"set_object_visible": {
+				"arg_types": [
+					"string",
+					"bool"
+				],
+				"args": [
+					"object_name",
+					"visibility"
+				]
+			},
+			"set_static": {
+				"arg_types": [
+					"float"
+				],
+				"args": [
+					"level"
+				]
+			},
+			"set_sun": {
+				"arg_types": [
+					"string",
+					"float"
+				],
+				"args": [
+					"property",
+					"value"
+				]
+			},
+			"set_sun_str": {
+				"arg_types": [
+					"string",
+					"string"
+				],
+				"args": [
+					"property",
+					"value"
+				]
+			},
+			"set_text_style": {
+				"arg_types": [
+					"string"
+				],
+				"args": [
+					"style"
+				]
+			},
+			"set_x_position": {
+				"arg_types": [
+					"string",
+					"float",
+					"float",
+					"bool"
+				],
+				"args": [
+					"character_name",
+					"index",
+					"time",
+					"wait_for_reposition"
+				]
+			},
+			"shake_camera": {
+				"arg_types": [
+					"float"
+				],
+				"args": [
+					"strength"
+				]
+			},
+			"show_cg": {
+				"arg_types": [
+					"string",
+					"float",
+					"bool"
+				],
+				"args": [
+					"name",
+					"fade_in_time",
+					"continue_dialog_through_cg"
+				]
+			},
+			"show_character": {
+				"arg_types": [
+					"string",
+					"bool"
+				],
+				"args": [
+					"character_name",
+					"clear_others"
+				]
+			},
+			"show_letter": {
+				"arg_types": [],
+				"args": []
+			},
+			"splatter_blood": {
+				"arg_types": [
+					"float"
+				],
+				"args": [
+					"amount"
+				]
+			},
+			"sway_camera": {
+				"arg_types": [
+					"float"
+				],
+				"args": [
+					"intensity"
+				]
+			},
+			"use_ui": {
+				"arg_types": [
+					"float"
+				],
+				"args": [
+					"id"
+				]
+			},
+			"wound_fx": {
+				"arg_types": [
+					"float",
+					"float"
+				],
+				"args": [
+					"shake_intensity",
+					"splatter_count"
+				]
+			},
+			"zoom_to": {
+				"arg_types": [
+					"float",
+					"float"
+				],
+				"args": [
+					"value",
+					"duration"
+				]
+			}
+		},
+		"locales_to_export": [
+			"af_ZA",
+			"sq_AL",
+			"ar_SA",
+			"hy_AM",
+			"az_AZ",
+			"eu_ES",
+			"be_BY",
+			"bn_IN",
+			"bs_BA",
+			"bg_BG",
+			"ca_ES",
+			"zh_CN",
+			"zh_TW",
+			"hr_HR",
+			"cs_CZ",
+			"da_DK",
+			"nl_NL",
+			"en_US",
+			"et_EE",
+			"fo_FO",
+			"fi_FI",
+			"fr_FR",
+			"gl_ES",
+			"ka_GE",
+			"de_DE",
+			"el_GR",
+			"gu_IN",
+			"he_IL",
+			"hi_IN",
+			"hu_HU",
+			"is_IS",
+			"id_ID",
+			"it_IT",
+			"ja_JP",
+			"kn_IN",
+			"kk_KZ",
+			"kok_IN",
+			"ko_KR",
+			"lv_LV",
+			"lt_LT",
+			"mk_MK",
+			"ms_MY",
+			"ml_IN",
+			"mt_MT",
+			"mr_IN",
+			"mn_MN",
+			"se_NO",
+			"nb_NO",
+			"nn_NO",
+			"fa_IR",
+			"pl_PL",
+			"pt_BR",
+			"pa_IN",
+			"ro_RO",
+			"ru_RU",
+			"sr_BA",
+			"sk_SK",
+			"es_ES",
+			"sw_KE",
+			"sv_SE",
+			"syr_SY",
+			"ta_IN",
+			"te_IN",
+			"th_TH",
+			"tn_ZA",
+			"tr_TR",
+			"uk_UA",
+			"uz_UZ",
+			"vi_VN",
+			"cy_GB",
+			"xh_ZA",
+			"zu_ZA"
+		],
+		"page_data": {
+			"0": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "0.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"default",
+								0
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_background(default, 0)",
+							"meta.validation_status": "OK",
+							"name": "set_background",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "0.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"default",
+								0
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_bgm(default, 0)",
+							"meta.validation_status": "OK",
+							"name": "set_bgm",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "0.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								1
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "use_ui(1)",
+							"meta.validation_status": "OK",
+							"name": "use_ui",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "0.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:yippie"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 1,
+				"number": 0,
+				"page_key": "",
+				"terminate": false
+			},
+			"1": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "1.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:20 cuts further and you're no step closer to an answer.<lc> 40 cuts further and still no answer. a small rivulet of red might hold one. <lc>60 cuts further and still no answer. you've made yourself the most pathetic bracelet on earth. <lc>when half your forearm is sodden with your own useless blood, you give up."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 2,
+				"number": 1,
+				"page_key": "self harm",
+				"terminate": false
+			},
+			"2": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "2.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:her boot against yiur skull, over and over. no regard for your safety or longterm health. you are an ibjevt to be destroyed\n[]>narrator: when you cum, you wish she could snuff you out then and there. yet all that remains is your heard pounding, blood flowing through your veins, flushing your more recent cuts. the bustling winds outside gently tap against the window and no other ambience is afforded to you here."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 3,
+				"number": 2,
+				"page_key": "masturbation",
+				"terminate": false
+			},
+			"3": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "3.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:scene where heather gets tattooed in the nape. doesn't see it until much later in a mirror"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 4,
+				"number": 3,
+				"page_key": "tattoo",
+				"terminate": false
+			},
+			"4": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "4.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather"
+							],
+							"active_actors_title": "character",
+							"content": "[]>heather: you're such a fucking snake!\n[]>sophie: me? a snake? oh I think I am but the egg dear daughter.\n[]>heather: don't fucking call me that.\n[]>sophie: I am but the terrible shell, a cage, to give birth to you. \n[]>sophie: from me you come. and unto hell you will follow, in time.\n[]>heather: I SAID AHUT UP\n[]>sophie: you have become so much more wonderfully monstrous that I could've ever hoped for.\n[]>heather:...\n[]>sophie: I'll be with you forever.\nGunshot\ntitle drop\ncredits"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": false,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 0,
+				"number": 4,
+				"page_key": "ending scene",
+				"terminate": true
+			}
+		},
+		"text_lead_time_other_actor": 0,
+		"text_lead_time_same_actor": 0,
+		"use_dialog_syntax": true
+	}
+}
