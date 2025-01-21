@@ -36,7 +36,7 @@ project/file/path="res://game/diisis_integration/script.json"
 [display]
 
 window/size/viewport_width=1024
-window/size/viewport_height=600
+window/size/viewport_height=768
 window/stretch/mode="canvas_items"
 
 [editor_plugins]

@@ -6,22 +6,28 @@
 	},
 	"pages": {
 		"dropdown_dialog_arguments": [
-			"amber-emotion"
+			"sophie-emotion",
+			"heather-emotion"
 		],
 		"dropdown_title_for_dialog_syntax": "character",
 		"dropdown_titles": [
-			"amber-emotion",
-			"character"
+			"sophie-emotion",
+			"character",
+			"heather-emotion"
 		],
 		"dropdowns": {
-			"amber-emotion": [
-				"neutral",
-				"happy"
-			],
 			"character": [
 				"narrator",
 				"sophie",
 				"heather"
+			],
+			"heather-emotion": [
+				"neutral",
+				"invisible"
+			],
+			"sophie-emotion": [
+				"neutral",
+				"invisible"
 			]
 		},
 		"empty_strings_for_l10n": false,
@@ -569,7 +575,7 @@
 								"heather"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: black. cloth. bagged over your face. difficulty moving.\n[]>narrator: shit predicament.\n[]>sophie: Heather. you will now work for us.\n[]>narrator: any of the thousand questions screaming through your mind do not make it outwards. mouth gagged. taped shut? something like that.\n[]>sophie: you will get to express yourself shortly.\n[]>narrator: your arms feel bolted down.\n[]>narrator: after a brief silence, the tarp is lifted.\n[]>narrator: you're greeted to a dingy room. dying incandescent bulb humming overhead. air heavy with mold."
+							"content": "[]>narrator: black. cloth. bagged over your face. difficulty moving.\n[]>narrator: shit predicament.\n[]>sophie{sophie-emotion|neutral,heather-emotion|neutral}: Heather. you will now work for us.\n[]>narrator: any of the thousand questions screaming through your mind do not make it outwards. mouth gagged. taped shut? something like that.\n[]>sophie: you will get to express yourself shortly.\n[]>narrator: your arms feel bolted down.\n[]>narrator: after a brief silence, the tarp is lifted.\n[]>narrator: you're greeted to a dingy room. dying incandescent bulb humming overhead. air heavy with mold."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1362,7 +1368,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2592,
+				"meta.scroll_vertical": 135,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
