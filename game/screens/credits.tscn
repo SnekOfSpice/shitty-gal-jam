@@ -43,18 +43,20 @@ custom_minimum_size = Vector2(600, 400)
 layout_mode = 2
 size_flags_horizontal = 4
 bbcode_enabled = true
-text = "[center][font_size=32][b]DIISIS[/b][/font_size]
-[i]Dialogue Interface Sister System[/i]
-~ Visual Novel Template ~
+text = "[center][font_size=26][b]No Empty Threats[/b][/font_size]
 
 Programmed by [url=https://snekofspice.itch.io/]Snek[/url]
+[i]Made with [url=https://github.com/SnekOfSpice/dialog-editor/]DIISIS[/url][/i][img=40]addons/diisis/final1alt.png[/img]
 
 Background Music
 [url=https://lmnlrecords.bandcamp.com/track/its-not-pretty-here]Modela - It's Not Pretty Here [/url]
 [url=https://chezmonplaisir.bandcamp.com/track/vroom-vroom-heart-heart-blob-0w0]Loyalty Freak Music - Vroom Vroom Heart Heart :blob_0w0​:​​[/url]
 
-Character Art
-[url=https://x.com/_10qi]10qi[/url]"
+
+[b]SFX[/b]
+MinecraftGamerLR - Intense Gore Sound: Opening Chest Cavity via Freesound.org (Attr 4.0)
+
+"
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
