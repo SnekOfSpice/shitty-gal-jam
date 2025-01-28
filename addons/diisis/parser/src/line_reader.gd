@@ -1267,7 +1267,6 @@ func call_from_position(call_position: int):
 	var i := 0
 	var arg_types : Array = Parser.get_instruction_arg_types(func_name)
 	for type in arg_types:
-		prints("\"", type, "\"")
 		match type:
 			"float":
 				args.append(float(parts[i]))

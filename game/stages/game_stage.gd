@@ -24,7 +24,7 @@ var hovering_meta := false
 @onready var rtl_custom_minimum_size : Vector2 = find_child("RichTextLabel").custom_minimum_size
 
 @onready var cg_roots := [find_child("CGBottomContainer"), find_child("CGTopContainer")]
-var blockers : int = 3 # character count + 1 (self) get_tree().get_node_count_in_group("diisis_character")
+#var blockers : int = 3 # character count + 1 (self) get_tree().get_node_count_in_group("diisis_character")
 var advance_blockers := 0
 
 @onready var text_start_position = find_child("TextContainer1").position
@@ -50,6 +50,7 @@ var target_sun_fill_amount := -1.0
 var target_static := 0.0
 
 func _ready():
+	find_child("StartCover").visible = true
 	ParserEvents.actor_name_changed.connect(on_actor_name_changed)
 	ParserEvents.text_content_text_changed.connect(on_text_content_text_changed)
 	ParserEvents.page_terminated.connect(go_to_main_menu)
@@ -69,13 +70,22 @@ func _ready():
 	for character in find_child("Characters").get_children():
 		character.visible = false
 	
-	remove_blocker()
+	#remove_blocker()
 	grab_focus()
 	
 	tree_exiting.connect(on_tree_exit)
 	
 	overlay_sun.get_material().set_shader_parameter("fill_amount", -1.0)
 	hide_cg()
+	
+	await get_tree().process_frame
+	if callable_upon_blocker_clear:
+		callable_upon_blocker_clear.call()
+	else:
+		Parser.reset_and_start()
+	
+	await get_tree().process_frame
+	find_child("StartCover").visible = false
 
 func on_read_new_line(_line_index:int):
 	Options.save_gamestate()
@@ -367,13 +377,13 @@ func deserialize(data:Dictionary):
 	
 	use_ui(data.get("ui_id", 1))
 
-func remove_blocker():
-	blockers -= 1
-	if blockers <= 0:
-		if callable_upon_blocker_clear:
-			callable_upon_blocker_clear.call()
-		else:
-			Parser.reset_and_start()
+#func remove_blocker():
+	#blockers -= 1
+	#if blockers <= 0:
+		#if callable_upon_blocker_clear:
+			#callable_upon_blocker_clear.call()
+		#else:
+			#Parser.reset_and_start()
 
 var emit_insutrction_complete_on_cg_hide :bool
 
