@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bl3r0kwwycrmw"]
+[gd_scene load_steps=10 format=3 uid="uid://bl3r0kwwycrmw"]
 
 [ext_resource type="Script" path="res://addons/diisis/editor/src/page.gd" id="1_2lug2"]
 [ext_resource type="Texture2D" uid="uid://c5jprlaidnag" path="res://addons/diisis/editor/visuals/theme/buttons_ui/ticked_goto.png" id="2_2dyyr"]
@@ -17,12 +17,6 @@ border_blend = true
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gmiuk"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vobab"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tkpqr"]
-bg_color = Color(0.223529, 0.207843, 0.243137, 0.843137)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhcii"]
-bg_color = Color(0.223529, 0.207843, 0.243137, 0.682353)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xj8yh"]
 
@@ -93,8 +87,6 @@ Useful for dialog scenes that are broken up with other gameplay and the endings 
 focus_mode = 0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_gmiuk")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_vobab")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_tkpqr")
-theme_override_styles/hover = SubResource("StyleBoxFlat_lhcii")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_xj8yh")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_mg67t")
 theme_override_icons/checked = ExtResource("3_m7kjo")

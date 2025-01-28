@@ -103,7 +103,7 @@ func set_next(next_page: int):
 	
 	var next_key = Pages.page_data.get(next).get("page_key")
 	
-	find_child("NextLineEdit").max_value = Pages.get_page_count() - 1
+	find_child("NextLineEdit").max_value = Pages.get_page_count()
 	find_child("NextLineEdit").value = next
 	find_child("NextKey").text = next_key
 
