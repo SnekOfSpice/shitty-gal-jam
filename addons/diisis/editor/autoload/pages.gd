@@ -402,7 +402,13 @@ func get_instruction_signature(instruction_name:String) -> String:
 	var arg_types : Array = instruction_templates.get(instruction_name).get("arg_types")
 	var arg_names : Array = instruction_templates.get(instruction_name).get("args")
 	while i < arg_types.size():
-		result += arg_names[i]
+		var arg_type_name : String
+		var raw_type : String = arg_types[i].trim_suffix(" ").trim_prefix(" ")
+		if raw_type.containsn("string"):
+			arg_type_name = "String"
+		else:
+			arg_type_name = raw_type
+		result += str(arg_names[i], " : ", arg_type_name)
 		
 		if i < arg_types.size() - 1:
 			result += ", "
@@ -410,18 +416,6 @@ func get_instruction_signature(instruction_name:String) -> String:
 		i += 1
 	
 	result += ") -> bool:"
-	
-	i = 0
-	while i < arg_types.size():
-		var type_str:String
-		if arg_types[i] == "string":
-			type_str = "String"
-		else:
-			type_str = arg_types[i]
-		
-		result += str("\n\t", arg_names[i], " = ", type_str, "(", arg_names[i], ")")
-		
-		i += 1
 	
 	result += "\n\t# Return true if you want the LineReader to wait until its InstructionHandler has emitted instruction_completed."
 	result += "\n\t# (Needs to be called by your code from somewhere.)"

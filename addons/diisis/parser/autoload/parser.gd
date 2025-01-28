@@ -36,6 +36,7 @@ var lines := []
 
 var facts := {}
 var starting_facts := {}
+var instruction_templates := {}
 
 var max_line_index_on_page := 0
 
@@ -104,6 +105,7 @@ func init(data:Dictionary):
 	starting_facts = facts.duplicate(true)
 	dropdown_titles = data.get("dropdown_titles", [])
 	dropdowns = data.get("dropdowns", {})
+	instruction_templates = data.get("instruction_templates", {})
 
 func _process(delta: float) -> void:
 	if not OS.has_feature("editor"):
@@ -560,3 +562,6 @@ func load_parser_state_from_file(file_path: String, pause_after_load:=false) -> 
 	paused = pause_after_load
 	
 	return data.get("Custom", {})
+
+func get_instruction_arg_types(instruction_name: String) -> Array:
+	return instruction_templates.get(instruction_name, {}).get("arg_types", [])

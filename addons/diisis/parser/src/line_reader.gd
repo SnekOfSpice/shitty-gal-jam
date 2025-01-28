@@ -1262,8 +1262,24 @@ func call_from_position(call_position: int):
 	var parts := text.split(",")
 	var func_name = parts[0]
 	parts.remove_at(0)
-	inline_evaluator.callv(func_name, Array(parts))
-	ParserEvents.function_called.emit(func_name, Array(parts), call_position)
+	
+	var args := []
+	var i := 0
+	var arg_types : Array = Parser.get_instruction_arg_types(func_name)
+	for type in arg_types:
+		prints("\"", type, "\"")
+		match type:
+			"float":
+				args.append(float(parts[i]))
+			"string":
+				args.append(String(parts[i]))
+			"bool":
+				var cast : bool = true if parts[i] == "true" else false
+				args.append(cast)
+		i += 1
+	
+	inline_evaluator.callv(func_name, args)
+	ParserEvents.function_called.emit(func_name, args, call_position)
 	call_strings.erase(call_position)
 
 func set_text_content_text(text: String):
