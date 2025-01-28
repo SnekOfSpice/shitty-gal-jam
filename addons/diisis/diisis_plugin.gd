@@ -115,7 +115,11 @@ func setup_vn_template():
 	
 	var source_path_game := "res://game/diisis_integration/demo_script.json"
 	if FileAccess.file_exists(source_path_game):
-		ProjectSettings.set_setting("diisis/project/file/path", source_path_game)
+		var existing_path : String = ProjectSettings.get_setting("diisis/project/file/path")
+		if not ProjectSettings.has_setting("diisis/project/file/path"):
+			ProjectSettings.set_setting("diisis/project/file/path", source_path_game)
+		elif existing_path.is_empty():
+			ProjectSettings.set_setting("diisis/project/file/path", source_path_game)
 	else:
 		popup_accept_dialogue("Error", str("Couldn't find ", source_path_game, "."))
 		return
