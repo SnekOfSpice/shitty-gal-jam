@@ -1,6 +1,6 @@
 ![banner](https://github.com/user-attachments/assets/5acf42f0-4b5e-4bc1-88b6-7ec1a1262d63)
 
-MIT-licensed dialog tool. Find the source code and license and demos on [GitHub](https://github.com/SnekOfSpice/dialog-editor).
+DIISIS is a dialogue system. Created to make gay faggot games <3
 
 # Demos & Project Templates
 
@@ -19,3 +19,8 @@ DIISIS comes with its own editor that behaves like a hybrid between plugin and s
 - [Discord](https://discord.gg/w9bWyUjAJT)
 - Contact me on hellsite [Twitter](https://x.com/SnekOfSpice)
 - Use the [GitHub Issues](https://github.com/SnekOfSpice/dialog-editor/issues) for bugs, feedback, and other issues you have with DIISIS
+
+# License & Source
+Find the source code and license and demos on [GitHub](https://github.com/SnekOfSpice/dialog-editor).
+
+DIISIS is distributed under the Cooperative Non-Violent Public License v7. It's open source and non-free. (Fuck corpos, fascists, and other oppressive forces like them.)
