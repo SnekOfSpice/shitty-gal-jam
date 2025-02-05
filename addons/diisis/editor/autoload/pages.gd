@@ -73,6 +73,9 @@ var jump_page_references_by_page := {}
 
 signal pages_modified
 
+func is_header_schema_empty():
+	return head_defaults.is_empty()
+
 func serialize() -> Dictionary:
 	return {
 		"head_defaults" : head_defaults,

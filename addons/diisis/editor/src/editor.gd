@@ -199,7 +199,11 @@ var ctrl_down := false
 var focused_control_before_ctrl:Control
 func _shortcut_input(event):
 	if event is InputEventKey:
-		if event.key_label == KEY_CTRL:
+		# on linux (or at least my steam deck), there's a bug where ctrl shortcuts still send their key inputs
+		# so e.g. ctrl+s to save also inserts an s in a text edit if it's currently focused
+		# this takes the focus away while holding down ctrl
+		# it's kinda scuffed ngl
+		if event.key_label == KEY_CTRL and OS.get_name() == "Linux":
 			var prev_ctrl_down = ctrl_down
 			var ctrl_start:bool
 			var ctrl_release:bool
@@ -235,13 +239,15 @@ func _shortcut_input(event):
 		
 		if event.is_command_or_control_pressed():
 			match event.key_label:
+				KEY_G:
+					find_child("GoTo").toggle_active()
 				KEY_N:
 					emit_signal("open_new_file")
 				KEY_S:
 					attempt_save_to_dir()
 				KEY_F:
 					open_popup($Popups.get_node("TextSearchPopup"))
-				KEY_Q:
+				KEY_T:
 					open_popup($Popups.get_node("MovePagePopup"))
 				KEY_Z:
 					if event.is_shift_pressed():

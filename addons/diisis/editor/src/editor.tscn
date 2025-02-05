@@ -176,7 +176,7 @@ item_4/id = 4
 item_4/separator = true
 item_5/text = "Facts"
 item_5/id = 5
-item_6/text = "Pages    (Ctrl+Q)"
+item_6/text = "Pages    (Ctrl+T)"
 item_6/id = 6
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/Core/MarginContainer/HBoxContainer2/VBoxContainer/HBoxContainer/FileControl/MarginContainer/HBoxContainer/VBoxContainer"]
