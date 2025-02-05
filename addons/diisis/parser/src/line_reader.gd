@@ -872,8 +872,7 @@ func _process(delta: float) -> void:
 		if (
 			((not called_positions.has(call_position)) and last_visible_characters >= call_position) or
 			(call_position >= last_visible_characters and call_position <= text_content.visible_characters) or
-			text_content.visible_characters == -1 or
-			last_visible_characters == -1
+			text_content.visible_characters == -1
 		):
 			call_from_position(call_position)
 	
@@ -1161,7 +1160,7 @@ func read_next_chunk():
 				var tag_length := bbcode_removed_text.find(">", scan_index) - scan_index + 1
 				var tag_string := bbcode_removed_text.substr(scan_index, tag_length)
 				bbcode_removed_text = bbcode_removed_text.erase(scan_index, tag_length)
-				call_strings[scan_index] = tag_string
+				call_strings[scan_index - tag_buffer] = tag_string
 				scan_index = max(scan_index - tag_string.length(), 0)
 				target_length -= tag_string.length()
 				tag_buffer += tag_string.length()
