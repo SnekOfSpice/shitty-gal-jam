@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=53 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -20,6 +20,8 @@
 [ext_resource type="Shader" path="res://game/stages/one_fadeout.gdshader" id="15_heqc4"]
 [ext_resource type="Shader" path="res://game/stages/static.gdshader" id="17_dc0ef"]
 [ext_resource type="PackedScene" uid="uid://ipa310726xyt" path="res://game/stages/rolling_credits.tscn" id="17_gnute"]
+[ext_resource type="Shader" path="res://game/stages/jpg.gdshader" id="19_lfk1e"]
+[ext_resource type="Shader" path="res://game/stages/vcr.gdshader" id="21_6i8ck"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3ca2q"]
 resource_local_to_scene = true
@@ -98,6 +100,39 @@ bg_color = Color(0.05, 0.05, 0.05, 0.756863)
 shader = ExtResource("17_dc0ef")
 shader_parameter/intensity = 0.0
 shader_parameter/border_size = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cj5jn"]
+shader = ExtResource("19_lfk1e")
+shader_parameter/washout_intensity = 0.163
+shader_parameter/blur_amount = 0.0
+shader_parameter/blockiness = 1145.23
+shader_parameter/color_steps = 24.0
+shader_parameter/grain_amount = 0.01
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_5o1hm"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_jk1ti"]
+width = 1024
+height = 768
+normalize = false
+noise = SubResource("FastNoiseLite_5o1hm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_50uri"]
+shader = ExtResource("21_6i8ck")
+shader_parameter/vhs_resolution = Vector2(320, 240)
+shader_parameter/samples = 2
+shader_parameter/crease_noise = 0.29
+shader_parameter/crease_opacity = 0.22
+shader_parameter/filter_intensity = 0.01
+shader_parameter/tape_crease_smear = 0.14
+shader_parameter/tape_crease_intensity = 0.44
+shader_parameter/tape_crease_jitter = 0.139
+shader_parameter/tape_crease_speed = 0.29
+shader_parameter/tape_crease_discoloration = 0.81
+shader_parameter/bottom_border_thickness = 21.57
+shader_parameter/bottom_border_jitter = 3.8
+shader_parameter/noise_intensity = 0.0
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_jk1ti")
 
 [node name="GameStage" type="Control"]
 layout_mode = 3
@@ -186,6 +221,7 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera2D"]
+layer = 2
 
 [node name="VNUIRoot" type="Control" parent="Camera2D/CanvasLayer"]
 layout_mode = 3
@@ -424,6 +460,28 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[node name="CanvasLayer5" type="CanvasLayer" parent="Camera2D"]
+visible = false
+
+[node name="Fuckfetgf" type="ColorRect" parent="Camera2D/CanvasLayer5"]
+material = SubResource("ShaderMaterial_cj5jn")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer4" type="CanvasLayer" parent="Camera2D"]
+visible = false
+
+[node name="Fuck" type="ColorRect" parent="Camera2D/CanvasLayer4"]
+material = SubResource("ShaderMaterial_50uri")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="InstructionHandler" type="Node" parent="."]
 script = ExtResource("4_u8vmc")
 
@@ -437,7 +495,11 @@ script = ExtResource("1_h4afo")
 auto_pause_duration = 0.4
 blank_names = Array[String](["narrator"])
 name_map = {
-"amber": "Amber"
+"heather": "Heather"
+}
+name_colors = {
+"heather": Color(0.841463, 0.592515, 0.53182, 1),
+"sophie": Color(0.733446, 0.864261, 0.733659, 1)
 }
 choice_container = NodePath("../Camera2D/CanvasLayer/VNUIRoot/VNUI/ChoiceContainer")
 choice_option_container = NodePath("../Camera2D/CanvasLayer/VNUIRoot/VNUI/ChoiceContainer/ChoiceOptionContainer")

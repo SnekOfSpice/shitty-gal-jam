@@ -38,7 +38,7 @@ var callable_upon_blocker_clear:Callable
 @onready var overlay_orgasm = find_child("Orgasm").get_node("ColorRect")
 
 
-@onready var sun_mat = overlay_sun.get_material()
+@onready var sun_mat = find_child("Fuck").get_material()
 @onready var orgasm_mat = overlay_orgasm.get_material()
 @onready var fade_mat = overlay_fade_out.get_material()
 @onready var static_mat = overlay_static.get_material()
@@ -114,10 +114,10 @@ func go_to_main_menu(_unused):
 
 
 func _process(_delta: float) -> void:
-	sun_mat.set_shader_parameter("steps", lerp(sun_mat.get_shader_parameter("steps"), target_sun_steps, 0.02))
-	sun_mat.set_shader_parameter("fill_amount", lerp(sun_mat.get_shader_parameter("fill_amount"), target_sun_fill_amount, 0.02))
-	if sun_mat.get_shader_parameter("fill_amount") > -1:
-		sun_mat.set_shader_parameter("background", get_viewport().get_texture())
+	#sun_mat.set_shader_parameter("steps", lerp(sun_mat.get_shader_parameter("steps"), target_sun_steps, 0.02))
+	#sun_mat.set_shader_parameter("fill_amount", lerp(sun_mat.get_shader_parameter("fill_amount"), target_sun_fill_amount, 0.02))
+	#if sun_mat.get_shader_parameter("fill_amount") > -1:
+	#sun_mat.set_shader_parameter("texture_channel0", get_viewport().get_texture())
 	
 	fade_mat.set_shader_parameter("lod", lerp(fade_mat.get_shader_parameter("lod"), target_lod, 0.02))
 	fade_mat.set_shader_parameter("mix_percentage", lerp(fade_mat.get_shader_parameter("mix_percentage"), target_mix, 0.02))

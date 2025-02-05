@@ -14,6 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_5gfyt")
 script = ExtResource("1_wqqgh")
+menu_music = "main_menu"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -2
@@ -130,6 +131,7 @@ layout_mode = 2
 theme_override_constants/margin_left = 50
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
