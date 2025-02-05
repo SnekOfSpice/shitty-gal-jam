@@ -195,8 +195,38 @@ func _process(delta: float) -> void:
 		auto_save_timer = AUTO_SAVE_INTERVAL
 		save_to_file(str(BACKUP_PATH, Time.get_datetime_string_from_system().replace(":", "-"), ".json"), true)
 
+var ctrl_down := false
+var focused_control_before_ctrl:Control
 func _shortcut_input(event):
 	if event is InputEventKey:
+		if event.key_label == KEY_CTRL:
+			var prev_ctrl_down = ctrl_down
+			var ctrl_start:bool
+			var ctrl_release:bool
+			if event.pressed:
+				if not prev_ctrl_down:
+					ctrl_start = true
+					focused_control_before_ctrl = get_viewport().gui_get_focus_owner()
+				ctrl_down = true
+			else:
+				if prev_ctrl_down:
+					ctrl_release = true
+				ctrl_down = false
+			
+			if ctrl_start or ctrl_release:
+				if ctrl_release:
+					if focused_control_before_ctrl:
+						var scroll := -1
+						if focused_control_before_ctrl is TextEdit:
+							scroll = current_page.find_child("ScrollContainer").scroll_vertical
+						focused_control_before_ctrl.grab_focus()
+						if scroll != -1:
+							await get_tree().process_frame
+							current_page.find_child("ScrollContainer").set_deferred("scroll_vertical", scroll)
+						focused_control_before_ctrl = null
+				elif ctrl_start:
+					grab_focus()
+				return
 		if not event.pressed:
 			return
 		
