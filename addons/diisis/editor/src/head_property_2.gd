@@ -11,9 +11,9 @@ var data_type :int= Pages.DataTypes._String
 #var drop_down_title := ""
 
 func init() -> void:
-	find_child("DataTypeButton").clear()
-	for dt in Pages.DataTypes:
-		find_child("DataTypeButton").add_item(dt)
+	find_child("DataTypeButton").init()
+	find_child("DropDownButton").init()
+	find_child("DropDownValueButton").init()
 
 #func updated_header_default():
 #	return {
@@ -38,7 +38,7 @@ func update_drop_downs(select_dd:= 0, select_dd_value:= 0):
 	if Pages.dropdowns.get(Pages.dropdowns.keys()[0]).size() == 0:
 		find_child("UndefinedDropDownsLabel").visible = true
 		return
-	
+	print("selecting ", select_dd)
 	find_child("UndefinedDropDownsLabel").visible = false
 	find_child("DropDownButton").select(select_dd)
 	
@@ -111,6 +111,7 @@ func deserialize(data: Dictionary):
 			var second = int(killme[1]) if killme.back() != null else 0
 			#prints("selecting dd ", values.front(), "-", values.back(), " in ", get_index())
 			update_drop_downs(first, second)
+			printt(first, second)
 		Pages.DataTypes._Boolean:
 			var new_value = values[0]
 			if values[0] is float or values[0] is bool or values[0] is int:
@@ -162,3 +163,21 @@ func _on_delete_button_pressed() -> void:
 func _on_boolean_button_pressed() -> void:
 	values[0] = find_child("BooleanButton").button_pressed
 	find_child("BooleanButton").text = str(values[0])
+
+
+func _on_data_type_button_option_pressed(index: int) -> void:
+	set_data_type(index)
+
+
+func _on_drop_down_button_option_pressed(index: int) -> void:
+	find_child("DropDownValueButton").clear()
+	for title in Pages.dropdowns.get(Pages.dropdown_titles[index]):
+		find_child("DropDownValueButton").add_item(title)
+	
+	values[0] = index
+	values = values.duplicate(true)
+
+
+func _on_drop_down_value_button_option_pressed(index: int) -> void:
+	values[1] = index
+	values = values.duplicate(true)

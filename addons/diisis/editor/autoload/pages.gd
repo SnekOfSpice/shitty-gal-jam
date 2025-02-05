@@ -527,10 +527,7 @@ func apply_new_header_schema(new_schema: Array):
 		var lines = page_data.get(i).get("lines")
 		
 		for line in lines:
-			prints("PRETRANSFORM-", line["header"], " SCHEMA-> ", new_schema)
 			line["header"] = transform_header(line.get("header"), new_schema, head_defaults)
-			prints("POSTTRANSFORM-", line["header"])
-	
 	
 	editor.refresh(false)
 	head_defaults = new_schema
