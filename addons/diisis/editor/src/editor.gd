@@ -217,7 +217,7 @@ func _shortcut_input(event):
 				if ctrl_release:
 					if focused_control_before_ctrl:
 						var scroll := -1
-						if focused_control_before_ctrl is TextEdit:
+						if focused_control_before_ctrl is TextEdit or focused_control_before_ctrl is LineEdit:
 							scroll = current_page.find_child("ScrollContainer").scroll_vertical
 						focused_control_before_ctrl.grab_focus()
 						if scroll != -1:
@@ -257,8 +257,8 @@ func _shortcut_input(event):
 					if active_dir != "":
 						$Popups.get_node("FDOpen").current_dir = active_dir
 					open_popup($Popups.get_node("FDOpen"), true)
-				KEY_A:
-					add_line_to_end_of_page()
+				#KEY_A:
+					#add_line_to_end_of_page()
 				KEY_1:
 					select_line_type(DIISIS.LineType.Text)
 				KEY_2:

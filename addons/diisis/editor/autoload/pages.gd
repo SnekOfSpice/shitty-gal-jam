@@ -761,6 +761,12 @@ func set_dropdown_options(dropdown_title:String, options:Array, replace_in_text:
 	
 	dropdowns[dropdown_title] = options
 
+func register_fact(fact_name : String, value):
+	if has_fact(fact_name):
+		push_warning(str("Fact ", fact_name, " already exists with default value ", facts.get(fact_name), " and won't be registered again."))
+		return
+	facts[fact_name] = value
+
 func alter_fact(from:String, to=null):
 	for page in page_data.values():
 		
@@ -816,6 +822,12 @@ func alter_fact(from:String, to=null):
 	facts.erase(from)
 	
 	editor.refresh(false)
+	
+func is_fact_new_and_not_empty(fact_name: String) -> bool:
+	return not (has_fact(fact_name) or fact_name.is_empty())
+
+func has_fact(fact_name:String) -> bool:
+	return facts.keys().has(fact_name)
 
 func does_address_exist(address:String) -> bool:
 	if address.ends_with(".") or address.is_empty():
