@@ -73,11 +73,10 @@ layout_mode = 2
 
 [node name="DropDownButton" parent="MarginContainer/HBoxContainer2/DropDownContainer" instance=ExtResource("2_3op7w")]
 layout_mode = 2
-options = Array[String](["neutral", "invisible", "smug"])
+options = Array[String](["sophie-emotion", "character", "heather-emotion"])
 
 [node name="DropDownValueButton" parent="MarginContainer/HBoxContainer2/DropDownContainer" instance=ExtResource("2_3op7w")]
 layout_mode = 2
-options = Array[String](["a", "b"])
 
 [node name="BooleanButton" type="CheckBox" parent="MarginContainer/HBoxContainer2"]
 layout_mode = 2

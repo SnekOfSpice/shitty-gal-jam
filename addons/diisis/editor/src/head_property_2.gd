@@ -24,6 +24,7 @@ func init() -> void:
 
 func update_drop_downs(select_dd:= 0, select_dd_value:= 0):
 	find_child("DropDownButton").clear()
+	find_child("DropDownValueButton").clear()
 	for title in Pages.dropdown_titles:
 		find_child("DropDownButton").add_item(title)
 	
@@ -38,7 +39,6 @@ func update_drop_downs(select_dd:= 0, select_dd_value:= 0):
 	if Pages.dropdowns.get(Pages.dropdowns.keys()[0]).size() == 0:
 		find_child("UndefinedDropDownsLabel").visible = true
 		return
-	print("selecting ", select_dd)
 	find_child("UndefinedDropDownsLabel").visible = false
 	find_child("DropDownButton").select(select_dd)
 	
@@ -73,11 +73,19 @@ func set_data_type(new_type: int):
 	if data_type != Pages.DataTypes._DropDown:
 		find_child("UndefinedDropDownsLabel").visible = false
 	
-	if data_type == Pages.DataTypes._DropDown:
+	if data_type == Pages.DataTypes._Boolean:
+		if typeof(values[0]) == TYPE_BOOL:
+			find_child("BooleanButton").text = str(values[0])
+			find_child("BooleanButton").button_pressed = values[0]
+		else:
+			find_child("BooleanButton").text = "false"
+			find_child("BooleanButton").button_pressed = false
+	elif data_type == Pages.DataTypes._DropDown:
 		if typeof(values[0]) == TYPE_FLOAT: values[0] = int(values[0])
 		if typeof(values[1]) == TYPE_FLOAT: values[1] = int(values[1])
 		if typeof(values[0]) != TYPE_INT: values[0] = 0
 		if typeof(values[1]) != TYPE_INT: values[1] = 0
+		update_drop_downs(values[0], values[1])
 
 func serialize() -> Dictionary:
 	var result := {}
@@ -89,7 +97,6 @@ func serialize() -> Dictionary:
 	return result
 
 func deserialize(data: Dictionary):
-	prints("deserializing header with", data.get("property_name"), data.get("values"))
 	var killme = []
 	for v in data.get("values"):
 		killme.append(v)
@@ -109,9 +116,7 @@ func deserialize(data: Dictionary):
 		Pages.DataTypes._DropDown:
 			var first = int(killme[0]) if killme.front() != null else 0
 			var second = int(killme[1]) if killme.back() != null else 0
-			#prints("selecting dd ", values.front(), "-", values.back(), " in ", get_index())
 			update_drop_downs(first, second)
-			printt(first, second)
 		Pages.DataTypes._Boolean:
 			var new_value = values[0]
 			if values[0] is float or values[0] is bool or values[0] is int:
@@ -120,13 +125,6 @@ func deserialize(data: Dictionary):
 				new_value = true
 			find_child("BooleanButton").button_pressed = bool(new_value)
 
-func _on_drop_down_button_item_selected(index: int) -> void:
-	find_child("DropDownValueButton").clear()
-	for title in Pages.dropdowns.get(Pages.dropdown_titles[index]):
-		find_child("DropDownValueButton").add_item(title)
-	
-	values[0] = index
-	values = values.duplicate(true)
 
 
 func _on_drop_down_value_button_item_selected(index: int) -> void:
@@ -171,8 +169,8 @@ func _on_data_type_button_option_pressed(index: int) -> void:
 
 func _on_drop_down_button_option_pressed(index: int) -> void:
 	find_child("DropDownValueButton").clear()
-	for title in Pages.dropdowns.get(Pages.dropdown_titles[index]):
-		find_child("DropDownValueButton").add_item(title)
+	for value in Pages.dropdowns.get(Pages.dropdown_titles[index]):
+		find_child("DropDownValueButton").add_item(value)
 	
 	values[0] = index
 	values = values.duplicate(true)
