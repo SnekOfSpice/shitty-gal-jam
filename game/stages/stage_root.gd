@@ -63,7 +63,10 @@ func set_background(background:String, fade_time:=0.0):
 	elif new_background.has_method("get_size"):
 		background_size = new_background.get_size()
 	
-	var overshoot = background_size - Vector2(960, 540)
+	var overshoot = background_size - Vector2(
+		ProjectSettings.get_setting("display/window/size/viewport_width"),
+		ProjectSettings.get_setting("display/window/size/viewport_height")
+		)
 	if overshoot.x > 0:
 		new_background.position.x = - overshoot.x * 0.5
 	if overshoot.y > 0:

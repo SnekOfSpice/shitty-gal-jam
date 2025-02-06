@@ -1,10 +1,11 @@
-[gd_resource type="Theme" load_steps=11 format=3 uid="uid://drk5fhsdjoewf"]
+[gd_resource type="Theme" load_steps=12 format=3 uid="uid://drk5fhsdjoewf"]
 
 [ext_resource type="FontFile" uid="uid://dr602cslge8ye" path="res://game/visuals/theme/fonts/creatodisplay/CreatoDisplay-ExtraBoldItalic.otf" id="1_m5frn"]
 [ext_resource type="FontFile" uid="uid://bmfu0agiivr8a" path="res://game/visuals/theme/fonts/ScheherazadeNew-Medium.ttf" id="2_a2pwd"]
 [ext_resource type="FontFile" uid="uid://b2dol1hsh80c4" path="res://game/visuals/theme/fonts/creatodisplay/CreatoDisplay-Bold.otf" id="3_x12l1"]
 [ext_resource type="FontFile" uid="uid://bjctbp85xwdsl" path="res://game/visuals/theme/fonts/creatodisplay/CreatoDisplay-BoldItalic.otf" id="4_4h4h5"]
 [ext_resource type="FontFile" uid="uid://dylddgbi874c5" path="res://game/visuals/theme/fonts/creatodisplay/CreatoDisplay-RegularItalic.otf" id="5_o8jvj"]
+[ext_resource type="FontFile" uid="uid://dawi2ibxbqu50" path="res://game/visuals/theme/fonts/F25_Bank_Printer.ttf" id="6_c0qo4"]
 [ext_resource type="FontFile" uid="uid://mdhdrswpxc2g" path="res://game/visuals/theme/fonts/creatodisplay/CreatoDisplay-Regular.otf" id="6_fjocv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_64c8h"]
@@ -84,4 +85,5 @@ RichTextLabel/font_sizes/normal_font_size = 18
 RichTextLabel/fonts/bold_font = ExtResource("3_x12l1")
 RichTextLabel/fonts/bold_italics_font = ExtResource("4_4h4h5")
 RichTextLabel/fonts/italics_font = ExtResource("5_o8jvj")
+RichTextLabel/fonts/mono_font = ExtResource("6_c0qo4")
 RichTextLabel/fonts/normal_font = ExtResource("6_fjocv")
