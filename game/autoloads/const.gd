@@ -17,7 +17,7 @@ const BACKGROUND_FETISH_CLUB := "placeholder.png"
 const BACKGROUND_HEATHER_APARTMENT := "heather_apartment.png"
 const BACKGROUND_HEATHER_BUNK := "placeholder.png"
 const BACKGROUND_ROAD_NIGHT := "placeholder.png"
-const BACKGROUND_SOPHIE_OFFICE := "placeholder.png"
+const BACKGROUND_SOPHIE_OFFICE := "sophie_office.png"
 const BACKGROUND_WAREHOUSE := "placeholder.png"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
