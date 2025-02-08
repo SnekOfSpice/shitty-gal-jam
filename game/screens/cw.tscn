@@ -55,7 +55,8 @@ text = "[center]This visual novel contains the following:
 
 Gore
 Self-Harm
-Hand Mutilation"
+Hand Mutilation
+Sexual Content"
 
 [node name="Button" type="Button" parent="."]
 auto_translate_mode = 1

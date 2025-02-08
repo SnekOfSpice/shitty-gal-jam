@@ -111,7 +111,7 @@ shader_parameter/grain_amount = 0.01
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_5o1hm"]
 
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_jk1ti"]
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_lba4p"]
 width = 1024
 height = 768
 normalize = false
@@ -132,7 +132,7 @@ shader_parameter/tape_crease_discoloration = 0.81
 shader_parameter/bottom_border_thickness = 21.57
 shader_parameter/bottom_border_jitter = 3.8
 shader_parameter/noise_intensity = 0.0
-shader_parameter/noise_texture = SubResource("NoiseTexture2D_jk1ti")
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_lba4p")
 
 [node name="GameStage" type="Control"]
 layout_mode = 3
@@ -156,6 +156,10 @@ character_name = "sophie"
 [node name="Character2" parent="Characters" instance=ExtResource("3_tdgll")]
 position = Vector2(822, 381)
 character_name = "heather"
+
+[node name="Character3" parent="Characters" instance=ExtResource("3_tdgll")]
+position = Vector2(822, 381)
+character_name = "guard"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(512, 384)
@@ -221,7 +225,7 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera2D"]
-layer = 2
+layer = 10
 
 [node name="VNUIRoot" type="Control" parent="Camera2D/CanvasLayer"]
 layout_mode = 3
@@ -496,6 +500,7 @@ auto_pause_duration = 0.4
 blank_names = Array[String](["narrator"])
 name_map = {
 "guard": "Guard",
+"guard2": "Girl with scar",
 "heather": "Heather"
 }
 name_colors = {

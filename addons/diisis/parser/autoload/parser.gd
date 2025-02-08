@@ -539,6 +539,10 @@ func deserialize(data: Dictionary):
 
 func save_parser_state_to_file(file_path: String, additional_data:={}):
 	var file = FileAccess.open(file_path, FileAccess.WRITE)
+	if not file:
+		push_error("File saving failed")
+		push_error(FileAccess.get_open_error())
+		return
 	var data_to_save := {}
 	data_to_save["Parser"] = serialize()
 	data_to_save["Custom"] = additional_data

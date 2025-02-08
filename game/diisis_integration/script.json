@@ -7,20 +7,27 @@
 	"pages": {
 		"dropdown_dialog_arguments": [
 			"sophie-emotion",
-			"heather-emotion"
+			"heather-emotion",
+			"guard-emotion"
 		],
 		"dropdown_title_for_dialog_syntax": "character",
 		"dropdown_titles": [
 			"sophie-emotion",
 			"character",
-			"heather-emotion"
+			"heather-emotion",
+			"guard-emotion"
 		],
 		"dropdowns": {
 			"character": [
 				"narrator",
 				"sophie",
 				"heather",
-				"guard"
+				"guard",
+				"guard2"
+			],
+			"guard-emotion": [
+				"neutral",
+				"invisible"
 			],
 			"heather-emotion": [
 				"neutral",
@@ -677,7 +684,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator: Black. Cloth. Bagged over your face. Difficulty moving.\n[]>narrator: Shit predicament.\n[]>sophie{sophie-emotion|neutral,heather-emotion|neutral}: Heather. You will now work for us.\n[]>narrator: Any of the thousand questions screaming through your mind do not make it outwards. Mouth gagged. Taped shut? Something like that.\n[]>sophie: You will get to express yourself shortly.\n[]>narrator: Your arms feel bolted down.\n[]>narrator: After a brief silence, the tarp is lifted.\n[]>narrator: You're greeted to a dingy room. Dying incandescent bulb humming overhead. Air heavy with mold."
@@ -769,7 +777,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator: When your eyes adjust, the figure stops being a morast-like blob.\n[]>narrator: The light is directed at the table between.\n[]>narrator: Your arms - Are - Bolted down.\n[]>narrator: You think she can smell your fear. \n[]>sophie: More presently, I can see your eyes jitter like there's no tomorrow honey.\n[]>narrator: What the fuck.\n[]>heather: What the fuck.\n[]>sophie: What the fuck indeed.\n[]>sophie: Do not worry, I am no psychic. It is simply a matter of you not being the first one in that chair- By a wide margin.\n[]>sophie: And if you cooperate, you won't have to die, soiling it - And we won't have to clean your half-digested breakfast out of this room. Is that not a win-win, honey?\n[]>narrator:...\n[]>sophie: I asked you a question. Are we clear on what the stakes are for incooperativeness?\n[]>narrator: Glacially, you begin to hint at a nod.\n[]>narrator:After a while of signaling your understanding, the woman in front of you continues.\n[]>sophie: Good. Then let us begin with negotiations.\n[]>narrator: The rag keeping your mouth shut is cut loose. <mp> You breathe in."
@@ -812,7 +821,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>sophie: For now, all you need to know is that you inherited some debts.\n[]>sophie: You will need to reimburse them, to me\n[]>sophie: As you have already ascertained, you are not to leave this place, for now. First we ought to come to an agreement.\n[]>sophie:You are not a person anymore. You belong to me.\n[]>sophie: And to make you aware of this fact in perpetuitity, I will send you home with a slight modification to what used to be [i]your[/i] body.\n[]>narrator: She accentuates that last part with a finger pointed between your eyes. <mp>Your heart rate quickens. Moreso than before."
@@ -904,7 +914,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>sophie: Look down at your hand. In a few minutes time it will not have all five fingers anymore.\n[]>narrator: You can't think. Pulse drowning out your thoughts. <mp>The only thing cutting through is her commandeering tone.\n[]>sophie: Pick a finger for us to sever.\n[]>narrator: Words are difficult to produce at the moment.\n[]>sophie: And no worries about going nonverbal, honey. Just stick out the finger you want to say goodbye to the most.\n[]>narrator: Fuckfuckfuckfuckfuckingfuckshitfuck\n[]>narrator: You look at your hand. You like it with all of your fingers attached to it.\n[]>sophie: If you don't decide, I'll do it for you. <mp>I need another middle finger for my collection, now that I think about it."
@@ -996,7 +1007,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator: You quickly stick out your index finger to protect your middle one. You need it to tell people to fuck off... <mp>And to... <mp>No you stupid horny brain what is wrong with you.\n[]>narrator: But you also need... Fuck it- You need them all."
@@ -1088,7 +1100,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>sophie: Oh, no fingers? Would you rather we cut at the wrist?\n[]>narrator:You freeze up-\n[]>sophie:Again, in about ten seconds I will drive this axe through your wrist. <mp>Do you want to go home with a stump?\n[]>narrator:Fuckfuckfuck.\n[]>sophie: ...And if you think that I will not follow through, you have still failed to grasp the gravity of the situation.\n[]>narrator: She motions to someone ...Or something... Behind you."
@@ -1180,10 +1193,11 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: Frantically, you splay your hand back out, wiggling your fingers so that they fittinlyg look like theyre in their death throes.\n[]>narrator: You slam your palm down.\n[]>sophie: No need for excessive force.\n[]>narrator: Your heart is bursting now. Your head slumps."
+							"content": "[]>narrator: Frantically, you splay your hand back out, wiggling your fingers so that they fittingly look like they're in their death throes.\n[]>narrator: You slam your palm down.\n[]>sophie: No need for excessive force.\n[]>narrator: Your heart is bursting now. Your head slumps."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1272,10 +1286,11 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: you stretch our your index finger again. <mp>reconsider. <mp>r<call:show_cg,hand_ring,0,true>ing finger. final decision.\n[]>narrator: you look up from uojr hand. the walls are tiled. a few of them cracked.\n[]>sophie: look at me.\n[]>narrator:you look at her.\n[]>sophie: yiur final choice?\n[]>narrator: you keep eye contact. motionless.\n[]>sophie: so be it.\n[]>narrator: her eyes flick a spark up to the girl that has been the machine up and down yohr hand for this entire process.."
+							"content": "[]>narrator: You stretch our your index finger again. <mp>Reconsider. <mp>R<call:show_cg,hand_ring,0,true>ing finger. Final decision.\n[]>narrator: You look up from your hand. The walls are tiled. A few of them cracked.\n[]>sophie: Look at me.\n[]>narrator:You look at her.\n[]>sophie: Your final choice?\n[]>narrator: You keep eye contact. Motionless.\n[]>sophie: So be it.\n[]>narrator: Her eyes flick a spark up to the girl that has been the machine up and down your hand for this entire process.."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1312,7 +1327,7 @@
 						},
 						"content": {
 							"delay_after": 0,
-							"delay_before": 0,
+							"delay_before": 3,
 							"line_reader.args": [
 								"sever"
 							],
@@ -1359,7 +1374,7 @@
 						},
 						"content": {
 							"delay_after": 0,
-							"delay_before": 0,
+							"delay_before": 5,
 							"line_reader.args": [
 								"hand_sever",
 								0,
@@ -1411,10 +1426,11 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: You scream. <mp>This is fucked. <mp>This is horrible. You sob and are a mess right away, the state before this immaculate in comparison. You're a fucking cripple now.\n[]>sophie: Like I said, we do not half-ass shit. <lc>We have medical staff on site. This will be taken care off, then you will be brought home. <mp>More info in the morning.\n[]>narrator:By now, breaths require enough oxygen to suffocate in this small room."
+							"content": "[]>narrator:The handaxe hits your bone. <mp>After several chops it finally snaps.\n[]>narrator: You scream. <mp>This is fucked. <mp>This is horrible. You sob and are a mess right away, the state before this immaculate in comparison. You're a fucking cripple now.\n[]>sophie: Like I said, we do not half-ass shit. <lc>We have medical staff on site. This will be taken care off, then you will be brought home. <mp>More info in the morning.\n[]>narrator:By now, breaths require enough oxygen to suffocate in this small room."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1454,7 +1470,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>sophie:I hope I do not have to spell it out that you are not to tell anyone about this in the meantime. \n[]>sophie:If you try to run away, you will be back here in no time.\n[]>sophie:Less gently then. \n[]>sophie:We found you once. We will again. And then, I will not be satisfied with one finger. And you sure as hell won't get a say in the matter, got it?\n[]>sophie:You will find more info in your mailbox by tomorrow noon. Call sick into work for the rest of the week and then I will make sure you are well taken care of.\n[]>sophie:And that is not a euphemism."
@@ -1549,10 +1566,11 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: The next morning, yiur alarm blares you awake after much too little sleep.\n[]>narrator: You phone into work and say your mom died and you need a few days of bereavement.\n[]>narrator: This close after waking up you still don't have feeling everywhere in your body. Using a phone with one less finger is a challenge however.\n[]>narrator: When you put the phone down, it stings more. The driver left you with ibuprofen. You take 1.5times the daily recommended dosage to make it through the process of waking up."
+							"content": "[]>narrator: The next morning, your alarm blares you awake after much too little sleep.\n[]>narrator: You use your landline to call into work and say your mom died and you need a few days of bereavement.\n[]>narrator: This close after waking up you still don't have feeling everywhere in your body. Holding a phone with one less finger is a challenge however.\n[]>narrator: When you put the receiver down, it stings more. The driver left you with ibuprofen. You take 1.5times the daily recommended dosage to make it through the process of waking up."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1658,7 +1676,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:When noon comes, you check your mailbox.\n[]>sophie{sophie-emotion|invisible}:[i]Heather.<lc>[i]Thank you for staying home today. <lc>[i]As a reward, I think it only appropriate to extend that trust and ask you kindly to visit me again tonight at 9 pm.\n[]>sophie:[i]Attached is a map printout and the address you need to go to.<lc>[i]It should give you no trouble to navigate here.\n[]>sophie:[i]Warm hugs <3\n[]>heather:...\n[]>heather:I...\n[]>heather:Can I quickly say that this is like... beyond fucked?\n[]>heather:And why would I need a printout? <mp>It's not as if...\n[]>heather:...\n[]>narrator:Is your PC still here?\n[]>heather{heather-emotion|shock}:AND WHAT ABOUT MY PHONE?\n[]>narrator:You frantically pat down your pockets. <mp>Nothing. <lc>You... attempt dart into your bedroom. Sometimes bumping into furniture you didn't really see."
@@ -1701,10 +1720,11 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: The steps through your apartment feel like you're walking on cotton. <lc>Everything is kind of numb, yet . Youre not in the mood for putting on music - or doing anything, really. <lc>Through this veil clouding your conscious, you hazily \n[]>narrator: Oh right, that's still there... apparently.\n[]>narrator: in your bedroom you do find... your PC. \n[]>narrator: ...it turns on.\n[]>narrator: ...it doesn't connect to any web pages.\n[]>narrator: When you open your notes app... a desktop notification disturbs your haze.\n[]>narrator: [code]Thinking of leaving a manifesto?\n[]>narrator: [code]Don't.\n[]>narrator: You shut the PC down again.\n[]>narrator: The late spring air makes your nose tingle.\n[]>narrator: You don't know what to do, so you rot on the couch for a while.\n[]>narrator: You cannot fall asleep."
+							"content": "[]>narrator: The steps through your apartment feel like you're walking on cotton. <lc>Everything is kind of numb, yet . Youre not in the mood for putting on music - Or doing anything, really. <lc>Through this veil clouding your conscious, you hazily \n[]>narrator: Oh right, that's still there... Apparently.\n[]>narrator: In your bedroom you do find... Your PC. \n[]>narrator: ...It turns on.\n[]>narrator: ...It doesn't connect to any web pages.\n[]>narrator: When you open the default text editor... A desktop notification disturbs your haze.\n[]>narrator: [code]Thinking of leaving a manifesto?\n[]>narrator: [code]Don't.\n[]>narrator: You shut the PC down again.\n[]>narrator: The late spring air makes your nose tingle.\n[]>narrator: You don't know what to do, so you rot on the couch for a while. If only you had your flip phone here, those free games would be a godsend right now.\n[]>narrator: You cannot fall asleep."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1846,7 +1866,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>sophie{sophie-emotion|neutral,heather-emotion|neutral}: Heather! I am delighted to see you made it back. <mp>Thank you so much for coming, darling.\n[]>narrator: As if on autopilot, your legs carried you back here. The second story of some dense high-rise cement block. Close to the industry outskirts, these apartments are more spartan than many of their downtown equivalents. The walls reek of smoke.\n[]>narrator: The room is... largely the same. Your dried blood from yesterday has crusted into the tabletop.\n[]>narrator: Now that you're free in your movement you can spot at least three other girls- guards, presumably.\n[]>narrator: Silent. Stoic. Staring into nothing.\n[]>sophie: Why won't you have a seat? We are just here to talk afterall.\n[]>narrator: She is not relinquishing her stare towards you.\n[]>narrator: Wavering, you trod into the chair you were bolted to yesterday. <mp>You keep your hands in your lap. <mp>Head down.\n[]>sophie: Can you look at me?\n[]>narrator: You can.\n[]>narrator: You do.\n[]>sophie: Thanks.\n[]>sophie: So, let us get to it then.\n[]>sophie: Did you bring your phone?\n[]>heather: ...\n[]>heather: Phone?\n[]>sophie: Yes, why not?\n[]>heather: It wasn't there. Couldn't find it."
@@ -1889,7 +1910,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>sophie: Did you check your mailbox before you left? I am sure it should have been delivered to you over the course of the afternoon.\n[]>heather: ...\n[]>sophie: Well?\n[]>heather: ...didn't.\n[]>sophie: Can you repeat that for me?\n[]>heather: I said I didn't check my mailbox.\n[]>sophie: Thank you, hun. What a shame. But no matter, you will get all you need from me.\n[]>heather: ..?\n[]>sophie: You see, I want you to get comfortable with the type of work I conduct. <mp>It often requires a delicate hand... To deliver these types of goods.\n[]>narrator: Cigarette drag.\n[]>heather: ...\n[]>narrator: Smoke towards your face.\n[]>sophie: For there are many vices out there. Everyone has one. and I make sure that a special kind of reject always gets their special kind of fix.\n[]>narrator: You're not sure if you should even talk back. \n[]>sophie: Too flowery?\n[]>heather: ...\n[]>sophie: ...\n[]>heather: ...it's fine.\n[]>sophie: I understand, it is a stressful situation for you, sitting across from me.\n[]>sophie: But I assure you, I mean you no harm.\n[]>sophie: But to get to the point: I need you to make a delivery for me.\n[]>heather: ...\n[]>sophie: A position on this small supply chain recently became vacated, and I thought it was the perfect opportunity for you to start paying off your debt.\n[]>narrator: Whatever the fuck that actually is.\n[]>sophie: I know you did not rack it up, Heather. But you were the best available next-of-kin, so to say.\n[]>heather: What do you mean?"
@@ -1932,7 +1954,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>sophie: Anna.\n[]>heather: College-Anna?\n[]>sophie: she hadn't responded in a few days, hadn't she?\n[]>heather{heather-emotion|sad}: yeah...\n[]>sophie: well, now you know.\n[]>heather: you killed her...\n[]>sophie: I would not go that far.\n[]>heather: Oh yeah, then someone else iced her. Got it.\n[]>heather{heather-emotion|crying}: Fuck off.\n[]>narrator: Your forehead meets the tabletop.\n[]>narrator: In silence, you sob.\n[]>narrator: Chair scrapes.\n[]>narrator: Hand on your back.\n[]>heather: Don't touch me.\n[]>narrator: She recedes her hand.\n[]>narrator: You cry more.\n[]>narrator: And more.\n[]>narrator: And when your tears have not run dry quite yet, you shakily ask.\n[]>heather: I'll be your drug mule?\n[]>sophie: For the time being.\n[]>heather: ...\n[]>sophie: I'm sorry, Heather.\n[]>heather: ...\n[]>heather: Sure...\n[]>narrator: Her gaze grazes past you now.\n[]>sophie: I am sure you concur that plenty a bean has been spilled already, so I will leave you to it.\n[]>narrator: She motions towards the guard she's eyeing.\n[]>sophie: She will accompany you to the warehouse. Instructions will be given. <mp>You will be safe.\n[]>narrator: Still shaking from crying.\n[]>narrator: Guard gives you a tissue.\n[]>narrator: Clean up. <mp>Head out. <mp>Easy steps.<ap> Or whatever."
@@ -2039,14 +2062,65 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"guard",
+								4,
+								0,
+								false
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(guard, 4, 0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{heather-emotion|invisible}: You get to ride shotgun in the SUV. With hands clenched between your thighs, you depart.\n[]>narrator: It takes a while for her to say anything to you.\n[]>guard: Fresh meat, eh?\n[]>narrator: She has both hands on the steering wheel. Her shoulder holster grins at you.\n[]>guard: Listen, I dunno where she picked you up or why you fill for that other chick now. But here's the rub.\n[]>guard: You try anything funny, you're dead.\n[]>guard: There's not much spark in your eyes already, it'd be a shame to snuff the rest out too.\n[]>narrator: You're tired. Red 7-segment display reads [code]11:39PM[/code].\n[]>guard: We're doing a pickup, if you couldn't believe it.\n[]>guard: You'll meet the girls, it'll be a great time.\n[]>guard: When that's done, I'll send you on your merry way to your destination, and we'll probably meet again at home base... <mp>or your funeral, depending on how badly you fuck up.\n[]>heather: ...\n[]>guard: She said you're safe, I know. You're gonna be safe if you don't say a word to anyone. Ever. Anywhere.\n[]>heather: ...\n[]>guard: Just take the shit and go where we tell you to. You're gonna get money for train tickets.\n[]>heather: ...\n[]>guard: You really are a silent type. I like that.\n[]>guard: Little meat.\n[]>guard: ...\n[]>narrator: With her not saying anything anymore, you try not to test your boundaries. The quaking in your chest is enough to make you zone out for the rest of the ride."
+							"content": "[]>narrator{heather-emotion|invisible}: You get to ride shotgun in the SUV. With hands clenched between your thighs, you depart.\n[]>narrator: It takes a while for her to say anything to you.\n[]>guard{guard-emotion|neutral}: Fresh meat, eh?\n[]>narrator: She has both hands on the steering wheel. Her shoulder holster grins at you.\n[]>guard: Listen, I dunno where she picked you up or why you fill for that other chick now. But here's the rub.\n[]>guard: You try anything funny, you're dead.\n[]>guard: There's not much spark in your eyes already, it'd be a shame to snuff the rest out too.\n[]>narrator: You're tired. Red 7-segment display reads [code]11:39PM[/code].\n[]>guard: We're doing a pickup, if you couldn't believe it.\n[]>guard: You'll meet the girls, it'll be a great time.\n[]>guard: When that's done, I'll send you on your merry way to your destination, and we'll probably meet again at home base... <mp>or your funeral, depending on how badly you fuck up.\n[]>heather: ...\n[]>guard: She said you're safe, I know. You're gonna be safe if you don't say a word to anyone. Ever. Anywhere.\n[]>heather: ...\n[]>guard: Just take the shit and go where we tell you to. You're gonna get money for train tickets.\n[]>heather: ...\n[]>guard: You really are a silent type. I like that.\n[]>guard: Little meat.\n[]>guard: ...\n[]>narrator: With her not saying anything anymore, you try not to test your boundaries. The quaking in your chest is enough to make you zone out for the rest of the ride."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2060,13 +2134,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.2",
+						"address": "2.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2108,13 +2182,108 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.3",
+						"address": "2.4",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "hide_all_characters()",
+							"meta.validation_status": "OK",
+							"name": "hide_all_characters",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"guard",
+								0,
+								0,
+								false
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(guard, 0, 0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2134,10 +2303,11 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:Lustre of pistols and boot knives occasionally catching in the warm glow of the overhead lamps.\n[]>narrator:get box cutter from crate\n[]>narrator:go to bathroom\n[]>>narrator: you said you were clean but you aren't. this is so much worse. you hope that this will make it better. make anything better.\n[]>narrator: this is already too much for you."
+							"content": "[]>narrator: You stop in front of an old warehouse. Your... Escort? Gets out and walks toward the gate. You keep your hands in your lap. She returns.\n[]>narrator: The gate opens and you drive inside.\n[]>narrator: A pristine array of stock footage-worthy palettes stack up to the ceiling. There's nowhere that catches your interest.\n[]>narrator: You stop a few aisles down.\n[]>guard{guard-emotion|neutral,heather-emotion|neutral}: Get out.\n[]>narrator: You do.\n[]>narrator: You push the door shut. She slams it.\n[]>narrator: Nods her head down the aisle.\n[]>guard: That's the girls.\n[]>narrator: You walk towards the group of women standing around a wooden crate. Their conversation quiets and their heads turn.\n[]>narrator: The girl next to you hugs a few of them, greets them all- None by name.\n[]>guard: So. This is Heather.\n[]>guard2: Ohoho, new girl?\n[]>narrator: That one has a raspy, airy voice.\n[]>narrator: And a neck scar to match.\n[]>guard: Yep. First run today.\n[]>narrator: You briefly eye the other girls too. Most of them have visible scarring somewhere.\n[]>narrator: Did they all end up here like you?\n[]>narrator: The lustre of pistols and boot knives occasionally catch in the warm glow of the overhead lamps as well.\n[]>guard2: New girl.\n[]>narrator: Oh.\n[]>guard2: Quit spacin' out.\n[]>guard2: Cred?\n[]>narrator: You don't give any look back. What is she talking about?\n[]>guard2: What. <ap>Qualifies. <ap>You. <ap>To. <ap>Be. <ap>Here?\n[]>narrator: You shrug.\n[]>narrator: Neck-scar-girl turns to your... Handler?\n[]>narrator: You really need some of their names.\n[]>guard2: So what's she doing here, again?\n[]>guard: Fuck if I know why she picked her.\n[]>guard2: Hand-picked?\n[]>guard: Apparently.\n[]>guard2: Well. She'll have her reasons.\n[]>guard: Anyways. Heather.\n[]>narrator: You hint at turning toward her.\n[]>narrator: She steps toward the crate at the center. Disregards you.\n[]>guard: This one tells you where you need to go.\n[]>narrator: Clipboard.\n[]>guard: And this is said thing.\n[]>narrator: Package. About 4 pounds.\n[]>guard2: Anythin' else?\n[]>guard: Nah.\n[]>guard2: Good.\n[]>narrator: Guard girl pats your shoulder.\n[]>guard: Let's go.\n[]>narrator: Package and clipboard in hand, you turn.\n[]>guard: Enjoy your break, girlies.\n[]>narrator: She waves as you walk back.\n[]>heather: So...\n[]>narrator: Her frown thunders down at you.\n[]>heather: What's your name?\n[]>guard: Why do you care?\n[]>heather: Seems helpful.\n[]>guard: Maybe. If you don't end up as dogfood before you get back... Maybe you'll learn.\n[]>guard: Not my place to give out that info."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2151,13 +2321,154 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 6,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.7",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"black",
+								2,
+								true
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "show_cg(black, 2, true)",
+							"meta.validation_status": "OK",
+							"name": "show_cg",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 7,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.8",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator: You don't exchange any more words.\n[]>narrator: You are let out at the train station.\n[]>narrator: Last train today to another city you've never been to before.\n[]>narrator: You sleep like shit.\n[]>narrator: The delivery the next day involves the most talking you've done since this entire thing started.\n[]>narrator: A friendly hangout with someone churning though names as much as they do with partners- If what you chat about is true.\n[]>narrator: You lament your very real relationship struggles.\n[]>narrator: You don't mention how She killed Anna. The crush you've been nursing for months.\n[]>narrator: If your world wasn't upside down and you met not as a drug mule but a friend, this might have had the potential to genuinely feel connected to humanity.\n[]>narrator: But that's not where you or your life is.\n[]>narrator: So with complete dissociation blanketing your brain, you say your goodbyes, get a small hug, and think about walking into oncoming traffic.\n[]>narrator: ...\n[]>narrator: As if you'd ever commit.\n[]>narrator: Attached to the clipboard were instructions to return ASAP. <mp>So you do."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 8,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.9",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"sophie",
+								"Her"
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_character_name(sophie, Her)",
+							"meta.validation_status": "OK",
+							"name": "set_character_name",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 2729,
 				"meta.selected": false,
 				"next": 3,
 				"number": 2,
@@ -2189,14 +2500,23 @@
 							"operand_key": "AND"
 						},
 						"content": {
-							"active_actors": [
-								"narrator",
-								"sophie",
-								"heather",
-								"guard"
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								2,
+								1,
+								3,
+								true,
+								"sophie_office",
+								"office"
 							],
-							"active_actors_title": "character",
-							"content": "[]>heather: so... what even is the debt \n[]>sophie: oh...\n[]>heather: what?\n[]>sophie: well, there is a real debt out there,make no mistake. several men and a couple more grand. however...\n[]>sophie: you didn't think you were actually working towards something here, did you, darling?\n[]>heather:...\n[]>sophie: who cares about a few bodies and some change.\n[]>heather:...\n[]>sophie: you exist for no other reason beyond your ability to be kf use to me.\n[]>sophie: and that makes you infinitely more valuable ,honey.\n[]>heather: you mean tk tell me... I've been suffering for nothing\n[]>sophie: Not for nothing. you suffer for me. and by extension, your continued survival.\n[]>sophie:And you will continue to be my plaything for much, much longer.\n[]>heather{heather-emotion|anger}:ARE YOU JUST SOME SADISTIC BITCH?\n[]>sophie:you have quite the foul mouth, do you know that?\n[]>narrator{heather-emotion|shock}:Slap.\n[]>sophie:I'm running a thoroughly successful business enterprise here, and keeps girls like you out of trouble.\n[]>heather {heather-emotion|crying}:You fucking mutilated me.\n[]>sophie:Would you rather some cartel sell you off into slavery?\n[]>sophie:To get fucked by men that hate you and will kill you for nothing but the simple convenience of it?\n[]>heather{heather-emotion|shock}:...\n[]>sophie:I care for you. Will continue to do so. <mp>And all I ask of you, is just a tiny amount of obedience.\n[]>sophie:Do you think you can do that for me?"
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "black_fade(2.0, 1.0, 3.0, true, sophie_office, office)",
+							"meta.validation_status": "OK",
+							"name": "black_fade",
+							"reverse_name": ""
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2205,7 +2525,7 @@
 							"meta.visible": false
 						},
 						"header": [],
-						"line_type": 0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
@@ -2236,10 +2556,11 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>heather:please\n[]>heather:please just make this stop\n[]>heather:I want my old life back"
+							"content": "[]>heather: so... what even is the debt \n[]>sophie: oh...\n[]>heather: what?\n[]>sophie: well, there is a real debt out there,make no mistake. several men and a couple more grand. however...\n[]>sophie: you didn't think you were actually working towards something here, did you, darling?\n[]>heather:...\n[]>sophie: who cares about a few bodies and some change.\n[]>heather:...\n[]>sophie: you exist for no other reason beyond your ability to be kf use to me.\n[]>sophie: and that makes you infinitely more valuable ,honey.\n[]>heather: you mean tk tell me... I've been suffering for nothing\n[]>sophie: Not for nothing. you suffer for me. and by extension, your continued survival.\n[]>sophie:And you will continue to be my plaything for much, much longer.\n[]>heather{heather-emotion|anger}:ARE YOU JUST SOME SADISTIC BITCH?\n[]>sophie:you have quite the foul mouth, do you know that?\n[]>narrator{heather-emotion|shock}:Slap.\n[]>sophie:I'm running a thoroughly successful business enterprise here, and keeps girls like you out of trouble.\n[]>heather {heather-emotion|crying}:You fucking mutilated me.\n[]>sophie:Would you rather some cartel sell you off into slavery?\n[]>sophie:To get fucked by men that hate you and will kill you for nothing but the simple convenience of it?\n[]>heather{heather-emotion|shock}:...\n[]>sophie:I care for you. Will continue to do so. <mp>And all I ask of you, is just a tiny amount of obedience.\n[]>sophie:Do you think you can do that for me?"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2279,10 +2600,11 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>sophie:you will cut into this body. tbag isn't an order but a promise"
+							"content": "[]>heather:please\n[]>heather:please just make this stop\n[]>heather:I want my old life back"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2297,6 +2619,50 @@
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
 						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "3.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>sophie:you will cut into this body. tbag isn't an order but a promise\n[]>narrator:get box cutter from crate\n[]>narrator:go to bathroom\n[]>narrator: you said you were clean but you aren't. this is so much worse. you hope that this will make it better. make anything better.\n[]>narrator: this is already too much for you."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						}
@@ -2338,7 +2704,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>heather: you left my PC intact, you left evidence all over me with that letter and and...\n[]>sophie: you mean the PC we got these RAM sticks from?\n[]>narrator: She pulls out two RAM sticks that have the wsame rainbow lighting youryours.\n[]>narrator: ...\n[]>narrator: We set up a VPN. All this time you thought you were looking things up, you were just screaming at a void. A simulacra. A local version if your most frequently visited sites.\n[]>heather: How the fuck...\n[]>sophie: \"Your\" pc has been ship-of-theseus'ed thrice in the last week.\n[]>sophie: There is no \"evidence\" to speak of.\n[]>sophie:Oh, and don't think you will get to return there any time soon. From now on, you'll sleep in here.\n[]>heather:In... where?\n[]>sophie:Why, yes. All this communiting must be so tiring. So I've prepared your own apartment down here."
@@ -2429,7 +2796,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:The amenities are surprisingly... available. This is less of a prison cell. Maybe a nordic prison cell? You saw adocumentary on that once.\n[]>narrator:Summer camp. <lc>It's like fucking summer camp all over. There's a few mugs, a dying lightbulb, and a decorated window that hints at... fun.\n[]>heather:This is a sick fucking joke.\n[]>narrator:The door behind you closes."
@@ -2472,7 +2840,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:This is all too much. Nothing is real, nothing is fake, nothing is anything anymore."
@@ -2515,7 +2884,8 @@
 								"narrator",
 								"sophie",
 								"heather",
-								"guard"
+								"guard",
+								"guard2"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:20 cuts further and you're no step closer to an answer.<lc> 40 cuts further and still no answer. a small rivulet of red might hold one. <lc>60 cuts further and still no answer. you've made yourself the most pathetic bracelet on earth. <lc>when half your forearm is sodden with your own useless blood, you give up."
@@ -2538,7 +2908,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 301,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 5,
 				"number": 4,

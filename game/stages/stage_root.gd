@@ -18,7 +18,7 @@ func set_screen(screen_path:String):
 	if (null if not is_instance_valid(GameWorld.camera) else GameWorld.camera) is GameCamera:
 		screen_container = GameWorld.camera.get_screen_container()
 	else:
-		screen_container = $ScreenContainer
+		screen_container = $CanvasLayer/ScreenContainer
 	
 	if screen_path.is_empty():
 		for c in screen_container.get_children():

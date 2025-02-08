@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b1i5kyfrrcns1"
+path="res://.godot/imported/ENTROPEIA - Dreams Of Dominion - 01 Bite the Hand of God.ogg-d883740760b96ea0499121ad3a0752c6.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/ENTROPEIA - Dreams Of Dominion - 01 Bite the Hand of God.ogg"
+dest_files=["res://.godot/imported/ENTROPEIA - Dreams Of Dominion - 01 Bite the Hand of God.ogg-d883740760b96ea0499121ad3a0752c6.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
