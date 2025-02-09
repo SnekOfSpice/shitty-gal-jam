@@ -1,11 +1,14 @@
-[gd_scene load_steps=53 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=56 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
 [ext_resource type="PackedScene" uid="uid://chfbyvpvah4eu" path="res://game/characters/character.tscn" id="3_tdgll"]
 [ext_resource type="Script" path="res://game/stages/objects.gd" id="3_x2eff"]
+[ext_resource type="Texture2D" uid="uid://b0xe0trs8e7cd" path="res://game/characters/sprites/extras/collar_default.png" id="4_05aii"]
 [ext_resource type="Script" path="res://game/stages/instruction_handler_intro.gd" id="4_u8vmc"]
+[ext_resource type="Texture2D" uid="uid://bqy3mja8rj3c8" path="res://game/characters/sprites/extras/collar_hurt.png" id="5_6oyp5"]
 [ext_resource type="Texture2D" uid="uid://delwppkladi0u" path="res://addons/diisis/editor/visuals/more.svg" id="5_7sulw"]
+[ext_resource type="Texture2D" uid="uid://t4i7d6rx10cx" path="res://game/characters/sprites/extras/bandage.png" id="5_s72kn"]
 [ext_resource type="Script" path="res://game/diisis_integration/inline_eval.gd" id="6_8ao3j"]
 [ext_resource type="Texture2D" uid="uid://bh7mo1v26xtqq" path="res://addons/diisis/editor/visuals/theme/buttons_ui/helpZeichenfläche 3.png" id="6_mh4vb"]
 [ext_resource type="Shader" path="res://game/stages/sun_shader/fade_out.gdshader" id="6_o425v"]
@@ -156,6 +159,15 @@ character_name = "sophie"
 [node name="Character2" parent="Characters" instance=ExtResource("3_tdgll")]
 position = Vector2(822, 381)
 character_name = "heather"
+extras = {
+"default": {
+"bandage": ExtResource("5_s72kn"),
+"collar": ExtResource("4_05aii")
+},
+"hurt": {
+"collar": ExtResource("5_6oyp5")
+}
+}
 
 [node name="Character3" parent="Characters" instance=ExtResource("3_tdgll")]
 position = Vector2(822, 381)

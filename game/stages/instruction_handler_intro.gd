@@ -225,3 +225,7 @@ func use_ui(id: float) -> bool:
 func cum(voice: String) -> bool:
 	GameWorld.game_stage.cum(voice)
 	return false
+
+func set_extra_visible(character_name : String, extra_name : String, is_visible : bool, hide_others : bool) -> bool:
+	GameWorld.game_stage.get_character(character_name).set_extra_visible(extra_name, is_visible, hide_others)
+	return false

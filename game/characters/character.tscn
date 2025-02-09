@@ -16,3 +16,5 @@ script = ExtResource("1_upf4t")
 [node name="Sprite" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_urdom")
 texture = ExtResource("2_lhaq4")
+
+[node name="Extras" type="Node2D" parent="."]

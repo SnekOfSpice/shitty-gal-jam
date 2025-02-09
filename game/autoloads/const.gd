@@ -23,6 +23,7 @@ const BACKGROUND_WAREHOUSE := "warehouse.png"
 const MUSIC_ROOT := "res://game/sounds/music/"
 const MUSIC_DATE := "bgm1.mp3" #https://dova-s.jp/EN/bgm/play3497.html
 const MUSIC_FETISH_CLUB := "ENTROPEIA - Dreams Of Dominion - 01 Bite the Hand of God.ogg"
+const MUSIC_SELF_HARM := "カフェ雨模様.mp3" #https://dova-s.jp/EN/bgm/play5377.html
 const MUSIC_OFFICE := "ENTROPEIA - I'll Burn This World To Feel its Warmth - 01 In Somniis.ogg"
 const MUSIC_OPENING_SCENE := "Cursed_film.mp3" # https://dova-s.jp/EN/bgm/play18456.html
 const MUSIC_MAIN_MENU := "brain.mp3" # https://dova-s.jp/EN/bgm/play20664.html

@@ -2,6 +2,9 @@ extends Node2D
 class_name Character
 
 @export var character_name := ""
+@export var extras := {
+	"default" : {}
+}
 var emotion := ""
 
 var target_x := 0.0
@@ -15,6 +18,20 @@ func _ready():
 	add_to_group("character")
 	target_x = position.x
 	
+	for emotion_name in extras.keys():
+		var group =  Node2D.new()
+		group.name = emotion_name
+		$Extras.add_child(group)
+		
+		var extras_in_emotion : Dictionary = extras.get(emotion_name)
+		for extra_name in extras_in_emotion.keys():
+			var tex = Sprite2D.new()
+			tex.name = extra_name
+			tex.texture = extras_in_emotion.get(extra_name)
+			tex.visible = false
+			group.add_child(tex)
+		
+		group.visible = false
 
 func set_x_position(idx:int, time := 0, advance_instruction_after_reposition:=false):
 	var position0 = 195
@@ -37,6 +54,14 @@ func serialize() -> Dictionary:
 	result["emotions_by_page"] = emotions_by_page
 	result["progress"] = active_mat.get_shader_parameter("progress")
 	
+	var extra_data := {}
+	for group : Node2D in $Extras.get_children():
+		var group_data := {}
+		for item : Sprite2D in group.get_children():
+			group_data[item.name] = item.visible
+		extra_data[group.name] = group_data
+	result["extras"] = extra_data
+	
 	return result
 
 func deserialize(data: Dictionary):
@@ -46,6 +71,11 @@ func deserialize(data: Dictionary):
 	visible = data.get("visible", false)
 	emotions_by_page = data.get("emotions_by_page", {})
 	active_mat.set_shader_parameter("progress", data.get("progress", 0.0))
+	
+	var extra_data : Dictionary = data.get("extras", {})
+	for group : Dictionary in extra_data.values():
+		for item_name in group.keys():
+			set_extra_visible(item_name, group.get(item_name))
 
 func on_dialog_line_args_passed(actor_name: String, dialog_line_args: Dictionary):
 	if actor_name == character_name:
@@ -67,3 +97,22 @@ func set_emotion(emotion_name:String):
 		return
 	visible = true
 	find_child("Sprite").texture = load(str("res://game/characters/sprites/", character_name, "-", emotion, ".png"))
+	
+	var special_extra := false
+	for group : Node2D in $Extras.get_children():
+		if group.name == emotion:
+			group.visible = true
+			special_extra = true
+		else:
+			group.visible = false
+	
+	if not special_extra and $Extras.get_node("default"):
+		$Extras.get_node("default").visible = true
+
+func set_extra_visible(extra_name : String, is_visible : bool, hide_others:=false):
+	for group : Node2D in $Extras.get_children():
+		for item : Sprite2D in group.get_children():
+			if item.name == extra_name:
+				item.visible = is_visible
+			elif hide_others:
+				item.visible = false
