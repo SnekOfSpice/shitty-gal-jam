@@ -1,53 +1,47 @@
 extends Control
 
 const LINES := [
-	"This was a demo",
-	"Thank you for reading <3"
+	"written, programmed, and illustrated\nby Remilia \"Snek\" Ketter"
 ]
 
 func _ready() -> void:
 	$White.modulate.a = 0.0
 	$Black.modulate.a = 0.0
 	$Label.modulate.a = 0.0
+	$TextureRect.modulate.a = 0.0
 	$White.visible = true
 	$Black.visible = true
 	$Label.visible = true
+	$TextureRect.visible = true
+	start()
 
 func start():
-	await get_tree().create_timer(1.0).timeout
-	Parser.line_reader.instruction_handler.set_sun("steps", 3.7)
-	await get_tree().create_timer(1.5).timeout
-	Parser.line_reader.instruction_handler.set_sun("fill_amount", 6.5)
-	await get_tree().create_timer(1.5).timeout
-	Parser.line_reader.instruction_handler.set_sun("steps", 1.8)
-	await get_tree().create_timer(0.5).timeout
+	$Black.modulate.a = 1
+	$TextureRect.modulate.a = 1
+	Sound.play_sfx("credits_gunshot")
+	# body drop sfx
+	# reverb sfx
 	
-	
-	var white_tween = create_tween()
-	white_tween.tween_property($White, "modulate:a", 1.0, 4.0)
-	
-	await white_tween.finished
-	
-	await get_tree().create_timer(1.0).timeout
+	await get_tree().create_timer(4.0).timeout
 	
 	for line : String in LINES:
 		
-		$Label.text = line
+		$Label.text = str("[center]",line,"[/center]")
 		
 		var fade = create_tween()
-		fade.tween_property($Label, "modulate:a", 1.0, 2.0)
+		fade.tween_property($Label, "modulate:a", 1.0, 0.0)
 		await fade.finished
 		
-		await get_tree().create_timer(4.0).timeout
+		await get_tree().create_timer(8.0).timeout
 		
 		fade = create_tween()
-		fade.tween_property($Label, "modulate:a", 0.0, 2.0)
+		fade.tween_property($Label, "modulate:a", 0.0, 0.0)
 		await fade.finished
 		
 		await get_tree().create_timer(1.0).timeout
 	
 	var black_tween = create_tween()
-	black_tween.tween_property($Black, "modulate:a", 1.0, 6.0)
+	black_tween.tween_property($TextureRect, "modulate:a", 0.0, 6.0)
 	await black_tween.finished
 	
 	await get_tree().create_timer(2.0).timeout

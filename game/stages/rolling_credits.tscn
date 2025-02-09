@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://ipa310726xyt"]
+[gd_scene load_steps=4 format=3 uid="uid://ipa310726xyt"]
 
 [ext_resource type="Script" path="res://game/stages/rolling_credits.gd" id="1_cgvis"]
+[ext_resource type="Texture2D" uid="uid://ckrumhvbvecfs" path="res://LOGO.png" id="2_ilvdq"]
+[ext_resource type="FontFile" uid="uid://darokbdbfpwej" path="res://game/visuals/theme/fonts/F25_Bank_Printer.otf" id="2_m54f7"]
 
 [node name="RollingCredits" type="Control"]
 layout_mode = 3
@@ -36,20 +38,27 @@ color = Color(0, 0, 0, 1)
 [node name="Label" type="RichTextLabel" parent="."]
 custom_minimum_size = Vector2(400, 0)
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -159.0
+offset_bottom = -124.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 mouse_filter = 2
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(0.804743, 0.804743, 0.804743, 0.823529)
 theme_override_constants/shadow_offset_y = 0
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/normal_font = ExtResource("2_m54f7")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "written by me"
 fit_content = true
+
+[node name="TextureRect" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(505, 312)
+scale = Vector2(0.490714, 0.490714)
+texture = ExtResource("2_ilvdq")

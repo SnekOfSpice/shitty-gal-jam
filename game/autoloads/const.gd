@@ -31,3 +31,4 @@ const MUSIC_WAKE_UP := "bgm2.mp3" # https://dova-s.jp/EN/bgm/play12349.html
 
 const SFX_ROOT := "res://game/sounds/sfx/"
 const SFX_SEVER := "sever.ogg"
+const SFX_CREDITS_GUNSHOT := "credits sfx.wav"
