@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=59 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -10,12 +10,15 @@
 [ext_resource type="Texture2D" uid="uid://delwppkladi0u" path="res://addons/diisis/editor/visuals/more.svg" id="5_7sulw"]
 [ext_resource type="Texture2D" uid="uid://t4i7d6rx10cx" path="res://game/characters/sprites/extras/bandage.png" id="5_s72kn"]
 [ext_resource type="Script" path="res://game/diisis_integration/inline_eval.gd" id="6_8ao3j"]
+[ext_resource type="Texture2D" uid="uid://dg1wqmto3na8t" path="res://game/characters/sprites/extras/heather_leash_default.png" id="6_8dvb1"]
 [ext_resource type="Texture2D" uid="uid://bh7mo1v26xtqq" path="res://addons/diisis/editor/visuals/theme/buttons_ui/helpZeichenfläche 3.png" id="6_mh4vb"]
 [ext_resource type="Shader" path="res://game/stages/sun_shader/fade_out.gdshader" id="6_o425v"]
 [ext_resource type="Texture2D" uid="uid://kl3iyk14qdik" path="res://game/stages/sun_shader/wide_noise.tres" id="8_6l6o8"]
+[ext_resource type="Texture2D" uid="uid://crvn5owr587we" path="res://game/characters/sprites/extras/heather_leash_hurt.png" id="8_6y6j1"]
 [ext_resource type="PackedScene" uid="uid://qkegdwc8ux5o" path="res://game/stages/black_fade.tscn" id="8_50byo"]
 [ext_resource type="Texture2D" uid="uid://c17fgm00bow0b" path="res://game/stages/sun_shader/mask_02_02.png" id="8_mxu8l"]
 [ext_resource type="Script" path="res://game/stages/game_camera.gd" id="9_lbjue"]
+[ext_resource type="Texture2D" uid="uid://bt3ppk3cjb5ml" path="res://game/characters/sprites/extras/sophie_leash_default.png" id="9_n3hta"]
 [ext_resource type="Theme" uid="uid://drk5fhsdjoewf" path="res://game/visuals/theme/diisis_theme.tres" id="11_n0ymb"]
 [ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
 [ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/systems/cheats.tscn" id="13_qackq"]
@@ -152,9 +155,9 @@ script = ExtResource("3_x2eff")
 
 [node name="Characters" type="Node2D" parent="."]
 
-[node name="Character" parent="Characters" instance=ExtResource("3_tdgll")]
-position = Vector2(195, 383)
-character_name = "sophie"
+[node name="Character3" parent="Characters" instance=ExtResource("3_tdgll")]
+position = Vector2(822, 381)
+character_name = "guard"
 
 [node name="Character2" parent="Characters" instance=ExtResource("3_tdgll")]
 position = Vector2(822, 381)
@@ -162,16 +165,23 @@ character_name = "heather"
 extras = {
 "default": {
 "bandage": ExtResource("5_s72kn"),
-"collar": ExtResource("4_05aii")
+"collar": ExtResource("4_05aii"),
+"leash": ExtResource("6_8dvb1")
 },
 "hurt": {
-"collar": ExtResource("5_6oyp5")
+"collar": ExtResource("5_6oyp5"),
+"leash": ExtResource("8_6y6j1")
 }
 }
 
-[node name="Character3" parent="Characters" instance=ExtResource("3_tdgll")]
-position = Vector2(822, 381)
-character_name = "guard"
+[node name="Character" parent="Characters" instance=ExtResource("3_tdgll")]
+position = Vector2(195, 383)
+character_name = "sophie"
+extras = {
+"default": {
+"leash": ExtResource("9_n3hta")
+}
+}
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(512, 384)

@@ -13,7 +13,6 @@ func _ready() -> void:
 	$Black.visible = true
 	$Label.visible = true
 	$TextureRect.visible = true
-	start()
 
 func start():
 	$Black.modulate.a = 1
