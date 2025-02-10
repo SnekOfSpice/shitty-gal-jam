@@ -6,6 +6,7 @@ const AUTO_SAVE_INTERVAL := 900.0 # 15 mins
 const BACKUP_PATH := "user://DIISIS_autosave/"
 var auto_save_timer := AUTO_SAVE_INTERVAL
 var is_open := false
+var opening := true # spaghetti yum
 var undo_redo_count_at_last_save := 0
 
 var _page = preload("res://addons/diisis/editor/src/page.tscn")
@@ -44,7 +45,7 @@ func refresh(serialize_before_load:=true, fragile:=false):
 	if current_page:
 		cpn = current_page.number
 	else:
-		cpn = 0
+		return
 	if serialize_before_load:
 		current_page.save()
 	await get_tree().process_frame
@@ -60,6 +61,7 @@ func refresh(serialize_before_load:=true, fragile:=false):
 
 func init(active_file_path:="") -> void:
 	print("init editor")
+	opening = true
 	core = find_child("Core")
 	page_container = core.find_child("PageContainer")
 	
@@ -121,6 +123,8 @@ func update_page_view(view:PageView):
 		node.set_page_view(view)
 
 func load_page(number: int, discard_without_saving:=false):
+	if opening:
+		return
 	await get_tree().process_frame
 	number = clamp(number, 0, Pages.get_page_count() - 1)
 	for page in page_container.get_children():
@@ -451,13 +455,18 @@ func open_from_path(path:String):
 	
 	await get_tree().process_frame
 	var editor_data = data.get("editor", {})
-	load_page(editor_data.get("current_page_number", 0), true)
+	#print("open from path ", editor_data.get("current_page_number", 0))
+	#load_page(editor_data.get("current_page_number", 0), true)
 	find_child("ViewTypesButtonContainer").get_child(editor_data.get("page_view", PageView.Full)).button_pressed = true
 	find_child("TextSizeButton").select(editor_data.get("text_size_id", 3))
 	
 	await get_tree().process_frame
 	set_text_size(editor_data.get("text_size_id", 3))
 	update_page_view(editor_data.get("page_view", PageView.Full))
+	
+	await get_tree().process_frame
+	opening = false
+	load_page(editor_data.get("current_page_number", 0), true)
 
 func _on_fd_open_file_selected(path: String) -> void:
 	open_from_path(path)

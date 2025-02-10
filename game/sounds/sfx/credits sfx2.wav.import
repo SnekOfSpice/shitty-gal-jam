@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d2j86fws2awk"
+path="res://.godot/imported/credits sfx2.wav-69863484da7d6fc1f3b2f6d76101aeb8.sample"
+
+[deps]
+
+source_file="res://game/sounds/sfx/credits sfx2.wav"
+dest_files=["res://.godot/imported/credits sfx2.wav-69863484da7d6fc1f3b2f6d76101aeb8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

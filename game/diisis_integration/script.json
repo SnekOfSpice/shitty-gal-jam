@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 15,
+		"current_page_number": 1,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -576,7 +576,7 @@
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
+						"meta.is_head_editable": true,
 						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
@@ -623,7 +623,7 @@
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
+						"meta.is_head_editable": true,
 						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
@@ -1654,7 +1654,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1007,
+				"meta.scroll_vertical": 4851,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,

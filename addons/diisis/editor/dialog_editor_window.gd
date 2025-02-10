@@ -33,11 +33,9 @@ func _on_about_to_popup() -> void:
 		find_child("WindowFactorScale").set_value(config.get_value("editor", "content_scale", 1.0))
 		size = config.get_value("editor", "size", size)
 		position = config.get_value("editor", "position", position)
-
-func _process(delta):
-	if not editor or not editor_window:
-		return
-	update_content_scale(editor_content_scale)
+	
+	await get_tree().process_frame
+	update_content_scale(1.0)
 
 func _on_close_requested() -> void:
 	if editor.undo_redo.get_history_count() == 0 or not editor.altered_history:
@@ -142,6 +140,7 @@ func update_content_scale(scale_factor:float):
 
 
 func _on_size_changed() -> void:
+	await get_tree().process_frame
 	update_content_scale(editor_content_scale)
 
 func _on_window_factor_scale_value_changed(value):
