@@ -1,6 +1,9 @@
 @tool
 extends Window
 
+func build_str(text:String):
+	size = Vector2.ONE
+	find_child("TextLabel").text = text
 
 func build(instruction_name: String, full_text:String, caret_column:int):
 	size = Vector2.ONE
@@ -9,7 +12,7 @@ func build(instruction_name: String, full_text:String, caret_column:int):
 	var arg_strings := []
 	var i := 0
 	while i < arg_names.size():
-		arg_strings.append(str(arg_names[i], ":", arg_types[i]))
+		arg_strings.append(str(arg_names[i], " : [i][color=b88d86EE]", arg_types[i], "[/color][/i]"))
 		i += 1
 	var args_before_caret :int = full_text.count(",", 0, caret_column)
 	
@@ -20,12 +23,12 @@ func build(instruction_name: String, full_text:String, caret_column:int):
 	for a in arg_strings:
 		if i == args_before_caret:
 			hit_index = i
-			hint += "[b]"
+			hint += "[u][bgcolor=05020a][outline_size=1][outline_color=e6c9c4DF]"
 		hint += a
+		if i == args_before_caret:
+			hint += "[/outline_color][/outline_size][/bgcolor][/u]"
 		if i < arg_strings.size() - 1:
 			hint += ", "
-		if i == args_before_caret:
-			hint += "[/b]"
 		i += 1
 	find_child("TextLabel").text = hint
 	position.x -= size.x * (float(hit_index) / float (i))

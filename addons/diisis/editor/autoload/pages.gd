@@ -1258,63 +1258,75 @@ func get_entered_instruction_compliance(instruction:String, check_as_template:=f
 	return "OK"
 
 
-func capitalize_sentence_beginnings_str(input:String) -> String:
-	return capitalize_sentence_beginnings([input])[0]
-
-func capitalize_sentence_beginnings(input:Array) -> Array:
+func capitalize_sentence_beginnings(text:String) -> String:
 	var letters := ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",]
 
 	var c12n_prefixes := [
-		".", ":", ";", "-", "?", "!", "~"
+		".", ":", ";", "?", "!", "~"
 	]
 
-	var result := []
-	for text : String in input:
-		var tags_in_text := []
-		var scan_index := 0
-		while scan_index < text.length():
-			if text[scan_index] == "<":
-				var tag_end = text.find(">", scan_index)
-				if tag_end == -1:
-					scan_index += 1
-					continue
-				var tag = text.substr(scan_index, tag_end - scan_index + 1)
-				tags_in_text.append(tag)
-			elif text[scan_index] == "{":
-				var tag_end = text.find("}", scan_index)
-				if tag_end == -1:
-					scan_index += 1
-					continue
-				var tag = text.substr(scan_index, tag_end - scan_index + 1)
-				tags_in_text.append(tag)
-			elif text[scan_index] == "[":
-				if text[scan_index-1] == "\\[":
-					scan_index += 1
-					continue
-				var tag_end = text.find("]", scan_index)
-				if tag_end == -1:
-					scan_index += 1
-					continue
-				var tag = text.substr(scan_index, tag_end - scan_index + 1)
-				tags_in_text.append(tag)
-			scan_index += 1
-		for letter : String in letters:
-			text = text.replace(str("\"", letter), str("\"", letter.capitalize()))
-			text = text.replace(str("<lc>", letter), str("<lc>", letter.capitalize()))
-			text = text.replace(str("<lc> ", letter), str("<lc> ", letter.capitalize()))
-			for prefix in c12n_prefixes:
-				if prefix != "-":
-					text = text.replace(str(prefix, letter), str(prefix, letter.capitalize()))
-					text = text.replace(str(prefix, "<ap>", letter), str(prefix, "<ap>", letter.capitalize()))
-					text = text.replace(str(prefix, "<mp>", letter), str(prefix, "<mp>", letter.capitalize()))
-					text = text.replace(str(prefix, "<lc>", letter), str(prefix, "<lc>", letter.capitalize()))
-				text = text.replace(str(prefix, " ", letter), str(prefix, " ", letter.capitalize()))
-				text = text.replace(str(prefix, " <ap>", letter), str(prefix, " <ap>", letter.capitalize()))
-				text = text.replace(str(prefix, " <mp>", letter), str(prefix, " <mp>", letter.capitalize()))
-				text = text.replace(str(prefix, " <lc>", letter), str(prefix, " <lc>", letter.capitalize()))
-		
-		for tag in tags_in_text:
-			text = text.replacen(tag, tag)
-		
-		result.append(text)
-	return result
+	var tags_in_text := []
+	var scan_index := 0
+	while scan_index < text.length():
+		if text[scan_index] == "<":
+			var tag_end = text.find(">", scan_index)
+			if tag_end == -1:
+				scan_index += 1
+				continue
+			var tag = text.substr(scan_index, tag_end - scan_index + 1)
+			tags_in_text.append(tag)
+		elif text[scan_index] == "{":
+			var tag_end = text.find("}", scan_index)
+			if tag_end == -1:
+				scan_index += 1
+				continue
+			var tag = text.substr(scan_index, tag_end - scan_index + 1)
+			tags_in_text.append(tag)
+		elif text[scan_index] == "[":
+			if text[scan_index-1] == "\\[":
+				scan_index += 1
+				continue
+			var tag_end = text.find("]", scan_index)
+			if tag_end == -1:
+				scan_index += 1
+				continue
+			var tag = text.substr(scan_index, tag_end - scan_index + 1)
+			tags_in_text.append(tag)
+		scan_index += 1
+	for letter : String in letters:
+		text = text.replace(str("\"", letter), str("\"", letter.capitalize()))
+		text = text.replace(str("<lc>", letter), str("<lc>", letter.capitalize()))
+		text = text.replace(str("<lc> ", letter), str("<lc> ", letter.capitalize()))
+		for prefix in c12n_prefixes:
+			if prefix != "-":
+				text = text.replace(str(prefix, letter), str(prefix, letter.capitalize()))
+				text = text.replace(str(prefix, "<ap>", letter), str(prefix, "<ap>", letter.capitalize()))
+				text = text.replace(str(prefix, "<mp>", letter), str(prefix, "<mp>", letter.capitalize()))
+				text = text.replace(str(prefix, "<lc>", letter), str(prefix, "<lc>", letter.capitalize()))
+			text = text.replace(str(prefix, " ", letter), str(prefix, " ", letter.capitalize()))
+			text = text.replace(str(prefix, " <ap>", letter), str(prefix, " <ap>", letter.capitalize()))
+			text = text.replace(str(prefix, " <mp>", letter), str(prefix, " <mp>", letter.capitalize()))
+			text = text.replace(str(prefix, " <lc>", letter), str(prefix, " <lc>", letter.capitalize()))
+	
+	for tag in tags_in_text:
+		text = text.replacen(tag, tag)
+	
+	return text
+
+func neaten_whitespace(text:String) -> String:
+	text = text.replace(":", ": ")
+	text = text.replace("<", " <")
+	
+	var contains_dead_whitespace := text.contains("  ")
+	while contains_dead_whitespace:
+		var doublespace_index = text.find("  ")
+		text = text.erase(doublespace_index)
+		contains_dead_whitespace = text.contains("  ")
+	
+	contains_dead_whitespace = text.contains("> ")
+	while contains_dead_whitespace:
+		var doublespace_index = text.find("> ")
+		text = text.erase(doublespace_index + 1)
+		contains_dead_whitespace = text.contains("> ")
+	
+	return text

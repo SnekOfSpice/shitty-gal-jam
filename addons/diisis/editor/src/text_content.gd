@@ -331,7 +331,9 @@ func _on_text_box_code_completion_requested() -> void:
 func _on_text_index_pressed(index: int) -> void:
 	match index:
 		0:
-			text_box.text = Pages.capitalize_sentence_beginnings_str(text_box.text)
+			text_box.text = Pages.capitalize_sentence_beginnings(text_box.text)
+		1:
+			text_box.text = Pages.neaten_whitespace(text_box.text)
 
 func index_all_tags():
 	tags.clear()

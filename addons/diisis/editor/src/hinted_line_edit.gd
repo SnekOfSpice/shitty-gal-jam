@@ -33,11 +33,14 @@ func update_hint(new_text: String):
 	if virtual_hint_line >= valid_options.size():
 		virtual_hint_line = max(valid_options.size() - 1, 0)
 	
+	for i in virtual_hint_line:
+		valid_options.append(valid_options.pop_front())
+	
 	var i := 0
 	for option : String in valid_options:
 		var highlighted_substr := option.replace(new_text, str("[b]", new_text, "[/b]"))
 		
-		if i == virtual_hint_line:
+		if i == 0:
 			highlighted_substr = str(">", highlighted_substr)
 		
 		option_list_string += highlighted_substr
@@ -47,11 +50,11 @@ func update_hint(new_text: String):
 	option_list_string = option_list_string.trim_suffix("\n")
 	if not just_submitted:
 		$ReadHint.popup()
-		$ReadHint.build(option_list_string)
 		just_submitted = false
 	
-	var caret_pos = Vector2i(global_position)
-	caret_pos.y -= 140
+	var caret_pos = Vector2i(global_position + Vector2(get_caret_draw_pos().x, 0))
+	caret_pos.y += size.y
+	$ReadHint.build_str(option_list_string)
 	$ReadHint.position = caret_pos
 
 func _on_gui_input(event: InputEvent) -> void:

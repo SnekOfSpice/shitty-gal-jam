@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 11,
+		"current_page_number": 8,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -49,7 +49,7 @@
 		},
 		"empty_strings_for_l10n": false,
 		"facts": {
-
+			"hhhh": false
 		},
 		"file_config": {
 			"evaluator_paths": [
@@ -483,7 +483,7 @@
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
+						"meta.is_head_editable": true,
 						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
@@ -531,7 +531,7 @@
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
+						"meta.is_head_editable": true,
 						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
@@ -892,7 +892,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>sophie: For now, all you need to know is that you inherited some debts.\n[]>sophie: You will need to reimburse them, to me\n[]>sophie: As you have already ascertained, you are not to leave this place, for now. First we ought to come to an agreement.\n[]>sophie:You are not a person anymore. You belong to me.\n[]>sophie: And to make you aware of this fact in perpetuitity, I will send you home with a slight modification to what used to be [i]your[/i] body.\n[]>narrator: She accentuates that last part with a finger pointed between your eyes. <mp>Your heart rate quickens. Moreso than before."
+							"content": "[]>sophie: For now, all you need to know is that you inherited some debts.\n[]>sophie: You will need to reimburse them, to me.\n[]>sophie: As you have already ascertained, you are not to leave this place, for now. First we ought to come to an agreement.\n[]>sophie:You are not a person anymore. You belong to me.\n[]>sophie: And to make you aware of this fact in perpetuitity, I will send you home with a slight modification to what used to be [i]your[/i] body.\n[]>narrator: She accentuates that last part with a finger pointed between your eyes. <mp>Your heart rate quickens. Moreso than before."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1657,7 +1657,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 4851,
+				"meta.scroll_vertical": 1710,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -1937,7 +1937,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>sophie{sophie-emotion|neutral,heather-emotion|sad}: Heather! I am delighted to see you made it back. <mp>Thank you so much for coming, darling.\n[]>narrator: As if on autopilot, your legs carried you back here. The second story of some dense high-rise cement block. Close to the industry outskirts, these apartments are more spartan than many of their downtown equivalents. The walls reek of smoke.\n[]>narrator: The room is... largely the same. Your dried blood from yesterday has crusted into the tabletop.\n[]>narrator: Now that you're free in your movement you can spot at least three other girls- guards, presumably.\n[]>narrator: Silent. Stoic. Staring into nothing.\n[]>sophie: Why won't you have a seat? We are just here to talk afterall.\n[]>narrator: She is not relinquishing her stare towards you.\n[]>narrator: Wavering, you trod into the chair you were bolted to yesterday. <mp>You keep your hands in your lap. <mp>Head down.\n[]>sophie: Can you look at me?\n[]>narrator: You can.\n[]>narrator{heather-emotion|neutral}: You do.\n[]>sophie: Thanks.\n[]>sophie: So, let us get to it then.\n[]>sophie: Did you bring your phone?\n[]>heather: ...\n[]>heather{heather-emotion|neutral}: Phone?\n[]>sophie: Yes, why not?\n[]>heather: It wasn't there. Couldn't find it."
+							"content": "[]>sophie{sophie-emotion|neutral,heather-emotion|neutral}: Heather! I am delighted to see you made it back. <mp>Thank you so much for coming, darling.\n[]>narrator: As if on autopilot, your legs carried you back here. The second story of some dense high-rise cement block. Close to the industry outskirts, these apartments are more spartan than many of their downtown equivalents. The walls reek of smoke.\n[]>narrator: The room is... Largely the same. Your dried blood from yesterday has crusted into the tabletop.\n[]>narrator: Now that you're free in your movement you can spot at least three other girls- guards, presumably.\n[]>narrator: Silent. Stoic. Staring into nothing.\n[]>sophie: Why won't you have a seat? We are just here to talk afterall.\n[]>narrator: She is not relinquishing her stare towards you.\n[]>narrator{heather-emotion|sad}: Wavering, you trod into the chair you were bolted to yesterday. <mp>You keep your hands in your lap. <mp>Head down.\n[]>sophie: Can you look at me?\n[]>narrator: You can.\n[]>narrator{heather-emotion|neutral}: You do.\n[]>sophie: Thanks.\n[]>sophie: So, let us get to it then.\n[]>sophie: Did you bring your phone?\n[]>heather: ...\n[]>heather{heather-emotion|neutral}: Phone?\n[]>sophie: Yes, why not?\n[]>heather: It wasn't there. Couldn't find it."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2025,7 +2025,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>sophie: Anna.\n[]>heather: College-Anna?\n[]>sophie:The one you have been developing a crush for for a while now, yes.\n[]>sophie:Those feelings were mutual.\n[]>heather:...\n[]>heather{heather-emotion|sad}:...Were.\n[]>sophie:I'm sorry to be the bearer of bad news.\n[]>heather:What...\n[]>sophie: She hadn't responded in a few days, hadn't she?\n[]>heather: Yeah...\n[]>sophie: Well, now you know.\n[]>heather: You killed her...\n[]>sophie: I would not go that far.\n[]>heather: Oh yeah, then someone else iced her. Got it.\n[]>heather{heather-emotion|crying}: Fuck off.\n[]>narrator: Your forehead meets the tabletop.\n[]>narrator: In silence, you sob.\n[]>narrator: Chair scrapes.\n[]>narrator: Hand on your back.\n[]>heather: Don't touch me.\n[]>narrator: She recedes her hand.\n[]>narrator: You cry more.\n[]>narrator: And more.\n[]>narrator: And when your tears have not run dry quite yet, you shakily ask.\n[]>heather: I'll be your drug mule?\n[]>sophie: For the time being.\n[]>heather: ...\n[]>sophie: I'm sorry, Heather.\n[]>heather: ...\n[]>heather: Sure...\n[]>narrator: Her gaze grazes past you now.\n[]>sophie: I am sure you concur that plenty a bean has been spilled already, so I will leave you to it.\n[]>narrator: She motions towards the guard she's eyeing.\n[]>sophie: She will accompany you to the warehouse. Instructions will be given. <mp>You will be safe.\n[]>narrator: Still shaking from crying.\n[]>narrator: Guard gives you a tissue.\n[]>narrator: Clean up. <mp>Head out. <mp>Easy steps.<ap> Or whatever."
+							"content": "[]>sophie: Anna.\n[]>heather: College-Anna?\n[]>sophie:The one you have been developing a crush for for a while now, yes.\n[]>sophie:Those feelings were mutual.\n[]>heather:...\n[]>heather{heather-emotion|sad}:...Were.\n[]>sophie:I'm sorry to be the bearer of bad news.\n[]>heather:What...\n[]>sophie: She hadn't responded in a few days, hadn't she?\n[]>heather: Yeah...\n[]>sophie: Well, now you know.\n[]>heather: You killed her...\n[]>sophie: I would not go that far.\n[]>heather: Oh yeah, then someone else iced her. Got it.\n[]>heather{heather-emotion|crying}: Fuck off.\n[]>narrator: Your forehead meets the tabletop.\n[]>narrator: In silence, you sob.\n[]>narrator: Chair scrapes.\n[]>narrator: Hand on your back.\n[]>heather: Don't touch me.\n[]>narrator: She recedes her hand.\n[]>narrator: You cry more.\n[]>narrator: And more.\n[]>narrator: And when your tears have not run dry quite yet, you shakily ask.\n[]>heather: I'll be your drug mule?\n[]>sophie: For the time being.\n[]>heather: ...\n[]>sophie: I'm sorry, Heather.\n[]>heather: ...\n[]>heather: Sure...\n[]>narrator: Her gaze grazes past you now.\n[]>sophie: I am sure you concur that plenty a bean has been spilled already, so I will leave you to it.\n[]>narrator: She motions towards the guard she's eyeing.\n[]>sophie: She will accompany you to the warehouse. Instructions will be given. <mp>You will be safe.\n[]>narrator: Still shaking from crying.\n[]>narrator: Guard gives you a tissue.\n[]>narrator: Clean up. <mp>Head out. <mp>Easy steps.<mp> Whatever."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2045,7 +2045,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2500,
+				"meta.scroll_vertical": 2510,
 				"meta.selected": false,
 				"next": 2,
 				"number": 1,
@@ -2535,7 +2535,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2729,
+				"meta.scroll_vertical": 2713,
 				"meta.selected": false,
 				"next": 3,
 				"number": 2,
@@ -3417,7 +3417,7 @@
 				},
 				"lines": [
 					{
-						"address": "8.0",
+						"address": "7.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3461,7 +3461,7 @@
 						}
 					},
 					{
-						"address": "8.1",
+						"address": "7.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3510,7 +3510,7 @@
 						}
 					},
 					{
-						"address": "8.2",
+						"address": "7.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3554,7 +3554,7 @@
 						}
 					},
 					{
-						"address": "8.3",
+						"address": "7.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3598,7 +3598,7 @@
 						}
 					},
 					{
-						"address": "8.4",
+						"address": "7.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3642,7 +3642,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 560,
+				"meta.scroll_vertical": 479,
 				"meta.selected": false,
 				"next": 8,
 				"number": 7,
@@ -3658,7 +3658,7 @@
 				},
 				"lines": [
 					{
-						"address": "7.0",
+						"address": "8.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3710,7 +3710,157 @@
 						}
 					},
 					{
-						"address": "7.1",
+						"address": "8.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"heather",
+								"chain",
+								true,
+								false
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_extra_visible(heather,chain,true,false)",
+							"meta.validation_status": "OK",
+							"name": "set_extra_visible",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "8.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"sophie",
+								"chain",
+								true,
+								false
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_extra_visible(sophie,chain,true,false)",
+							"meta.validation_status": "OK",
+							"name": "set_extra_visible",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "8.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"heather",
+								"collar",
+								true,
+								false
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_extra_visible(heather,collar,true,false)",
+							"meta.validation_status": "OK",
+							"name": "set_extra_visible",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "8.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3748,13 +3898,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.2",
+						"address": "8.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3792,13 +3942,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 47,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 9,
 				"number": 8,
@@ -4633,7 +4783,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1006,
+				"meta.scroll_vertical": 697,
 				"meta.selected": false,
 				"next": 12,
 				"number": 11,
