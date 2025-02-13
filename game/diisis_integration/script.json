@@ -53,7 +53,7 @@
 		},
 		"file_config": {
 			"evaluator_paths": [
-				"res://sample/inline_eval.gd"
+				"res://game/stages/instruction_handler_intro.gd"
 			]
 		},
 		"head_defaults": [],
@@ -4633,7 +4633,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1597,
+				"meta.scroll_vertical": 1006,
 				"meta.selected": false,
 				"next": 12,
 				"number": 11,

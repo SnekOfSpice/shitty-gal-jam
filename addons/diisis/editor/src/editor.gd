@@ -610,6 +610,29 @@ func _on_file_id_pressed(id: int) -> void:
 			emit_signal("open_new_file")
 
 
+func request_arg_hint(text_box:Control):
+	if not (text_box is LineEdit or text_box is TextEdit):
+		push_error(str("Tried calling request_arg_hint with object of type ", text_box.get_class()))
+		return
+	var caret_pos = Vector2i(text_box.get_caret_draw_pos())
+	caret_pos += Vector2i(text_box.global_position)
+	caret_pos *= content_scale
+	caret_pos += Vector2(0, 10) * content_scale
+	_place_arg_hint(caret_pos)
+	
+	text_box.set_caret_column(text_box.get_caret_column())
+	text_box.call_deferred("grab_focus")
+
+func _place_arg_hint(at:Vector2):
+	find_child("ArgHint").position = at
+
+func build_arg_hint(instruction_name:String, full_arg_text:String, caret_column:int):
+	find_child("ArgHint").build(instruction_name, full_arg_text, caret_column)
+	find_child("ArgHint").popup()
+
+func hide_arg_hint():
+	find_child("ArgHint").hide()
+
 func _on_funny_debug_button_pressed() -> void:
 	var doms := ["af_ZA",
 "sq_AL",
