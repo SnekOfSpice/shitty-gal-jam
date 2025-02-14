@@ -33,14 +33,14 @@ func update_hint(new_text: String):
 	if virtual_hint_line >= valid_options.size():
 		virtual_hint_line = max(valid_options.size() - 1, 0)
 	
-	for i in virtual_hint_line:
-		valid_options.append(valid_options.pop_front())
+	#for i in virtual_hint_line:
+		#valid_options.append(valid_options.pop_front())
 	
 	var i := 0
 	for option : String in valid_options:
 		var highlighted_substr := option.replace(new_text, str("[b]", new_text, "[/b]"))
 		
-		if i == 0:
+		if i == virtual_hint_line:
 			highlighted_substr = str(">", highlighted_substr)
 		
 		option_list_string += highlighted_substr

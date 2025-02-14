@@ -18,6 +18,7 @@ func start():
 	$Black.modulate.a = 1
 	$TextureRect.modulate.a = 1
 	Sound.play_sfx("credits_gunshot")
+	Sound.play_bgm("silence")
 	# body drop sfx
 	# reverb sfx
 	

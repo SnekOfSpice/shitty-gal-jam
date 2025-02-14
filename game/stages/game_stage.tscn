@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=67 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -13,17 +13,25 @@
 [ext_resource type="Texture2D" uid="uid://dg1wqmto3na8t" path="res://game/characters/sprites/extras/heather_leash_default.png" id="6_8dvb1"]
 [ext_resource type="Texture2D" uid="uid://bh7mo1v26xtqq" path="res://addons/diisis/editor/visuals/theme/buttons_ui/helpZeichenfläche 3.png" id="6_mh4vb"]
 [ext_resource type="Shader" path="res://game/stages/sun_shader/fade_out.gdshader" id="6_o425v"]
+[ext_resource type="Texture2D" uid="uid://2se6wxs1x0m1" path="res://game/characters/sprites/extras/heather_cuts1_fresh_default.png" id="7_hbmkx"]
 [ext_resource type="Texture2D" uid="uid://kl3iyk14qdik" path="res://game/stages/sun_shader/wide_noise.tres" id="8_6l6o8"]
 [ext_resource type="Texture2D" uid="uid://crvn5owr587we" path="res://game/characters/sprites/extras/heather_leash_hurt.png" id="8_6y6j1"]
 [ext_resource type="PackedScene" uid="uid://qkegdwc8ux5o" path="res://game/stages/black_fade.tscn" id="8_50byo"]
 [ext_resource type="Texture2D" uid="uid://c17fgm00bow0b" path="res://game/stages/sun_shader/mask_02_02.png" id="8_mxu8l"]
+[ext_resource type="Texture2D" uid="uid://cg3wn6q57577r" path="res://game/characters/sprites/extras/heather_cuts1_scar_default.png" id="8_usdaj"]
+[ext_resource type="Texture2D" uid="uid://bf0w4ompiehk8" path="res://game/characters/sprites/extras/heather_cuts2_fresh_default.png" id="9_5ofag"]
 [ext_resource type="Script" path="res://game/stages/game_camera.gd" id="9_lbjue"]
 [ext_resource type="Texture2D" uid="uid://bt3ppk3cjb5ml" path="res://game/characters/sprites/extras/sophie_leash_default.png" id="9_n3hta"]
+[ext_resource type="Texture2D" uid="uid://dhjkugspyp2o" path="res://game/characters/sprites/extras/heather_cuts2_scar_default.png" id="10_2rww1"]
 [ext_resource type="Theme" uid="uid://drk5fhsdjoewf" path="res://game/visuals/theme/diisis_theme.tres" id="11_n0ymb"]
 [ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
+[ext_resource type="Texture2D" uid="uid://uagme413djvr" path="res://game/characters/sprites/extras/heather_cuts1_fresh_pain.png" id="13_ooe82"]
 [ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/systems/cheats.tscn" id="13_qackq"]
 [ext_resource type="Script" path="res://game/stages/start_cover.gd" id="13_qfsh6"]
+[ext_resource type="Texture2D" uid="uid://dnukxob5teh3n" path="res://game/characters/sprites/extras/heather_cuts1_scar_pain.png" id="14_n0m6s"]
 [ext_resource type="Shader" path="res://game/stages/one_fadeout.gdshader" id="15_heqc4"]
+[ext_resource type="Texture2D" uid="uid://btsgt68gl168v" path="res://game/characters/sprites/extras/heather_cuts2_fresh_pain.png" id="15_ja61d"]
+[ext_resource type="Texture2D" uid="uid://bigkvefvyjom1" path="res://game/characters/sprites/extras/heather_cuts2_scar_pain.png" id="16_4i8a0"]
 [ext_resource type="Shader" path="res://game/stages/static.gdshader" id="17_dc0ef"]
 [ext_resource type="PackedScene" uid="uid://ipa310726xyt" path="res://game/stages/rolling_credits.tscn" id="17_gnute"]
 [ext_resource type="Shader" path="res://game/stages/jpg.gdshader" id="19_lfk1e"]
@@ -155,26 +163,34 @@ script = ExtResource("3_x2eff")
 
 [node name="Characters" type="Node2D" parent="."]
 
-[node name="Character3" parent="Characters" instance=ExtResource("3_tdgll")]
+[node name="Steph" parent="Characters" instance=ExtResource("3_tdgll")]
 position = Vector2(822, 381)
 character_name = "guard"
 
-[node name="Character2" parent="Characters" instance=ExtResource("3_tdgll")]
+[node name="Heather" parent="Characters" instance=ExtResource("3_tdgll")]
 position = Vector2(822, 381)
 character_name = "heather"
 extras = {
 "default": {
 "bandage": ExtResource("5_s72kn"),
 "collar": ExtResource("4_05aii"),
+"cuts1_fresh": ExtResource("7_hbmkx"),
+"cuts1_scar": ExtResource("8_usdaj"),
+"cuts2_fresh": ExtResource("9_5ofag"),
+"cuts2_scar": ExtResource("10_2rww1"),
 "leash": ExtResource("6_8dvb1")
 },
 "hurt": {
 "collar": ExtResource("5_6oyp5"),
+"cuts1_fresh": ExtResource("13_ooe82"),
+"cuts1_scar": ExtResource("14_n0m6s"),
+"cuts2_fresh": ExtResource("15_ja61d"),
+"cuts2_scar": ExtResource("16_4i8a0"),
 "leash": ExtResource("8_6y6j1")
 }
 }
 
-[node name="Character" parent="Characters" instance=ExtResource("3_tdgll")]
+[node name="Sophie" parent="Characters" instance=ExtResource("3_tdgll")]
 position = Vector2(195, 383)
 character_name = "sophie"
 extras = {
