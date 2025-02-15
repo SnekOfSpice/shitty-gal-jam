@@ -13,7 +13,9 @@ func _ready() -> void:
 	find_child("LoadButton").visible = Options.does_savegame_exist()
 	
 	find_child("LoadButton").text = str("Load (", int(Parser.get_game_progress_from_file(Options.SAVEGAME_PATH) * 100), "%)")
-
+	if GameWorld.just_started:
+		GameWorld.just_started = false
+		
 
 func _gui_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
@@ -45,3 +47,7 @@ func _on_discord_button_pressed() -> void:
 
 func _on_git_hub_button_pressed() -> void:
 	OS.shell_open("https://github.com/SnekOfSpice/dialog-editor")
+
+
+func _on_sound_check_button_pressed() -> void:
+	find_child("SoundCheckOverlay").visible = false

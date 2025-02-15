@@ -11,6 +11,7 @@ var background := ""
 var just_finished_game := false
 
 var skip := false
+var just_started := true
 
 func serialize():
 	var result := {}
@@ -28,4 +29,4 @@ func deserialize(data:Dictionary):
 
 func hide_all_characters():
 	for character : Character in get_tree().get_nodes_in_group("character"):
-		character.visible = false
+		character.set_emotion("invisible")

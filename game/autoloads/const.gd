@@ -34,7 +34,7 @@ const MUSIC_OFFICE := "ENTROPEIA - I'll Burn This World To Feel its Warmth - 01 
 const MUSIC_OPENING_SCENE := "Cursed_film.mp3" # https://dova-s.jp/EN/bgm/play18456.html
 const MUSIC_SELF_HARM := "カフェ雨模様.mp3" #https://dova-s.jp/EN/bgm/play5377.html
 const MUSIC_SILENCE := "silence.wav"
-const MUSIC_SUBJUGATION := "silence.wav"
+const MUSIC_SUBJUGATION := "Paradise_Found.mp3"
 const MUSIC_WAKE_UP := "bgm2.mp3" # https://dova-s.jp/EN/bgm/play12349.html
 const MUSIC_WORK := "Paradise_Found.mp3"
 

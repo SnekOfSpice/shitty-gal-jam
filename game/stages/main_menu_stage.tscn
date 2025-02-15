@@ -194,6 +194,47 @@ focus_mode = 0
 text = "Quit"
 alignment = 0
 
+[node name="CanvasLayer3" type="CanvasLayer" parent="."]
+layer = 20
+
+[node name="SoundCheckOverlay" type="ColorRect" parent="CanvasLayer3"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_fjoxk")
+color = Color(0, 0, 0, 0.635294)
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer3/SoundCheckOverlay"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer3/SoundCheckOverlay/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer3/SoundCheckOverlay/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+bbcode_enabled = true
+text = "[center][b]You should play this visual novel with sound enabled.[/b][/center]"
+fit_content = true
+
+[node name="SoundCheckButton" type="Button" parent="CanvasLayer3/SoundCheckOverlay/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Got it"
+
 [connection signal="pressed" from="HBoxContainer/DiscordButton" to="." method="_on_discord_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/GitHubButton" to="." method="_on_git_hub_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer/StartButton" to="." method="emit_signal" binds= ["start_game"]]
@@ -202,3 +243,4 @@ alignment = 0
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/CWButton" to="." method="_on_cw_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="CanvasLayer3/SoundCheckOverlay/CenterContainer/VBoxContainer/SoundCheckButton" to="." method="_on_sound_check_button_pressed"]

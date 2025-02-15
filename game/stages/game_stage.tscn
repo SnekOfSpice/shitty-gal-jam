@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=68 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -34,6 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://bigkvefvyjom1" path="res://game/characters/sprites/extras/heather_cuts2_scar_pain.png" id="16_4i8a0"]
 [ext_resource type="Shader" path="res://game/stages/static.gdshader" id="17_dc0ef"]
 [ext_resource type="PackedScene" uid="uid://ipa310726xyt" path="res://game/stages/rolling_credits.tscn" id="17_gnute"]
+[ext_resource type="Texture2D" uid="uid://jugqsd8ynml5" path="res://game/characters/sprites/extras/sophie_cigarette_default.png" id="18_ks73f"]
 [ext_resource type="Shader" path="res://game/stages/jpg.gdshader" id="19_lfk1e"]
 [ext_resource type="Shader" path="res://game/stages/vcr.gdshader" id="21_6i8ck"]
 
@@ -167,6 +168,10 @@ script = ExtResource("3_x2eff")
 position = Vector2(822, 381)
 character_name = "guard"
 
+[node name="Guard2" parent="Characters" instance=ExtResource("3_tdgll")]
+position = Vector2(822, 381)
+character_name = "guard2"
+
 [node name="Heather" parent="Characters" instance=ExtResource("3_tdgll")]
 position = Vector2(822, 381)
 character_name = "heather"
@@ -195,6 +200,7 @@ position = Vector2(195, 383)
 character_name = "sophie"
 extras = {
 "default": {
+"cigarette": ExtResource("18_ks73f"),
 "leash": ExtResource("9_n3hta")
 }
 }
@@ -542,6 +548,8 @@ name_map = {
 "heather": "Heather"
 }
 name_colors = {
+"guard": Color(0.84, 0.252, 0.3304, 1),
+"guard2": Color(0.937029, 0.892055, 0.511506, 1),
 "heather": Color(0.841463, 0.592515, 0.53182, 1),
 "sophie": Color(0.733446, 0.864261, 0.733659, 1)
 }

@@ -5,9 +5,14 @@ class_name Character
 @export var extras := {
 	"default" : {}
 }
+var fade_in := 0.4
+var fade_out := 0.4
+var fade_tween
+
 var emotion := ""
 
 var target_x := 0.0
+var target_visibility := visible
 
 var emotions_by_page := {}
 
@@ -32,6 +37,8 @@ func _ready():
 			group.add_child(tex)
 		
 		group.visible = false
+	
+	visibility_changed.connect(on_visibility_changed)
 
 func set_x_position(idx:int, time := 0, advance_instruction_after_reposition:=false):
 	var position0 = 195
@@ -48,7 +55,7 @@ func set_x_position(idx:int, time := 0, advance_instruction_after_reposition:=fa
 func serialize() -> Dictionary:
 	var result := {}
 	
-	result["visible"] = visible
+	result["visible"] = target_visibility
 	result["emotion"] = emotion
 	result["target_x"] = target_x
 	result["emotions_by_page"] = emotions_by_page
@@ -69,6 +76,7 @@ func deserialize(data: Dictionary):
 	position.x = data.get("target_x", position.x)
 	target_x = data.get("target_x", position.x)
 	visible = data.get("visible", false)
+	target_visibility = data.get("visible", false)
 	emotions_by_page = data.get("emotions_by_page", {})
 	active_mat.set_shader_parameter("progress", data.get("progress", 0.0))
 	
@@ -93,7 +101,12 @@ func on_dialog_line_args_passed(actor_name: String, dialog_line_args: Dictionary
 func set_emotion(emotion_name:String):
 	emotion = emotion_name
 	if emotion_name == "invisible" or emotion_name.is_empty():
-		visible = false
+		target_visibility = false
+		if fade_tween:
+			fade_tween.kill()
+		fade_tween = create_tween()
+		fade_tween.finished.connect(self.set.bind("visible", false))
+		fade_tween.tween_property(self, "modulate:a", 0, fade_out * modulate.a)
 		return
 	visible = true
 	find_child("Sprite").texture = load(str("res://game/characters/sprites/", character_name, "-", emotion, ".png"))
@@ -116,3 +129,20 @@ func set_extra_visible(extra_name : String, is_visible : bool, hide_others:=fals
 				item.visible = is_visible
 			elif hide_others:
 				item.visible = false
+
+func on_visibility_changed():
+	target_visibility = visible
+	if visible and fade_in == 0:
+		return
+	if not visible:
+		return
+	
+	if fade_tween:
+		fade_tween.kill()
+	fade_tween = create_tween()
+	
+	if visible:
+		modulate.a = 0
+		fade_tween.tween_property(self, "modulate:a", 1, fade_in)
+	
+	fade_tween.finished.connect(fade_tween.kill)
