@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 7,
+		"current_page_number": 21,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -8,14 +8,16 @@
 		"dropdown_dialog_arguments": [
 			"sophie-emotion",
 			"heather-emotion",
-			"guard-emotion"
+			"guard-emotion",
+			"guard2-emotion"
 		],
 		"dropdown_title_for_dialog_syntax": "character",
 		"dropdown_titles": [
 			"sophie-emotion",
 			"character",
 			"heather-emotion",
-			"guard-emotion"
+			"guard-emotion",
+			"guard2-emotion"
 		],
 		"dropdowns": {
 			"character": [
@@ -28,6 +30,11 @@
 			"guard-emotion": [
 				"neutral",
 				"invisible"
+			],
+			"guard2-emotion": [
+				"neutral",
+				"invisible",
+				"crying"
 			],
 			"heather-emotion": [
 				"neutral",
@@ -509,54 +516,6 @@
 							"delay_after": 0,
 							"delay_before": 0,
 							"line_reader.args": [
-								"default",
-								0
-							],
-							"line_reader.reverse_args": [],
-							"meta.has_reverse": false,
-							"meta.reverse_text": "",
-							"meta.text": "set_background(default, 0)",
-							"meta.validation_status": "OK",
-							"name": "set_background",
-							"reverse_name": ""
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 2,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": true,
-						"meta.line_index": 1,
-						"meta.selector": {
-							"selected": false
-						}
-					},
-					{
-						"address": "0.2",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"delay_after": 0,
-							"delay_before": 0,
-							"line_reader.args": [
 								"opening_scene",
 								0
 							],
@@ -580,13 +539,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "0.3",
+						"address": "0.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -627,13 +586,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "0.4",
+						"address": "0.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -659,6 +618,54 @@
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
 							"meta.text": "set_character_name(sophie, ???)",
+							"meta.validation_status": "OK",
+							"name": "set_character_name",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "0.4",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"guard2",
+								"Twitchy Guard"
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_character_name(guard2, Twitchy Guard)",
 							"meta.validation_status": "OK",
 							"name": "set_character_name",
 							"reverse_name": ""
@@ -1657,7 +1664,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 4873,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -4594,7 +4601,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 370,
+				"meta.scroll_vertical": 963,
 				"meta.selected": false,
 				"next": 8,
 				"number": 7,
@@ -8790,11 +8797,463 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 20,
+				"meta.scroll_vertical": 1092,
 				"meta.selected": false,
 				"next": 0,
 				"number": 20,
 				"page_key": "ending scene",
+				"terminate": true
+			},
+			"21": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "21.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								0,
+								2,
+								4,
+								true,
+								"burger_joint",
+								"epilogue"
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "black_fade(0, 2, 4, true, burger_joint, epilogue)",
+							"meta.validation_status": "OK",
+							"name": "black_fade",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "21.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"guard2",
+								"Tess"
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_character_name(guard2, Tess)",
+							"meta.validation_status": "OK",
+							"name": "set_character_name",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "21.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"guard2",
+								1,
+								0,
+								false
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(guard2, 1, 0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "21.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"heather",
+								6,
+								0,
+								false
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(heather, 6, 0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "21.4",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"heather",
+								"collar",
+								false,
+								true
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_extra_visible(heather, collar, false, true)",
+							"meta.validation_status": "OK",
+							"name": "set_extra_visible",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "21.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>guard2{guard2-emotion|neutral,heather-emotion|neutral}: Shit I didn't even know [i]your[/i] name.\n[]>heather: ...\n[]>guard2: I'd seen you... Like... once with that bitch.\n[]>guard2: So I just done and shot my shot\n[]>guard2: Hell, if it didn't work out so what. Not like I left any traces on that iron or paper.\n[]>heather: ...\n[]>guard2: Thanks though, Heather.\n[]>heather: Sure...\n[]>heather: ...\n[]>heather: You too... I think.\n[]>guard2: ...\n[]>heather: Were... You and Steph... Close\n[]>guard2: Crying: Shit man...\n[]>heather: ...\n[]>guard2: ...\n[]>guard2: Fuck,.\n[]>guard2: Lemme sort through this myself first.\n[]>heather: Take your time.\n[]>narrator: G2 neutral she blows her nose with napkin, composes herself a little again.\n[]>narrator: Not like anyone cares. This is the only burger joint your parents could ever affort when you were little.\n[]>heather: ...\n[]>guard2: Do you have much to go back to?\n[]>heather: \"No\" for most of my life. I hope my friends didn't forget me.\n[]>guard2: Probably haven't.\n[]>heather: Yeah...\n[]>guard2: But.\n[]>guard2: We can't tell anyone about this.\n[]>guard2: Not now, not ever.\n[]>guard2: Cops'll hit us with assisting in drug whatever-the-fuck.\n[]>heather: I know.\n[]>heather: I should maybe talk to my crush. If she's alive like Sophie said...\n[]>guard2: That bitch's name was Sophie?\n[]>heather: Oh yeah. I never told you.\n[]>guard2: Whatever.\n[]>guard2: Not worth the breath.\n[]>guard2: ...\n[]>heather: ...\n[]>guard2: Fuck, girl.\n[]>narrator: Exhaustion is written on both of your faces. Even if it has been a few days.\n[]>heather: ...\n[]>guard2: ...\n[]>heather: So... Wanna stay in touch?\n[]>guard2: Sure.\n[]>narrator: You give Tess your phone number and MySpace name and receive her number in return."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "21.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"heather_tess_hug",
+								4,
+								true
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "show_cg(heather_tess_hug, 4, true)",
+							"meta.validation_status": "OK",
+							"name": "show_cg",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 6,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "21.7",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>guard2: Take care.\n[]>heather: You too.\n[]>heather: I'll text you."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 7,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "21.8",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 2,
+							"delay_before": 0,
+							"line_reader.args": [
+								"black",
+								6,
+								false
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "show_cg(black, 6, false)",
+							"meta.validation_status": "OK",
+							"name": "show_cg",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 8,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 1787,
+				"meta.selected": false,
+				"next": 0,
+				"number": 21,
+				"page_key": "epilogue",
 				"terminate": true
 			}
 		},

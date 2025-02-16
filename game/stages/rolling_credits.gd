@@ -15,6 +15,7 @@ func _ready() -> void:
 	$TextureRect.visible = true
 
 func start():
+	Options.just_finished_game = true
 	$Black.modulate.a = 1
 	$TextureRect.modulate.a = 1
 	Sound.play_sfx("credits_gunshot")

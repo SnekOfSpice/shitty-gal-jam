@@ -235,12 +235,25 @@ func drop_down_values_to_string_array(values:=[0,0]) -> Array:
 	result[1] = value
 	return result
 
+func get_page_number(key:String) -> int:
+	for data in page_data.values():
+		if data.get("page_key", "") == key:
+			return data.get("number")
+	return -1
+
+func read_page_by_key(key:String):
+	var number = get_page_number(key)
+	if number == -1:
+		push_error(str("Couldn't find page with key \"", key, "\"."))
+		return
+	read_page(number)
+
 func read_page(number: int, starting_line_index := 0):
 	if not page_data.keys().has(number):
 		push_warning(str("number ", number, " not in page data"))
 		return
 	
-	#emit_signal("read_new_page", number)
+	set_paused(false)
 	ParserEvents.read_new_page.emit(number)
 	page_index = number
 	lines = page_data.get(page_index).get("lines")

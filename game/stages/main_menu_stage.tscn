@@ -139,10 +139,6 @@ layout_mode = 2
 theme = ExtResource("3_fjoxk")
 theme_override_constants/separation = 12
 
-[node name="HSeparator" type="HSeparator" parent="CanvasLayer2/MarginContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -160,6 +156,14 @@ layout_mode = 2
 focus_mode = 0
 theme_override_font_sizes/font_size = 30
 text = "Load"
+alignment = 0
+
+[node name="EpilogueButton" type="Button" parent="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+text = "Epilogue"
 alignment = 0
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer2/MarginContainer/VBoxContainer"]
@@ -194,10 +198,41 @@ focus_mode = 0
 text = "Quit"
 alignment = 0
 
+[node name="SaveContainer" type="PanelContainer" parent="CanvasLayer2"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -54.0
+offset_right = 307.0
+grow_vertical = 0
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/SaveContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_right = 10
+
+[node name="Vbox" type="HBoxContainer" parent="CanvasLayer2/SaveContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("3_fjoxk")
+
+[node name="SaveSlotLabel" type="Label" parent="CanvasLayer2/SaveContainer/MarginContainer/Vbox"]
+layout_mode = 2
+text = "Current Save Slot: 1"
+
+[node name="SaveSlotButton" type="Button" parent="CanvasLayer2/SaveContainer/MarginContainer/Vbox"]
+layout_mode = 2
+size_flags_vertical = 4
+focus_mode = 0
+text = "Change"
+
 [node name="CanvasLayer3" type="CanvasLayer" parent="."]
 layer = 20
 
 [node name="SoundCheckOverlay" type="ColorRect" parent="CanvasLayer3"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -235,12 +270,54 @@ fit_content = true
 layout_mode = 2
 text = "Got it"
 
+[node name="UnlockedEpilogueOverlay" type="ColorRect" parent="CanvasLayer3"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_fjoxk")
+color = Color(0, 0, 0, 0.635294)
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer3/UnlockedEpilogueOverlay"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer3/UnlockedEpilogueOverlay/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer3/UnlockedEpilogueOverlay/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+bbcode_enabled = true
+text = "[center][b]Epilogue unlocked.[/b][/center]"
+fit_content = true
+
+[node name="UnlockedEpilogueButton" type="Button" parent="CanvasLayer3/UnlockedEpilogueOverlay/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Got it"
+
 [connection signal="pressed" from="HBoxContainer/DiscordButton" to="." method="_on_discord_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/GitHubButton" to="." method="_on_git_hub_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer/StartButton" to="." method="emit_signal" binds= ["start_game"]]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer/LoadButton" to="." method="emit_signal" binds= ["load_game"]]
+[connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer/EpilogueButton" to="." method="emit_signal" binds= ["start_epilogue"]]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/CWButton" to="." method="_on_cw_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="CanvasLayer2/SaveContainer/MarginContainer/Vbox/SaveSlotButton" to="." method="_on_save_slot_button_pressed"]
 [connection signal="pressed" from="CanvasLayer3/SoundCheckOverlay/CenterContainer/VBoxContainer/SoundCheckButton" to="." method="_on_sound_check_button_pressed"]
+[connection signal="pressed" from="CanvasLayer3/UnlockedEpilogueOverlay/CenterContainer/VBoxContainer/UnlockedEpilogueButton" to="." method="_on_unlocked_epilogue_button_pressed"]

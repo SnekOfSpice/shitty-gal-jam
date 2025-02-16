@@ -9,6 +9,7 @@ const SCREEN_HISTORY := "history.tscn"
 const SCREEN_OPTIONS := "options_screen.tscn"
 const SCREEN_CREDITS := "credits.tscn"
 const SCREEN_CONTENT_WARNING := "cw.tscn"
+const SCREEN_SAVE := "save_screen.tscn"
 
 const BACKGROUND_ROOT := "res://game/backgrounds/"
 const BACKGROUND_BURGER_JOINT := "burger_joint.png"
@@ -26,6 +27,7 @@ const BACKGROUND_WAREHOUSE := "warehouse.png"
 const MUSIC_ROOT := "res://game/sounds/music/"
 const MUSIC_AFTER_STEPH_DEATH := "Paradise_Found.mp3"
 const MUSIC_DATE := "bgm1.mp3" #https://dova-s.jp/EN/bgm/play3497.html
+const MUSIC_EPILOGUE := "Paradise_Found.mp3"
 const MUSIC_FETISH_CLUB := "ENTROPEIA - Dreams Of Dominion - 01 Bite the Hand of God.ogg"
 const MUSIC_HOSTEL := "Paradise_Found.mp3"
 const MUSIC_MAIN_MENU := "brain.mp3" # https://dova-s.jp/EN/bgm/play20664.html

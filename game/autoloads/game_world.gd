@@ -8,7 +8,6 @@ var instruction_handler: InstructionHandler
 var camera : GameCamera
 
 var background := ""
-var just_finished_game := false
 
 var skip := false
 var just_started := true
@@ -25,7 +24,6 @@ func deserialize(data:Dictionary):
 		game_stage.deserialize(data.get("game_stage", {}))
 	else:
 		print("game stage not set for gameworld deserialization")
-
 
 func hide_all_characters():
 	for character : Character in get_tree().get_nodes_in_group("character"):

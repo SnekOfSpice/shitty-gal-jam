@@ -4,6 +4,8 @@ class_name StageRoot
 var stage := ""
 var screen := ""
 
+var screenshot_to_save:Image
+
 func _ready():
 	change_stage(CONST.STAGE_MAIN)
 	set_screen("")
@@ -13,6 +15,10 @@ func set_screen(screen_path:String):
 	if is_instance_valid(Parser.line_reader):
 		if Parser.line_reader.is_input_locked:
 			return
+	
+	screenshot_to_save = get_viewport().get_texture().get_image()
+	var s = Options.get_save_thumbnail_size()
+	screenshot_to_save.resize(s.x, s.y)
 	
 	var screen_container:Control
 	if (null if not is_instance_valid(GameWorld.camera) else GameWorld.camera) is GameCamera:
@@ -87,13 +93,15 @@ func set_background(background:String, fade_time:=0.0):
 func new_gamestate():
 	game_start_callable = Parser.reset_and_start
 	change_stage(CONST.STAGE_GAME)
-	#Parser.reset_and_start()
+
 
 func load_gamestate():
 	game_start_callable = Options.load_gamestate
 	change_stage(CONST.STAGE_GAME)
-	#Options.load_gamestate()
-	#Parser.paused = false
+
+func start_epilogue():
+	game_start_callable = Parser.read_page_by_key.bind("epilogue")
+	change_stage(CONST.STAGE_GAME)
 
 var game_start_callable:Callable
 func change_stage(stage_path:String):
@@ -110,16 +118,20 @@ func change_stage(stage_path:String):
 	for child in $StageContainer.get_children():
 		if new_stage != child:
 			child.queue_free()
-	$StageContainer.add_child(new_stage)
 	
 	
 	match stage_path:
 		CONST.STAGE_MAIN:
 			new_stage.start_game.connect(new_gamestate)
 			new_stage.load_game.connect(load_gamestate)
+			new_stage.start_epilogue.connect(start_epilogue)
 		#CONST.STAGE_GAME:
 			#new_stage.blockers_cleared.connect(game_start_callable)
 	
-	stage = stage_path
+	$StageContainer.add_child(new_stage)
 	
+	stage = stage_path
+
+func get_stage_node() -> Node:
+	return $StageContainer.get_child(0)
 	
