@@ -38,14 +38,11 @@ color = Color(0, 0, 0, 1)
 [node name="Label" type="RichTextLabel" parent="."]
 custom_minimum_size = Vector2(400, 0)
 layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
+anchors_preset = 10
 anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -159.0
-offset_bottom = -124.0
+offset_top = 594.0
+offset_bottom = 618.0
 grow_horizontal = 2
-grow_vertical = 0
 mouse_filter = 2
 theme_override_colors/default_color = Color(0.804743, 0.804743, 0.804743, 0.823529)
 theme_override_constants/shadow_offset_y = 0
@@ -62,3 +59,14 @@ visible = false
 position = Vector2(505, 312)
 scale = Vector2(0.490714, 0.490714)
 texture = ExtResource("2_ilvdq")
+
+[node name="Black2" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

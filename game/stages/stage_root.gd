@@ -16,9 +16,10 @@ func set_screen(screen_path:String):
 		if Parser.line_reader.is_input_locked:
 			return
 	
-	screenshot_to_save = get_viewport().get_texture().get_image()
-	var s = Options.get_save_thumbnail_size()
-	screenshot_to_save.resize(s.x, s.y)
+	if stage == CONST.STAGE_GAME:
+		screenshot_to_save = get_viewport().get_texture().get_image()
+		var s = Options.get_save_thumbnail_size()
+		screenshot_to_save.resize(s.x, s.y)
 	
 	var screen_container:Control
 	if (null if not is_instance_valid(GameWorld.camera) else GameWorld.camera) is GameCamera:

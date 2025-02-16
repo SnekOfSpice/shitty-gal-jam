@@ -146,3 +146,7 @@ func on_visibility_changed():
 		fade_tween.tween_property(self, "modulate:a", 1, fade_in)
 	
 	fade_tween.finished.connect(fade_tween.kill)
+
+## circumvents fade_out.
+func set_invisible():
+	visible = false

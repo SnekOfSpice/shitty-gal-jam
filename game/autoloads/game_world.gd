@@ -27,4 +27,4 @@ func deserialize(data:Dictionary):
 
 func hide_all_characters():
 	for character : Character in get_tree().get_nodes_in_group("character"):
-		character.set_emotion("invisible")
+		character.set_invisible()

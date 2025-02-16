@@ -25,7 +25,7 @@ func _ready() -> void:
 			Options.unlocked_epilogue = true
 			find_child("UnlockedEpilogueOverlay").visible = Options.unlocked_epilogue
 	
-	find_child("EpilogueButton").visible = Options.unlocked_epilogue
+	find_child("EpilogueButton").visible = Options.unlocked_epilogue or OS.has_feature("editor")
 
 func update_load_button():
 	find_child("LoadButton").visible = Options.has_savedata()
