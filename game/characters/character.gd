@@ -19,6 +19,7 @@ var emotions_by_page := {}
 @onready var active_mat = $Sprite.get_material()
 
 func _ready():
+	set_emotion("neutral")
 	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
 	add_to_group("character")
 	target_x = position.x
@@ -35,6 +36,8 @@ func _ready():
 			tex.texture = extras_in_emotion.get(extra_name)
 			tex.visible = false
 			group.add_child(tex)
+			if tex.texture.get_size().x > $Sprite.texture.get_size().x:
+				tex.position.x += 0.5 * (tex.texture.get_size().x - $Sprite.texture.get_size().x)
 		
 		group.visible = false
 	

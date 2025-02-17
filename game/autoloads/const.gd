@@ -26,6 +26,7 @@ const BACKGROUND_WAREHOUSE := "warehouse.png"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
 const MUSIC_AFTER_STEPH_DEATH := "Paradise_Found.mp3"
+const MUSIC_CONFRONTATION := "Paradise_Found.mp3"
 const MUSIC_DATE := "bgm1.mp3" #https://dova-s.jp/EN/bgm/play3497.html
 const MUSIC_EPILOGUE := "TOO_LATE.mp3" # https://dova-s.jp/EN/bgm/play10682.html
 const MUSIC_FETISH_CLUB := "ENTROPEIA - Dreams Of Dominion - 01 Bite the Hand of God.ogg"
@@ -43,3 +44,4 @@ const MUSIC_WORK := "Paradise_Found.mp3"
 const SFX_ROOT := "res://game/sounds/sfx/"
 const SFX_SEVER := "sever.ogg"
 const SFX_CREDITS_GUNSHOT := "credits sfx.wav"
+const SFX_GUNSHOT := "gunshot.wav"

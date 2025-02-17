@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 22,
+		"current_page_number": 12,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -1664,7 +1664,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 4175,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -1754,7 +1754,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:When noon comes, you check your mailbox.\n[]>sophie{sophie-emotion|invisible}:[i]Heather.<lc>[i]Thank you for staying home today. <lc>[i]As a reward, I think it only appropriate to extend that trust and ask you kindly to visit me again tonight at 9 pm.\n[]>sophie:[i]Attached is a map printout and the address you need to go to.<lc>[i]It should give you no trouble to navigate here.\n[]>sophie:[i]Warm hugs <3\n[]>heather:...\n[]>heather:I...\n[]>heather:Can I quickly say that this is like... beyond fucked?\n[]>heather:And why would I need a printout? <mp>It's not as if...\n[]>heather:...\n[]>narrator:Is your PC still here?\n[]>heather{heather-emotion|shock}:AND WHAT ABOUT MY PHONE?\n[]>narrator:You frantically pat down your pockets. <mp>Nothing. <lc>You... [i]attempt[/i] to dart into your bedroom. You sometime bump into furniture you didn't really see."
+							"content": "[]>narrator:When noon comes, you check your mailbox.\n[]>sophie{sophie-emotion|invisible}:[i]Heather.<lc>[i]Thank you for staying home today. <lc>[i]As a reward, I think it only appropriate to extend that trust and ask you kindly to visit me again tonight at 9 pm.\n[]>sophie:[i]Attached is a map printout and the address you need to go to.<lc>[i]It should give you no trouble to navigate here.\n[]>sophie:[i]Warm hugs <3\n[]>heather:...\n[]>heather:I...\n[]>heather:Can I quickly say that this is like... beyond fucked?\n[]>heather:And why would I need a printout? <mp>It's not as if...\n[]>heather:...\n[]>narrator:Is your PC still here?\n[]>heather{heather-emotion|shock}:AND WHAT ABOUT MY PHONE?\n[]>narrator:You frantically pat down your pockets and your stump stings. <mp>Nothing. <lc>You... [i]attempt[/i] to dart into your bedroom. You sometime bump into furniture you didn't really see."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2052,7 +2052,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 2510,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 2,
 				"number": 1,
@@ -3171,7 +3171,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{heather-emotion|anger}:This is all too much. <mp>Nothing is real, nothing is fake, nothing is anything anymore.\n[]>narrator:You barely make it inside.\n[]>narrator:Slump down against your door as it closes.\n[]>narrator{heather-emotion|crying}:Curled up upright fetal position."
+							"content": "[]>narrator{heather-emotion|anger}:This is all too much. <mp>Nothing is real, nothing is fake, nothing is anything anymore.\n[]>narrator:Barely inside, you slump down against your door as it closes.\n[]>narrator{heather-emotion|crying}:Curled up upright fetal position."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3267,7 +3267,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: You life is a haze.\n[]>narrator: Existence itself is too heavy to bear.\n[]>narrator: You make you body carry more of your burden."
+							"content": "[]>narrator: Your life is a haze.\n[]>narrator: Existence itself is too heavy to bear.\n[]>narrator: You make your body carry more of your burden."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3430,7 +3430,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1111,
+				"meta.scroll_vertical": 402,
 				"meta.selected": false,
 				"next": 5,
 				"number": 4,
@@ -5038,14 +5038,14 @@
 							"delay_before": 0,
 							"line_reader.args": [
 								"heather",
-								"chain",
+								"leash",
 								true,
 								false
 							],
 							"line_reader.reverse_args": [],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "set_extra_visible(heather,chain,true,false)",
+							"meta.text": "set_extra_visible(heather,leash,true,false)",
 							"meta.validation_status": "OK",
 							"name": "set_extra_visible",
 							"reverse_name": ""
@@ -5088,14 +5088,14 @@
 							"delay_before": 0,
 							"line_reader.args": [
 								"sophie",
-								"chain",
+								"leash",
 								true,
 								false
 							],
 							"line_reader.reverse_args": [],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "set_extra_visible(sophie,chain,true,false)",
+							"meta.text": "set_extra_visible(sophie,leash,true,false)",
 							"meta.validation_status": "OK",
 							"name": "set_extra_visible",
 							"reverse_name": ""
@@ -5400,7 +5400,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 238,
+				"meta.scroll_vertical": 1377,
 				"meta.selected": false,
 				"next": 10,
 				"number": 9,
@@ -5600,7 +5600,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 456,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 11,
 				"number": 10,
@@ -5617,6 +5617,168 @@
 				"lines": [
 					{
 						"address": "11.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								2,
+								2,
+								2,
+								true,
+								"road_night",
+								"work"
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "black_fade(2,2,2,true, road_night, work)",
+							"meta.validation_status": "OK",
+							"name": "black_fade",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "11.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"heather",
+								"leash",
+								false,
+								false
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_extra_visible(heather, leash, false, false)",
+							"meta.validation_status": "OK",
+							"name": "set_extra_visible",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "11.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>heather:sob\n[]>guard:you said she had you type up your resignation?\n[]>guard:I mean she provides for us. but sometimes that does mean shit work.\n[]>guard:Today we're going out on cleanup duty."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					}
+				],
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 12,
+				"number": 11,
+				"page_key": "talk with steph about making a living",
+				"terminate": false
+			},
+			"12": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "12.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5668,7 +5830,7 @@
 						}
 					},
 					{
-						"address": "11.1",
+						"address": "12.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5712,7 +5874,7 @@
 						}
 					},
 					{
-						"address": "11.2",
+						"address": "12.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5754,14 +5916,14 @@
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
-						"meta.is_head_editable": false,
+						"meta.is_head_editable": true,
 						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "11.3",
+						"address": "12.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5805,7 +5967,7 @@
 						}
 					},
 					{
-						"address": "11.4",
+						"address": "12.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5849,7 +6011,7 @@
 						}
 					},
 					{
-						"address": "11.5",
+						"address": "12.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5893,14 +6055,14 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 467,
+				"meta.scroll_vertical": 491,
 				"meta.selected": false,
-				"next": 12,
-				"number": 11,
+				"next": 13,
+				"number": 12,
 				"page_key": "masturbation",
 				"terminate": false
 			},
-			"12": {
+			"13": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -5909,7 +6071,7 @@
 				},
 				"lines": [
 					{
-						"address": "12.0",
+						"address": "13.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5961,7 +6123,57 @@
 						}
 					},
 					{
-						"address": "12.1",
+						"address": "13.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"heather",
+								"leash",
+								true,
+								false
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_extra_visible(heather, leash, true, false)",
+							"meta.validation_status": "OK",
+							"name": "set_extra_visible",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "13.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -5999,13 +6211,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.2",
+						"address": "13.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6049,13 +6261,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.3",
+						"address": "13.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6093,13 +6305,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.4",
+						"address": "13.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6142,13 +6354,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.5",
+						"address": "13.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6186,13 +6398,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.6",
+						"address": "13.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6235,13 +6447,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.7",
+						"address": "13.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6279,13 +6491,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.8",
+						"address": "13.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6328,13 +6540,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.9",
+						"address": "13.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6372,13 +6584,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 9,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.10",
+						"address": "13.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6424,13 +6636,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 10,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.11",
+						"address": "13.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6468,13 +6680,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 11,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.12",
+						"address": "13.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6512,13 +6724,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 12,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.13",
+						"address": "13.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6556,13 +6768,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 13,
+						"meta.line_index": 14,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "12.14",
+						"address": "13.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6604,20 +6816,20 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 14,
+						"meta.line_index": 15,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 2323,
+				"meta.scroll_vertical": 402,
 				"meta.selected": false,
-				"next": 13,
-				"number": 12,
+				"next": 14,
+				"number": 13,
 				"page_key": "fetish club + bathroom escape attmpt",
 				"terminate": false
 			},
-			"13": {
+			"14": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -6626,7 +6838,7 @@
 				},
 				"lines": [
 					{
-						"address": "13.0",
+						"address": "14.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6670,7 +6882,7 @@
 						}
 					},
 					{
-						"address": "13.1",
+						"address": "14.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6719,7 +6931,7 @@
 						}
 					},
 					{
-						"address": "13.2",
+						"address": "14.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6763,7 +6975,7 @@
 						}
 					},
 					{
-						"address": "13.3",
+						"address": "14.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6807,7 +7019,7 @@
 						}
 					},
 					{
-						"address": "13.4",
+						"address": "14.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6853,12 +7065,12 @@
 				],
 				"meta.scroll_vertical": 0,
 				"meta.selected": false,
-				"next": 14,
-				"number": 13,
+				"next": 15,
+				"number": 14,
 				"page_key": "tattoo",
 				"terminate": false
 			},
-			"14": {
+			"15": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -6867,7 +7079,7 @@
 				},
 				"lines": [
 					{
-						"address": "14.0",
+						"address": "15.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6919,7 +7131,7 @@
 						}
 					},
 					{
-						"address": "14.1",
+						"address": "15.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6943,7 +7155,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: The next day contains nothing.\n[]>narrator: The day after that, it's time for another delivery.\n[]>narrator: Ms. Scary Redhead accompanies you once more.\n[]>narrator: This time, she's driving you out to some forested area.\n[]>narrator: No train connection.\n[]>narrator: Takes over half a day to get here.\n[]>narrator: She stays next to the car. You walk up some wooded mountain.\n[]>narrator: \"Division of labor\", apparently.\ngunshot sfx\n[]>narrator: It's 3 guys. One of them betrays the others. He dies and takes another out with him.\n[]>narrator: You and the other survivor wordlessly ignore each other in an agreement of confidentiality.\n[]>narrator: When he's gone, you pocket the smaller of the now-ownerless handguns."
+							"content": "[]>narrator: The next day contains nothing.\n[]>narrator: The day after that, it's time for another delivery.\n[]>narrator: Ms. Scary Redhead accompanies you once more.\n[]>narrator: This time, she's driving you out to some forested area.\n[]>narrator: No train connection.\n[]>narrator: Takes over half a day to get here.\n[]>narrator: She stays next to the car. You walk up some wooded mountain.\n[]>narrator: \"Division of labor\", apparently.\n[]>narrator: It's 3 guys. <mp>One of them <call:play_sfx,gunshot>betrays the others. He dies and takes <call:play_sfx,gunshot>another out with him.\n[]>narrator: You and the other survivor wordlessly ignore each other in an agreement of confidentiality.\n[]>narrator: When he's gone, you pocket the smaller of the now-ownerless handguns."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -6963,7 +7175,7 @@
 						}
 					},
 					{
-						"address": "14.2",
+						"address": "15.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7015,7 +7227,7 @@
 						}
 					},
 					{
-						"address": "14.3",
+						"address": "15.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7059,7 +7271,7 @@
 						}
 					},
 					{
-						"address": "14.4",
+						"address": "15.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7103,7 +7315,7 @@
 						}
 					},
 					{
-						"address": "14.5",
+						"address": "15.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7153,14 +7365,14 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 561,
+				"meta.scroll_vertical": 600,
 				"meta.selected": false,
-				"next": 15,
-				"number": 14,
+				"next": 16,
+				"number": 15,
 				"page_key": "delivery in forest + sh",
 				"terminate": false
 			},
-			"15": {
+			"16": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -7169,7 +7381,7 @@
 				},
 				"lines": [
 					{
-						"address": "15.0",
+						"address": "16.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7213,7 +7425,7 @@
 						}
 					},
 					{
-						"address": "15.1",
+						"address": "16.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7257,7 +7469,7 @@
 						}
 					},
 					{
-						"address": "15.2",
+						"address": "16.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7306,7 +7518,7 @@
 						}
 					},
 					{
-						"address": "15.3",
+						"address": "16.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7350,7 +7562,7 @@
 						}
 					},
 					{
-						"address": "15.4",
+						"address": "16.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7394,7 +7606,7 @@
 						}
 					},
 					{
-						"address": "15.5",
+						"address": "16.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7415,12 +7627,12 @@
 							"line_reader.args": [
 								"black",
 								3,
-								false
+								true
 							],
 							"line_reader.reverse_args": [],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "show_cg(black,3,false)",
+							"meta.text": "show_cg(black,3,true)",
 							"meta.validation_status": "OK",
 							"name": "show_cg",
 							"reverse_name": ""
@@ -7443,7 +7655,7 @@
 						}
 					},
 					{
-						"address": "15.6",
+						"address": "16.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7492,7 +7704,7 @@
 						}
 					},
 					{
-						"address": "15.7",
+						"address": "16.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7538,12 +7750,12 @@
 				],
 				"meta.scroll_vertical": 1607,
 				"meta.selected": false,
-				"next": 16,
-				"number": 15,
+				"next": 17,
+				"number": 16,
 				"page_key": "cuddling with steph",
 				"terminate": false
 			},
-			"16": {
+			"17": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -7552,7 +7764,7 @@
 				},
 				"lines": [
 					{
-						"address": "16.0",
+						"address": "17.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7568,15 +7780,23 @@
 							"operand_key": "AND"
 						},
 						"content": {
-							"active_actors": [
-								"narrator",
-								"sophie",
-								"heather",
-								"guard",
-								"guard2"
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								4,
+								4,
+								2,
+								true,
+								"heather_bunk",
+								"confrontation"
 							],
-							"active_actors_title": "character",
-							"content": "[]>narrator:Heather goes out to another delivery. pockets a gun there."
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "black_fade(4, 4, 2, true, heather_bunk, confrontation)",
+							"meta.validation_status": "OK",
+							"name": "black_fade",
+							"reverse_name": ""
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -7585,7 +7805,7 @@
 							"meta.visible": false
 						},
 						"header": [],
-						"line_type": 0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
@@ -7596,7 +7816,7 @@
 						}
 					},
 					{
-						"address": "16.1",
+						"address": "17.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7640,7 +7860,7 @@
 						}
 					},
 					{
-						"address": "16.2",
+						"address": "17.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7684,7 +7904,7 @@
 						}
 					},
 					{
-						"address": "16.3",
+						"address": "17.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7728,14 +7948,14 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 127,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
-				"next": 17,
-				"number": 16,
+				"next": 18,
+				"number": 17,
 				"page_key": "empty gun threat",
 				"terminate": false
 			},
-			"17": {
+			"18": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -7744,7 +7964,7 @@
 				},
 				"lines": [
 					{
-						"address": "17.0",
+						"address": "18.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7788,7 +8008,7 @@
 						}
 					},
 					{
-						"address": "17.1",
+						"address": "18.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7837,7 +8057,7 @@
 						}
 					},
 					{
-						"address": "17.2",
+						"address": "18.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7881,7 +8101,7 @@
 						}
 					},
 					{
-						"address": "17.3",
+						"address": "18.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7926,7 +8146,7 @@
 						}
 					},
 					{
-						"address": "17.4",
+						"address": "18.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -7972,12 +8192,12 @@
 				],
 				"meta.scroll_vertical": 446,
 				"meta.selected": false,
-				"next": 18,
-				"number": 17,
+				"next": 19,
+				"number": 18,
 				"page_key": "empty name threat",
 				"terminate": false
 			},
-			"18": {
+			"19": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -7986,7 +8206,7 @@
 				},
 				"lines": [
 					{
-						"address": "18.0",
+						"address": "19.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8030,7 +8250,7 @@
 						}
 					},
 					{
-						"address": "18.1",
+						"address": "19.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8079,7 +8299,7 @@
 						}
 					},
 					{
-						"address": "18.2",
+						"address": "19.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8128,7 +8348,7 @@
 						}
 					},
 					{
-						"address": "18.3",
+						"address": "19.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8172,7 +8392,7 @@
 						}
 					},
 					{
-						"address": "18.4",
+						"address": "19.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8219,7 +8439,7 @@
 						}
 					},
 					{
-						"address": "18.5",
+						"address": "19.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8240,12 +8460,12 @@
 							"line_reader.args": [
 								"steph_dead",
 								0,
-								false
+								true
 							],
 							"line_reader.reverse_args": [],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "show_cg(steph_dead, 0, false)",
+							"meta.text": "show_cg(steph_dead, 0, true)",
 							"meta.validation_status": "OK",
 							"name": "show_cg",
 							"reverse_name": ""
@@ -8270,12 +8490,12 @@
 				],
 				"meta.scroll_vertical": 800,
 				"meta.selected": false,
-				"next": 19,
-				"number": 18,
+				"next": 20,
+				"number": 19,
 				"page_key": "steph death",
 				"terminate": false
 			},
-			"19": {
+			"20": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -8284,7 +8504,7 @@
 				},
 				"lines": [
 					{
-						"address": "19.0",
+						"address": "20.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8336,7 +8556,7 @@
 						}
 					},
 					{
-						"address": "19.1",
+						"address": "20.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8380,7 +8600,7 @@
 						}
 					},
 					{
-						"address": "19.2",
+						"address": "20.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8424,7 +8644,7 @@
 						}
 					},
 					{
-						"address": "19.3",
+						"address": "20.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8470,12 +8690,12 @@
 				],
 				"meta.scroll_vertical": 0,
 				"meta.selected": false,
-				"next": 20,
-				"number": 19,
+				"next": 21,
+				"number": 20,
 				"page_key": "breakdown after steph death",
 				"terminate": false
 			},
-			"20": {
+			"21": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -8484,7 +8704,7 @@
 				},
 				"lines": [
 					{
-						"address": "20.0",
+						"address": "21.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8530,12 +8750,12 @@
 				],
 				"meta.scroll_vertical": 0,
 				"meta.selected": false,
-				"next": 21,
-				"number": 20,
+				"next": 22,
+				"number": 21,
 				"page_key": "get gun",
 				"terminate": false
 			},
-			"21": {
+			"22": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -8544,7 +8764,7 @@
 				},
 				"lines": [
 					{
-						"address": "20.0",
+						"address": "22.0",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8594,7 +8814,7 @@
 						}
 					},
 					{
-						"address": "20.1",
+						"address": "22.1",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8644,7 +8864,7 @@
 						}
 					},
 					{
-						"address": "20.2",
+						"address": "22.2",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8688,7 +8908,7 @@
 						}
 					},
 					{
-						"address": "20.3",
+						"address": "22.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8732,7 +8952,7 @@
 						}
 					},
 					{
-						"address": "20.4",
+						"address": "22.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8776,7 +8996,7 @@
 						}
 					},
 					{
-						"address": "20.5",
+						"address": "22.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8820,7 +9040,7 @@
 						}
 					},
 					{
-						"address": "20.6",
+						"address": "22.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8864,7 +9084,7 @@
 						}
 					},
 					{
-						"address": "20.7",
+						"address": "22.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8908,7 +9128,7 @@
 						}
 					},
 					{
-						"address": "20.8",
+						"address": "22.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -8953,14 +9173,14 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1092,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 0,
-				"number": 21,
+				"number": 22,
 				"page_key": "ending scene",
 				"terminate": true
 			},
-			"22": {
+			"23": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -9405,10 +9625,10 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1787,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 0,
-				"number": 22,
+				"number": 23,
 				"page_key": "epilogue",
 				"terminate": true
 			}

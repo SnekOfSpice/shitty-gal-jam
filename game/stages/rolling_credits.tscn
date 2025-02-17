@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://ipa310726xyt"]
 
 [ext_resource type="Script" path="res://game/stages/rolling_credits.gd" id="1_cgvis"]
-[ext_resource type="Texture2D" uid="uid://ckrumhvbvecfs" path="res://LOGO.png" id="2_ilvdq"]
 [ext_resource type="FontFile" uid="uid://darokbdbfpwej" path="res://game/visuals/theme/fonts/F25_Bank_Printer.otf" id="2_m54f7"]
+[ext_resource type="Texture2D" uid="uid://bilgwttfus2se" path="res://LOGO_bw.png" id="3_gtxjr"]
 
 [node name="RollingCredits" type="Control"]
 layout_mode = 3
@@ -58,7 +58,7 @@ fit_content = true
 visible = false
 position = Vector2(505, 312)
 scale = Vector2(0.490714, 0.490714)
-texture = ExtResource("2_ilvdq")
+texture = ExtResource("3_gtxjr")
 
 [node name="Black2" type="ColorRect" parent="."]
 visible = false

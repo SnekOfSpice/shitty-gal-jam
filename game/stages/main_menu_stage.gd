@@ -24,6 +24,7 @@ func _ready() -> void:
 		if not Options.unlocked_epilogue:
 			Options.unlocked_epilogue = true
 			find_child("UnlockedEpilogueOverlay").visible = Options.unlocked_epilogue
+			Options.save_prefs()
 	
 	find_child("EpilogueButton").visible = Options.unlocked_epilogue or OS.has_feature("editor")
 
