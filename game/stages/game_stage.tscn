@@ -543,7 +543,7 @@ script = ExtResource("1_h4afo")
 auto_pause_duration = 0.4
 blank_names = Array[String](["narrator"])
 name_map = {
-"guard": "Guard",
+"guard": "Her Guard",
 "guard2": "Girl with scar",
 "heather": "Heather"
 }

@@ -2,6 +2,23 @@ extends Node2D
 class_name Character
 
 @export var character_name := ""
+
+## dictionary for overlay-style sprites. should be laid out like so:
+## [codeblock]
+## var extras := {
+##     # needs to be called "default"
+##     "default" : {
+##        "extra1" : Object,
+##        "extra2" : Object
+##        },
+##     # override for emotion with this name, sorted by extra
+##     "emotion1" : { 
+##        # extra1 will change when emotion1 is displayed
+##        "extra1" : Object
+##        }
+## }
+## [/codeblock]
+## All [Object]s should be pngs you drag in there
 @export var extras := {
 	"default" : {}
 }
