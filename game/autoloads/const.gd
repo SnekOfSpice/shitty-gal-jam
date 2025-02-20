@@ -42,7 +42,8 @@ const MUSIC_WAKE_UP := "bgm2.mp3" # https://dova-s.jp/EN/bgm/play12349.html
 const MUSIC_WORK := "Paradise_Found.mp3"
 
 const SFX_ROOT := "res://game/sounds/sfx/"
-const SFX_SEVER := "sever.ogg"
+const SFX_CAR_DOOR := "car_door.wav"
 const SFX_CREDITS_GUNSHOT := "credits sfx.wav"
-const SFX_GUNSHOT := "gunshot.wav"
 const SFX_DOUBLE_SHOT := "doubleshot.wav"
+const SFX_GUNSHOT := "gunshot.wav"
+const SFX_SEVER := "sever.ogg"

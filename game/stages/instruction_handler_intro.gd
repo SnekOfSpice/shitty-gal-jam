@@ -60,9 +60,12 @@ func black_fade(fade_in:float, hold_time:float, fade_out:float, hide_characters:
 	return true
 
 
-func hide_all_characters() -> bool:
+func hide_all_characters(use_fadeout : bool) -> bool:
 	for character: Character in get_tree().get_nodes_in_group("character"):
-		character.set_invisible()
+		if use_fadeout:
+			character.set_emotion("invisible")
+		else:
+			character.set_invisible()
 	return false
 
 

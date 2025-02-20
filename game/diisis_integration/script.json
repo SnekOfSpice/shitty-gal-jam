@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 11,
+		"current_page_number": 7,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -107,8 +107,12 @@
 				]
 			},
 			"hide_all_characters": {
-				"arg_types": [],
-				"args": []
+				"arg_types": [
+					"bool"
+				],
+				"args": [
+					"use_fadeout"
+				]
 			},
 			"hide_cg": {
 				"arg_types": [],
@@ -1799,7 +1803,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{heather-emotion|neutral}: The steps through your apartment feel like you're walking on cotton. <lc>Everything is kind of numb. You're not in the mood for putting on music - Or doing anything, really. <lc>Through this veil clouding your conscious, you hazily make your way to your bedroom desk.\n[]>narrator: Oh right, that's still there... Apparently.\n[]>narrator: In your bedroom you do find... Your PC. \n[]>narrator: ...It turns on.\n[]>narrator: ...It doesn't connect to any web pages.\n[]>narrator: When you open the default text editor... A desktop notification disturbs your haze.\n[]>narrator: [code]Thinking of leaving a manifesto?\n[]>narrator: [code]Don't.\n[]>narrator{heather-emotion|sad}: You shut the PC down again.\n[]>narrator: The late spring air makes your nose tingle.\n[]>narrator: You don't know what to do, so you rot on the couch for a while. If only you had your flip phone here, those free games would be a godsend right now.\n[]>narrator: You cannot fall asleep."
+							"content": "[]>narrator{heather-emotion|neutral}: The steps through your apartment feel like you're walking on cotton. <lc>Everything is kind of numb. You're not in the mood for putting on music - Or doing anything, really. <lc>Through this veil clouding your conscious, you hazily make your way to your bedroom desk.\n[]>narrator: Oh right, that's still there... Apparently.\n[]>narrator: In your bedroom you do find... Your PC. \n[]>narrator: ...It turns on.\n[]>narrator: ...It doesn't connect to any web pages.\n[]>narrator: When you open the default text editor... A desktop notification disturbs your haze.\n[]>narrator: [code]Thinking of leaving a manifesto?\n[]>narrator: [code]Don't.\n[]>narrator{heather-emotion|sad}: You shut the PC down again.\n[]>narrator: The late spring air makes your nose tingle.\n[]>narrator: You don't know what to do, so you rot on the couch for a while. If only you had your flip phone here, those free games would be a godsend right now.\n[]>narrator: Until the evening, sleep never graces you for more than a few minutes."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1890,17 +1894,17 @@
 							"delay_after": 0,
 							"delay_before": 0,
 							"line_reader.args": [
-								"heather",
-								7,
-								0,
+								"sophie",
+								"cigarette",
+								true,
 								false
 							],
 							"line_reader.reverse_args": [],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "set_x_position(heather, 7, 0, false)",
+							"meta.text": "set_extra_visible(sophie,cigarette,true,false)",
 							"meta.validation_status": "OK",
-							"name": "set_x_position",
+							"name": "set_extra_visible",
 							"reverse_name": ""
 						},
 						"facts": {
@@ -1937,15 +1941,21 @@
 							"operand_key": "AND"
 						},
 						"content": {
-							"active_actors": [
-								"narrator",
-								"sophie",
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
 								"heather",
-								"guard",
-								"guard2"
+								7,
+								0,
+								false
 							],
-							"active_actors_title": "character",
-							"content": "[]>sophie{sophie-emotion|neutral,heather-emotion|neutral}: Heather! I am delighted to see you made it back. <mp>Thank you so much for coming, darling.\n[]>narrator: As if on autopilot, your legs carried you back here. The second story of some dense high-rise cement block. Close to the industry outskirts, these apartments are more spartan than many of their downtown equivalents. The walls reek of smoke.\n[]>narrator: The room is... Largely the same. Your dried blood from yesterday has crusted into the tabletop.\n[]>narrator: Now that you're free in your movement you can spot at least three other girls- guards, presumably.\n[]>narrator: Silent. Stoic. Staring into nothing.\n[]>sophie: Why won't you have a seat? We are just here to talk afterall.\n[]>narrator: She is not relinquishing her stare towards you.\n[]>narrator{heather-emotion|sad}: Wavering, you trod into the chair you were bolted to yesterday. <mp>You keep your hands in your lap. <mp>Head down.\n[]>sophie: Can you look at me?\n[]>narrator: You can.\n[]>narrator{heather-emotion|neutral}: You do.\n[]>sophie: Thanks.\n[]>sophie: So, let us get to it then.\n[]>sophie: Did you bring your phone?\n[]>heather: ...\n[]>heather{heather-emotion|neutral}: Phone?\n[]>sophie: Yes, why not?\n[]>heather: It wasn't there. Couldn't find it."
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(heather, 7, 0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -1954,7 +1964,7 @@
 							"meta.visible": false
 						},
 						"header": [],
-						"line_type": 0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
@@ -1989,7 +1999,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>sophie: Did you check your mailbox before you left? I am sure it should have been delivered to you over the course of the afternoon.\n[]>heather: ...\n[]>sophie: Well?\n[]>heather: ...Didn't.\n[]>sophie: Can you repeat that for me?\n[]>heather: I said I didn't check my mailbox.\n[]>sophie: Thank you, hun. What a shame. But no matter, you will get all you need from me.\n[]>heather: ..?\n[]>sophie: You see, I want you to get comfortable with the type of work I conduct. <mp>It often requires a delicate hand... To deliver these types of goods.\n[]>narrator: Cigarette drag.\n[]>heather: ...\n[]>narrator: Smoke towards your face.\n[]>sophie: For there are many vices out there. Everyone has one. And I make sure that a special kind of reject always gets their special kind of fix.\n[]>narrator: You're not sure if you should even talk back. \n[]>sophie: Too flowery?\n[]>heather: ...\n[]>sophie: ...\n[]>heather: ...It's fine.\n[]>sophie: I understand, it is a stressful situation for you, sitting across from me.\n[]>sophie: But I assure you, I mean you no harm.\n[]>sophie: But to get to the point: I need you to make a delivery for me.\n[]>heather: ...\n[]>sophie: A position on this small supply chain recently became vacated, and I thought it was the perfect opportunity for you to start paying off your debt.\n[]>narrator: Whatever the fuck that actually is.\n[]>sophie: I know you did not rack it up, Heather. But you were the best available next-of-kin, so to say.\n[]>heather: What do you mean?"
+							"content": "[]>sophie{sophie-emotion|neutral,heather-emotion|neutral}: Heather! I am delighted to see you made it back. <mp>Thank you so much for coming, darling.\n[]>narrator: As if on autopilot, your legs carried you back here. The second story of some dense high-rise cement block. Close to the industry outskirts, these apartments are more spartan than many of their downtown equivalents. The walls reek of smoke.\n[]>narrator: The room is... Largely the same. Your dried blood from yesterday has crusted into the tabletop.\n[]>narrator: Now that you're free in your movement you can spot at least three other girls- guards, presumably.\n[]>narrator: Silent. Stoic. Staring into nothing.\n[]>sophie: Why won't you have a seat? We are just here to talk afterall.\n[]>narrator: She is not relinquishing her stare towards you.\n[]>narrator{heather-emotion|sad}: Wavering, you trod into the chair you were bolted to yesterday. <mp>You keep your hands in your lap. <mp>Head down.\n[]>sophie: Can you look at me?\n[]>narrator: You can.\n[]>narrator{heather-emotion|neutral}: You do.\n[]>sophie: Thanks.\n[]>sophie: So, let us get to it then.\n[]>sophie: Did you bring your phone?\n[]>heather: ...\n[]>heather{heather-emotion|neutral}: Phone?\n[]>sophie: Yes, why not?\n[]>heather: It wasn't there. Couldn't find it."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2033,7 +2043,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>sophie: Anna.\n[]>heather: College-Anna?\n[]>sophie:The one you have been developing a crush for for a while now, yes.\n[]>sophie:Those feelings were mutual.\n[]>heather:...\n[]>heather{heather-emotion|sad}:...Were.\n[]>sophie:I'm sorry to be the bearer of bad news.\n[]>heather:What...\n[]>sophie: She hadn't responded in a few days, hadn't she?\n[]>heather: Yeah...\n[]>sophie: Well, now you know.\n[]>heather: You killed her...\n[]>sophie: I would not go that far.\n[]>heather: Oh yeah, then someone else iced her. Got it.\n[]>heather{heather-emotion|crying}: Fuck off.\n[]>narrator: Your forehead meets the tabletop.\n[]>narrator: In silence, you sob.\n[]>narrator: Chair scrapes.\n[]>narrator: Hand on your back.\n[]>heather: Don't touch me.\n[]>narrator: She recedes her hand.\n[]>narrator: You cry more.\n[]>narrator: And more.\n[]>narrator: And when your tears have not run dry quite yet, you shakily ask.\n[]>heather: I'll be your drug mule?\n[]>sophie: For the time being.\n[]>heather: ...\n[]>sophie: I'm sorry, Heather.\n[]>heather: ...\n[]>heather: Sure...\n[]>narrator: Her gaze grazes past you now.\n[]>sophie: I am sure you concur that plenty a bean has been spilled already, so I will leave you to it.\n[]>narrator: She motions towards the guard she's eyeing.\n[]>sophie: She will accompany you to the warehouse. Instructions will be given. <mp>You will be safe.\n[]>narrator: Still shaking from crying.\n[]>narrator: Guard gives you a tissue.\n[]>narrator: Clean up. <mp>Head out. <mp>Easy steps.<mp> Whatever."
+							"content": "[]>sophie: Did you check your mailbox before you left? I am sure it should have been delivered to you over the course of the afternoon.\n[]>heather: ...\n[]>sophie: Well?\n[]>heather: ...Didn't.\n[]>sophie: Can you repeat that for me?\n[]>heather: I said I didn't check my mailbox.\n[]>sophie: Thank you, hun. What a shame. But no matter, you will get all you need from me.\n[]>heather: ..?\n[]>sophie: You see, I want you to get comfortable with the type of work I conduct. <mp>It often requires a delicate hand... To deliver these types of goods.\n[]>narrator: Cigarette drag.\n[]>heather: ...\n[]>narrator: Smoke towards your face.\n[]>sophie: For there are many vices out there. Everyone has one. And I make sure that a special kind of reject always gets their special kind of fix.\n[]>narrator: You're not sure if you should even talk back. \n[]>sophie: Too flowery?\n[]>heather: ...\n[]>sophie: ...\n[]>heather: ...It's fine.\n[]>sophie: I understand, it is a stressful situation for you, sitting across from me.\n[]>sophie: But I assure you, I mean you no harm.\n[]>sophie: But to get to the point: I need you to make a delivery for me.\n[]>heather: ...\n[]>sophie: A position on this small supply chain recently became vacated, and I thought it was the perfect opportunity for you to start paying off your debt.\n[]>narrator: Whatever the fuck that actually is.\n[]>sophie: I know you did not rack it up, Heather. But you were the best available next-of-kin, so to say.\n[]>heather: What do you mean?"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2051,9 +2061,53 @@
 						"meta.selector": {
 							"selected": false
 						}
+					},
+					{
+						"address": "1.8",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>sophie: Anna.\n[]>heather: College-Anna?\n[]>sophie:The one you have been developing a crush for for a while now, yes.\n[]>sophie:Those feelings were mutual.\n[]>heather:...\n[]>heather{heather-emotion|sad}:...Were.\n[]>sophie:I'm sorry to be the bearer of bad news.\n[]>heather:What...\n[]>sophie: She hadn't responded in a few days, hadn't she?\n[]>heather: Yeah...\n[]>sophie: Well, now you know.\n[]>heather: You killed her...\n[]>sophie: I would not go that far.\n[]>heather: Oh yeah, then someone else iced her. Got it.\n[]>heather{heather-emotion|crying}: Fuck off.\n[]>narrator: Your forehead meets the tabletop.\n[]>narrator: In silence, you sob.\n[]>narrator: Chair scrapes.\n[]>narrator: Hand on your back.\n[]>heather: Don't touch me.\n[]>narrator: She recedes her hand.\n[]>narrator: You cry more.\n[]>narrator: And more.\n[]>narrator: And when your tears have not run dry quite yet, you shakily ask.\n[]>heather: I'll be your drug mule?\n[]>sophie: For the time being.\n[]>heather: ...\n[]>sophie: I'm sorry, Heather.\n[]>heather: ...\n[]>heather: Sure...\n[]>narrator: Her gaze grazes past you now.\n[]>sophie: I am sure you concur that plenty a bean has been spilled already, so I will leave you to it.\n[]>narrator: She motions towards the guard she's eyeing.\n[]>sophie: She will accompany you to the warehouse. Instructions will be given. <mp>You will be safe.\n[]>narrator: Still shaking from crying.\n[]>narrator: Guard gives you a tissue.\n[]>narrator: Clean up. <mp>Head out. <mp>Easy steps.<mp> Whatever."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 8,
+						"meta.selector": {
+							"selected": false
+						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 2706,
 				"meta.selected": false,
 				"next": 2,
 				"number": 1,
@@ -2140,17 +2194,17 @@
 							"delay_after": 0,
 							"delay_before": 0,
 							"line_reader.args": [
-								"guard",
-								4,
-								0,
+								"sophie",
+								"cigarette",
+								false,
 								false
 							],
 							"line_reader.reverse_args": [],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "set_x_position(guard, 4, 0, false)",
+							"meta.text": "set_extra_visible(sophie,cigarette,false,false)",
 							"meta.validation_status": "OK",
-							"name": "set_x_position",
+							"name": "set_extra_visible",
 							"reverse_name": ""
 						},
 						"facts": {
@@ -2187,6 +2241,56 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"guard",
+								4,
+								0,
+								false
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(guard, 4, 0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"narrator",
 								"sophie",
@@ -2195,7 +2299,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{heather-emotion|invisible}: You get to ride shotgun in the SUV. With hands clenched between your thighs, you depart.\n[]>narrator: It takes a while for her to say anything to you.\n[]>guard{guard-emotion|neutral}: Fresh meat, eh?\n[]>narrator: She has both hands on the steering wheel. Her shoulder holster grins at you.\n[]>guard: Listen, I dunno where she picked you up or why you fill for that other chick now. But here's the rub.\n[]>guard: You try anything funny, you're dead.\n[]>guard: There's not much spark in your eyes already, it'd be a shame to snuff the rest out too.\n[]>narrator: You're tired. 7-segment display reads [code][color=#ff0000]11:39PM[/color][/code].\n[]>guard: We're doing a pickup, if you couldn't believe it.\n[]>guard: You'll meet the girls, it'll be a great time.\n[]>guard: When that's done, I'll send you on your merry way to your destination, and we'll probably meet again at home base... <mp>or your funeral, depending on how badly you fuck up.\n[]>heather: ...\n[]>guard: She said you're safe, I know. You're gonna be safe if you don't say a word to anyone. Ever. Anywhere.\n[]>heather: ...\n[]>guard: Just take the shit and go where we tell you to. You're gonna get money for train tickets.\n[]>heather: ...\n[]>guard: You really are a silent type. I like that.\n[]>guard: Little meat.\n[]>guard: ...\n[]>narrator: With her not saying anything anymore, you try not to test your boundaries. The quaking in your chest is enough to make you zone out for the rest of the ride."
+							"content": "[]>narrator{heather-emotion|invisible}: You get to ride shotgun in the SUV. With hands clenched between your thighs, you depart.\n[]>narrator: It takes a while for her to say anything to you.\n[]>guard{guard-emotion|neutral}: Fresh meat, eh?\n[]>narrator: She has both hands on the steering wheel. Her shoulder holster grins at you.\n[]>guard: Listen, I dunno where she picked you up or why you fill for that other chick now. But here's the rub.\n[]>guard: You try anything funny, you're dead.\n[]>guard: There ain't much spark in your eyes already, it'd be a shame to snuff the rest out too.\n[]>narrator: You're tired. 7-segment display reads [code][color=#ff0000]11:39PM[/color][/code].\n[]>guard: We're doing a pickup, if you couldn't believe it.\n[]>guard: You'll meet the girls, it'll be a great time.\n[]>guard: When that's done, I'll send you on your merry way to your destination, and we'll probably meet again at home base... <mp>or your funeral, depending on how badly you fuck up.\n[]>heather: ...\n[]>guard: She said you're safe, I know. You're gonna be safe if you don't say a word to anyone. Ever. Anywhere.\n[]>heather: ...\n[]>guard: Just take the shit and go where we tell you to. You're gonna get money for train tickets.\n[]>heather: ...\n[]>guard: You really are a silent type. I like that.\n[]>guard: Little meat.\n[]>guard: ...\n[]>narrator: With her not saying anything anymore, you try not to test your boundaries. The quaking in your chest is enough to make you zone out for the rest of the ride."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2209,13 +2313,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.3",
+						"address": "2.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2257,13 +2361,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.4",
+						"address": "2.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2281,11 +2385,13 @@
 						"content": {
 							"delay_after": 0,
 							"delay_before": 0,
-							"line_reader.args": [],
+							"line_reader.args": [
+								true
+							],
 							"line_reader.reverse_args": [],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "hide_all_characters()",
+							"meta.text": "hide_all_characters(true)",
 							"meta.validation_status": "OK",
 							"name": "hide_all_characters",
 							"reverse_name": ""
@@ -2302,13 +2408,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.5",
+						"address": "2.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2352,13 +2458,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.6",
+						"address": "2.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2402,50 +2508,6 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6,
-						"meta.selector": {
-							"selected": false
-						}
-					},
-					{
-						"address": "2.7",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"active_actors": [
-								"narrator",
-								"sophie",
-								"heather",
-								"guard",
-								"guard2"
-							],
-							"active_actors_title": "character",
-							"content": "[]>narrator: You stop in front of an old warehouse. Your... Escort? Gets out and walks toward the gate. You keep your hands in your lap. She returns.\n[]>narrator: The gate opens and you drive inside.\n[]>narrator: A pristine array of stock footage-worthy palettes stack up to the ceiling. There's nowhere that catches your interest.\n[]>narrator: You stop a few aisles down.\n[]>guard{guard-emotion|neutral,heather-emotion|neutral}: Get out.\n[]>narrator: You do.\n[]>narrator: With an awkward reverse hand movement, you push the door shut. <mp>She slams it.\n[]>narrator: Nods her head down the aisle.\n[]>guard: That's the girls."
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": true,
 						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
@@ -2476,7 +2538,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator{guard2-emotion|neutral}: You walk towards the group of women standing around a wooden crate. Their conversation quiets and their heads turn.\n[]>narrator: Guard girl next to you hugs a few of them, greets them all- None by name.\n[]>guard: So. This is Heather.\n[]>guard2: Ohoho, new girl?\n[]>narrator: That one has a raspy, airy voice.\n[]>narrator: And a neck scar to match.\n[]>guard: Yep. First run today.\n[]>narrator: You briefly eye the other girls too. Most of them have visible scarring somewhere.\n[]>narrator: Did they all end up here like you?\n[]>narrator: The lustre of pistols and boot knives occasionally catch in the warm glow of the overhead lamps as well.\n[]>guard2: New girl.\n[]>narrator: Oh.\n[]>guard2: Quit spacin' out.\n[]>guard2: Cred?\n[]>narrator: You don't give any look back. What is she talking about?\n[]>guard2: What. <ap>Qualifies. <ap>You. <ap>To. <ap>Be. <ap>Here?\n[]>narrator: You shrug.\n[]>narrator: Neck-scar-girl turns to your... Handler?\n[]>narrator: You really need some of their names.\n[]>guard2: So what's she doing here, again?"
+							"content": "[]>narrator: You stop in front of an old warehouse. Your... Escort? Gets out and walks toward the gate. You keep your hands in your lap. She returns.\n[]>narrator: The gate opens and you drive inside.\n[]>narrator: A pristine array of stock footage-worthy palettes stack up to the ceiling. There's nowhere that catches your interest.\n[]>narrator: You stop a few aisles down.\n[]>guard{guard-emotion|neutral,heather-emotion|neutral}: Get out.\n[]>narrator: You do.\n[]>narrator: With an awkward reverse hand movement, you push the door shut. <mp>She <call:play_sfx,car_door>slams it.\n[]>narrator: Nods her head down the aisle.\n[]>guard: That's the girls."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2520,7 +2582,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>guard: Fuck if I know why she picked her.\n[]>guard2: Hand-picked?\n[]>guard: Apparently.\n[]>guard2: Well. She'll have her reasons.\n[]>guard: Anyways. Heather.\n[]>narrator: You hint at turning toward her.\n[]>narrator: She steps toward the crate at the center. Disregards you.\n[]>guard: This one tells you where you need to go.\n[]>narrator: Clipboard.\n[]>guard: And this is said thing.\n[]>narrator: Package. About 4 pounds.\n[]>guard2: Anythin' else?\n[]>guard: Nah.\n[]>guard2: Good.\n[]>narrator: Guard girl pats your shoulder.\n[]>guard: Let's go.\n[]>narrator: Package and clipboard in hand, you turn.\n[]>guard: Enjoy your break, girlies.\n[]>narrator{guard2-emotion|invisible}: She waves as you walk back. <mp>You follow in her steps.<mp>Small tippy taps make you match pace.\n[]>heather: So...\n[]>narrator: Her frown thunders down at you.\n[]>heather: What's your name?\n[]>guard: Why do you care?\n[]>heather: Seems helpful.\n[]>guard: Maybe. If you don't end up as dogfood before you get back... Maybe you'll learn.\n[]>guard: Not my place to give out that info."
+							"content": "[]>narrator{guard2-emotion|neutral}: You walk towards the group of women standing around a wooden crate. Their conversation quiets and their heads turn.\n[]>narrator: Guard girl next to you hugs a few of them, greets them all- None by name.\n[]>guard: So. This is Heather.\n[]>guard2: Ohoho, new girl?\n[]>narrator: That one has a raspy, airy voice.\n[]>narrator: And a neck scar to match.\n[]>guard: Yep. First run today.\n[]>narrator: You briefly eye the other girls too. Most of them have visible scarring somewhere.\n[]>narrator: Did they all end up here like you?\n[]>narrator: The lustre of pistols and boot knives occasionally catch in the warm glow of the overhead lamps as well.\n[]>guard2: New girl.\n[]>narrator: Oh.\n[]>guard2: Quit spacin' out.\n[]>guard2: Cred?\n[]>narrator: You don't give any look back. What is she talking about?\n[]>guard2: What. <ap>Qualifies. <ap>You. <ap>To. <ap>Be. <ap>Here?\n[]>narrator: You shrug.\n[]>narrator: Neck-scar-girl turns to your... Handler?\n[]>narrator: You really need some of their names.\n[]>guard2: So what's she doing here, again?"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -2541,6 +2603,50 @@
 					},
 					{
 						"address": "2.10",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>guard: Fuck if I know why she picked her.\n[]>guard2: Hand-picked?\n[]>guard: Apparently.\n[]>guard2: Well. She'll have her reasons.\n[]>guard: Anyways. Heather.\n[]>narrator: You hint at turning toward her.\n[]>narrator: She steps toward the crate at the center. Disregards you.\n[]>guard: This one tells you where you need to go.\n[]>narrator: Clipboard.\n[]>guard: And this is said thing.\n[]>narrator: Package. About 4 pounds.\n[]>guard2: Anythin' else?\n[]>guard: Nah.\n[]>guard2: Good.\n[]>narrator: Guard girl pats your shoulder.\n[]>guard: Let's go.\n[]>narrator: Package and clipboard in hand, you turn.\n[]>guard: Enjoy your break, girlies.\n[]>narrator{guard2-emotion|invisible}: She waves as you walk back. <mp>You follow in her steps.<mp>Small tippy taps make you match pace.\n[]>heather: So...\n[]>narrator: Her frown thunders down at you.\n[]>heather: What's your name?\n[]>guard: Why do you care?\n[]>heather: Seems helpful.\n[]>guard: Maybe. If you don't end up as dogfood before you get back... Maybe you'll learn.\n[]>guard: Not my place to give out that info."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 10,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "2.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2583,13 +2689,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 10,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.11",
+						"address": "2.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2627,13 +2733,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 11,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "2.12",
+						"address": "2.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2675,13 +2781,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 12,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 1688,
+				"meta.scroll_vertical": 3308,
 				"meta.selected": false,
 				"next": 3,
 				"number": 2,
@@ -3361,7 +3467,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: The notches of the boxcutter rap into this empty room.\n[]>narrator: You rest it on your other arm.\n[]>narrator:the first cut is always the most difficult one. Are you really about to cut into your skin? Is this was healthy people are supposed to do?\n[]>narrator: Of course not.\n[]>narrator: But this is no threshold for you.\n[]>narrator: It is but the mere realization that youve been here before, and will probably be here again. Your heart sinking in perpetuity, with the tar of inevitability clinging to it.\n[]>narrator: You probably cannot get better.\n[]>narrator: But at least yiou know that this helps. <mp>Somehow.\n[]>narrator: The endorphins flood your brain like a wave of syrup. The shame of not going deep enough follows soon after. You barely draw blood on this first one.\n[]>narrator: You observe the small trickle. Pinhead-sized droplets oozing from the cut.\n[]>narrator: You feel good.\n[]>narrator: Fuck, you feel amazing.\n[]>narrator: You keep going.\n[]>narrator: 20 cuts further and you're no step closer to finding any answers to your predicament but you also just don't really care.\n[]>narrator: You've been powerless since forever.\n[]>narrator: Shallow upon shallow cuts layer themselves, digging away every layer of skin.\n[]>narrator: And when your arm becomes too slippery from the bleeding, you descend upon your thighs.\n[]>narrator: 40, 60- however many cuts it takes to feel complete.\n[]>narrator: ...\n[]>narrator: You once said you were clean.\n[]>narrator: Yeah, right."
+							"content": "[]>narrator: The notches of the boxcutter rap into this empty room.\n[]>narrator: You rest it on your other arm.\n[]>narrator:The first cut is always the most difficult one. Are you really about to cut into your skin? Is this was healthy people are supposed to do?\n[]>narrator: Of course not.\n[]>narrator: But this is no threshold for you.\n[]>narrator: It is but the mere realization that you've been here before, and will probably be here again. Your heart sinking in perpetuity, with the tar of inevitability clinging to it.\n[]>narrator: You probably cannot get better.\n[]>narrator: But at least yiou know that this helps. <mp>Somehow.\n[]>narrator: The endorphins flood your brain like a wave of syrup. The shame of not going deep enough follows soon after. You barely draw blood on this first one.\n[]>narrator: You observe the small trickle. Pinhead-sized droplets oozing from the cut.\n[]>narrator: You feel good.\n[]>narrator: Fuck, you feel amazing.\n[]>narrator: You keep going.\n[]>narrator: 20 cuts further and you're no step closer to finding any answers to your predicament but you also just don't really care.\n[]>narrator: You've been powerless since forever.\n[]>narrator: Shallow upon shallow cuts layer themselves, digging away every layer of skin.\n[]>narrator: And when your arm becomes too slippery from the bleeding, you descend upon your thighs.\n[]>narrator: 40, 60- however many cuts it takes to feel complete.\n[]>narrator: ...\n[]>narrator: You once said you were clean.\n[]>narrator: Yeah, right."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3431,7 +3537,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 402,
+				"meta.scroll_vertical": 1111,
 				"meta.selected": false,
 				"next": 5,
 				"number": 4,
@@ -3523,7 +3629,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:another lette rgreets your mailbox. same instructions as yesterdy. 9 pm."
+							"content": "[]>narrator: Another letter greets your mailbox. Same instructions as yesterdy. 9 pm."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3544,6 +3650,50 @@
 					},
 					{
 						"address": "5.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:You kill the time by rotting on the couch. Occasionally you unsuccessfully attempt to distract yourself with the few offline games on your PC."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "5.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3589,13 +3739,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "5.3",
+						"address": "5.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3639,13 +3789,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "5.4",
+						"address": "5.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3689,13 +3839,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "5.5",
+						"address": "5.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3733,13 +3883,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "5.6",
+						"address": "5.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3777,13 +3927,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "5.7",
+						"address": "5.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3825,13 +3975,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "5.8",
+						"address": "5.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -3855,7 +4005,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:The amenities are surprisingly... available. This is less of a prison cell. Maybe a nordic prison cell? You saw adocumentary on that once.\n[]>narrator:Summer camp. <lc>It's like fucking summer camp all over. There's a few mugs, a dying lightbulb, and a decorated window that hints at... fun.\n[]>heather:This is a sick fucking joke.\n[]>narrator:The door behind you closes."
+							"content": "[]>narrator:She leads you down a few stories, somewhere into the basement. <lc>The amenities are surprisingly... available. This is less of a prison cell. Maybe a nordic prison cell? You saw adocumentary on that once.\n[]>narrator:Summer camp. <lc>It's like fucking summer camp all over. There's a few mugs, a dying lightbulb, and a decorated window that hints at... fun.\n[]>heather:This is a sick fucking joke.\n[]>narrator:The door behind you closes."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -3869,13 +4019,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 1299,
 				"meta.selected": false,
 				"next": 6,
 				"number": 5,
@@ -4245,15 +4395,21 @@
 							"operand_key": "AND"
 						},
 						"content": {
-							"active_actors": [
-								"narrator",
-								"sophie",
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
 								"heather",
-								"guard",
-								"guard2"
+								3,
+								0,
+								false
 							],
-							"active_actors_title": "character",
-							"content": "[]>narrator: this is so much worse than not being clean. you hope that this will make it better. make anything better.\n[]>narrator: If it were not for the directionlessness of your freefall into Her arms, you would aim your very core at escape.\n[]>heather{heather-emotion|sad}:Why can't I just destroy myself..."
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(heather,3,0,false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4262,7 +4418,7 @@
 							"meta.visible": false
 						},
 						"header": [],
-						"line_type": 0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
@@ -4297,7 +4453,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator: Sitting in stasis you contemplate. All of the violent pmeans you have ever seen.\n[]>heather:I wish I could blow my fucking brains out \n[]>heather: smatter into the pavement\n[]>heather: knife stabbed up through my mouth, into my brain.\n[]>narrator: Die in any way.\n[]>narrator: Anywhere.\n[]>heather: Please."
+							"content": "[]>narrator: this is so much worse than not being clean. you hope that this will make it better. make anything better.\n[]>narrator: If it were not for the directionlessness of your freefall into Her arms, you would aim your very core at escape.\n[]>heather{heather-emotion|sad}:Why can't I just destroy myself..."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4341,7 +4497,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>heather:back in bunk: you smash amug. cut with the shards\n[]>narrator:It makes your hand seep with crimson.\n[]>narrator:You re-apply the bandage just the same.\n[]>narrator:It looks beyond fucked now."
+							"content": "[]>narrator: Sitting in stasis you contemplate. All of the violent pmeans you have ever seen.\n[]>heather:I wish I could blow my fucking brains out \n[]>heather: smatter into the pavement\n[]>heather: knife stabbed up through my mouth, into my brain.\n[]>narrator: Die in any way.\n[]>narrator: Anywhere.\n[]>heather: Please."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4359,9 +4515,53 @@
 						"meta.selector": {
 							"selected": false
 						}
+					},
+					{
+						"address": "6.10",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>heather:back in bunk: you smash amug. cut with the shards\n[]>narrator:It makes your hand seep with crimson.\n[]>narrator:You re-apply the bandage just the same.\n[]>narrator:It looks beyond fucked now."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 10,
+						"meta.selector": {
+							"selected": false
+						}
 					}
 				],
-				"meta.scroll_vertical": 603,
+				"meta.scroll_vertical": 1320,
 				"meta.selected": false,
 				"next": 7,
 				"number": 6,
@@ -4445,6 +4645,56 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"heather",
+								7,
+								0,
+								false
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_x_position(heather, 7, 0, false)",
+							"meta.validation_status": "OK",
+							"name": "set_x_position",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"active_actors": [
 								"narrator",
 								"sophie",
@@ -4467,13 +4717,61 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "7.2",
+						"address": "7.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"guard",
+								"Handler"
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_character_name(guard, Handler)",
+							"meta.validation_status": "OK",
+							"name": "set_character_name",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -4516,94 +4814,6 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
-						"meta.selector": {
-							"selected": false
-						}
-					},
-					{
-						"address": "7.3",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"active_actors": [
-								"narrator",
-								"sophie",
-								"heather",
-								"guard",
-								"guard2"
-							],
-							"active_actors_title": "character",
-							"content": "[]>narrator:This feels... cozy. To some degree."
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": true,
-						"meta.line_index": 3,
-						"meta.selector": {
-							"selected": false
-						}
-					},
-					{
-						"address": "7.4",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"active_actors": [
-								"narrator",
-								"sophie",
-								"heather",
-								"guard",
-								"guard2"
-							],
-							"active_actors_title": "character",
-							"content": "[]>narrator: For 2 days, you haven't been allowed to leave this plush crevasse. <lc>Food delivered to you in dog bowls. <lc>No cutlery. <lc>She is out most days. <lc>Enrichment was left to you in the form of retro consoles.\n[]>narrator: Many of your childhood games from the 90s. <lc>Fuck. Almost makes you feel good about your decision to not give up your thumgs or pointer fingers last week. <lc>Or whenever that was."
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": true,
 						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
@@ -4634,7 +4844,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>heather: so... what even is the debt \n[]>sophie: oh...\n[]>heather: what?\n[]>sophie: well, there is a real debt out there,make no mistake. several men and a couple more grand. however...\n[]>sophie: you didn't think you were actually working towards something here, did you, darling?\n[]>heather:...\n[]>sophie: who cares about a few bodies and some change.\n[]>heather:...\n[]>sophie: you exist for no other reason beyond your ability to be kf use to me.\n[]>sophie: and that makes you infinitely more valuable ,honey.\n[]>heather: you mean tk tell me... I've been suffering for nothing\n[]>sophie: Not for nothing. you suffer for me. and by extension, your continued survival.\n[]>sophie:And you will continue to be my plaything for much, much longer.\n[]>heather{heather-emotion|anger}:ARE YOU JUST SOME SADISTIC BITCH?\n[]>sophie:you have quite the foul mouth, do you know that?\n[]>narrator{heather-emotion|shock}:Slap.\n[]>sophie:I'm running a thoroughly successful business enterprise here, and keeps girls like you out of trouble.\n[]>heather {heather-emotion|crying}:You fucking mutilated me.\n[]>sophie:Would you rather some cartel sell you off into slavery?\n[]>sophie:To get fucked by men that hate you and will kill you for nothing but the simple convenience of it?\n[]>heather{heather-emotion|shock}:...\n[]>sophie:I care for you. Will continue to do so. <mp>And all I ask of you, is just a tiny amount of obedience.\n[]>sophie:Do you think you can do that for me?"
+							"content": "[]>narrator:This feels... cozy. To some degree."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4678,7 +4888,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>heather: crying what do you want from meeee\n[]>sophie: I told you alredy, darling. mere obiedience.\n[]>heather: why... what do you get out of this?\n[]>sophie: satisfaction."
+							"content": "[]>narrator: For 2 days, you haven't been allowed to leave this plush crevasse. <lc>Food delivered to you in dog bowls. <lc>No cutlery. <lc>She is out most days. <lc>Enrichment was left to you in the form of retro consoles.\n[]>narrator: Many of your childhood games from the 90s. <lc>Fuck. Almost makes you feel good about your decision to not give up your thumgs or pointer fingers last week. <lc>Or whenever that was."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -4696,9 +4906,379 @@
 						"meta.selector": {
 							"selected": false
 						}
+					},
+					{
+						"address": "7.7",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"black",
+								4,
+								true
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "show_cg(black, 4, true)",
+							"meta.validation_status": "OK",
+							"name": "show_cg",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 7,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.8",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"dogbed",
+								4,
+								true
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "show_cg(dogbed, 4, true)",
+							"meta.validation_status": "OK",
+							"name": "show_cg",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 8,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.9",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:One evening, She sleeps in the same room as you again. The dogbed, at her feet."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 9,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.10",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>heather: So... What even is the debt?\n[]>sophie: Oh...\n[]>heather: ...\n[]>sophie:Curious puppy, are you?\n[]>heather:...\n[]>sophie:Speak.\n[]>heather:Well...\n[]>sophie:That means [i]bark[/i].\n[]>heather:...\n[]>narrator:You let out a most pathetic bark.\n[]>sophie:Eventually, you will get it properly.\n[]>sophie:For now, it suffices.\n[]>narrator:She nudes you with her foot.\n[]>sophie: There is a real debt out there, make no mistake. Several men and a couple grand. <mp>Incurred by your dearest Anna, even. <mp>However...\n[]>sophie: I think you ought to relinquish the concept of... Paying it off. <mp>That is not what you are doing here.\n[]>heather:...\n[]>sophie: Who cares about a few bodies and some change?\n[]>heather:...\n[]>sophie: You exist for no other reason beyond your ability to be of use to me.\n[]>sophie:Putting you out there in the world, only to have you return after every journey. <mp>Oh that is such a special feeling, darling.\n[]>narrator:She presses her foot harder against your skull.\n[]>sophie: [i]That[/i] is what makes you infinitely more valuable, honey.\n[]>sophie:And now go to sleep.\n[]>sophie:No more human words for today."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 10,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.11",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								2,
+								2,
+								2,
+								true,
+								"sophie_office",
+								"subjugation"
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "black_fade(2,2,2,true,sophie_office, subjugation)",
+							"meta.validation_status": "OK",
+							"name": "black_fade",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 11,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.12",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>heather:Hey.. about what you said yesterday."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 12,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.13",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>heather: you mean tk tell me... I've been suffering for nothing\n[]>sophie: Not for nothing. you suffer for me. and by extension, your continued survival.\n[]>sophie:And you will continue to be my plaything for much, much longer.\n[]>heather{heather-emotion|anger}:ARE YOU JUST SOME SADISTIC BITCH?\n[]>sophie{sophie-emotion|annoyed}:you have quite the foul mouth, do you know that?\n[]>narrator{heather-emotion|shock}:Slap.\n[]>sophie:I'm running a thoroughly successful business enterprise here, and keeps girls like you out of trouble.\n[]>heather{heather-emotion|crying}:You fucking mutilated me.\n[]>sophie:Would you rather some cartel sell you off into slavery?\n[]>sophie:To get fucked by men that hate you and will kill you for nothing but the simple convenience of it?\n[]>heather{heather-emotion|shock}:...\n[]>sophie{sophie-emotion|smug}:I care for you. Will continue to do so. <mp>And all I ask of you, is just a tiny amount of obedience.\n[]>sophie{sophie-emotion|pity}:Do you think you can do that for me?"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 13,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "7.14",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>heather: crying what do you want from meeee\n[]>sophie: I told you alredy, darling. mere obiedience.\n[]>heather: why... what do you get out of this?\n[]>sophie: satisfaction."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 14,
+						"meta.selector": {
+							"selected": false
+						}
 					}
 				],
-				"meta.scroll_vertical": 963,
+				"meta.scroll_vertical": 2559,
 				"meta.selected": false,
 				"next": 8,
 				"number": 7,
@@ -5881,7 +6461,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>sophie:new comfy position yay\n[]>sophie:I've heard good things about you out there.\n[]>narrator:Headpat.\n[]>sophie:That you get along well with a certain other of the girls.\n[]>sophie:So I'll have you accompany her once more, as you're used to by now.\n[]>sophie:Thank you for being such an obedient thing for me."
+							"content": "[]>sophie:But as your owner, I am responsible for taking you out sometimes. And when I cannot accomodate that need, I will delegate this task to your handler. I believe you two are familiar already.\n[]>sophie:new comfy position yay\n[]>sophie:I've heard good things about you out there.\n[]>narrator:Headpat.\n[]>sophie:That you get along well with a certain other of the girls.\n[]>sophie:So I'll have you accompany her once more, as you're used to by now.\n[]>sophie:Thank you for being such an obedient thing for me."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -6167,7 +6747,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>heather:I want out.\n[]>heather:...\n[]>narrator:She slams the breaks.\n[]>guard{guard-emotion|anger}:By my fucking guest then.\n[]>narrator:Beyond the shoulder in front of the door is nothing but an arid, dead expanse.\n[]>heather:...\n[]>guard:That's what you asked, isn't it?\n[]>heather:...\n[]>heather:Would you just let me die here?\n[]>narrator:She sighs. <mp>Relaxes her voice.\n[]>guard{guard-emotion|neutral}:Get out. I wanna talk.\n[]>narrator:She turns off the engine and opens her door. Her nod of the head informs you that you are to mirror her. <mp>So you do."
+							"content": "[]>heather:I want out.\n[]>heather:...\n[]>narrator:She slams the breaks.\n[]>guard{guard-emotion|anger}:By my fucking guest then.\n[]>narrator:Beyond the shoulder in front of the door is nothing but an arid, dead expanse.\n[]>heather:...\n[]>guard:That's what you asked, isn't it?\n[]>heather:...\n[]>heather:Would you just let me die here?\n[]>narrator:She sighs. <mp>Relaxes her voice.\n[]>guard{guard-emotion|neutral}:Get out. I wanna talk.\n[]>narrator:She turns off the engine, keeps the lights turned on, and opens her door. Her nod of the head informs you that you are to mirror her. <mp>So you do."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -6304,7 +6884,7 @@
 								"guard2"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:MORE CONVO"
+							"content": "[]>narrator: Your handler loudly exhales. Doing the same would read as assertion-to.equals, of taking up space you do not have. So you keep your breathing to yourself. A similar logic dictates your stillness when she stretches her legs and body, never increasing the distance to the car.\n[]>narrator: The nightly silence returns and fills the air around you. You don't yet return to the car. And your conversation returns not to you.\n[]>narrator: ust saturates the air to the point of it not being that refreshing to step outside. But getting to stand up is nice.\n[]>narrator:Maybe your hander thinks the same. Bad throught. As if your thoughts were comparable to her.\n[]>narrator:You're dumb and don't know shit.\n[]>narrator:Nothing...\n[]>guard: wanna get back in?\n[]>narrator: asking you. what.\n[]>heather: uhh...\n[]>guard: got blood back running in me.\n[]>guard: and we still got a couple hundred miles more.\n[]>guard: so.\n[]>heather: ...\n[]>heather: one more question."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -6340,16 +6920,15 @@
 							"operand_key": "AND"
 						},
 						"content": {
-							"delay_after": 0,
-							"delay_before": 0,
-							"line_reader.args": [],
-							"line_reader.reverse_args": [],
-							"meta.has_reverse": false,
-							"meta.reverse_text": "",
-							"meta.text": "hide_cg()",
-							"meta.validation_status": "OK",
-							"name": "hide_cg",
-							"reverse_name": ""
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2"
+							],
+							"active_actors_title": "character",
+							"content": "[]>guard: ...\n[]>heather: why can't I know Her name?\n[]>guard: She is peculiar about what is done in her name.\n[]>heather: What the fuck does that mea-\n[]>guard: That's all I'm spilling on this topic.\n[]>heather: But-\n[]>guard: Drop it.\n[]>narrator: The wind is knocked from your lungs as your handler pushes you towards your side of the car.\n[]>narrator: You look up at her in pity.\n[]>guard: Shut.\n[]>heather: ...\n[]>guard: ..."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -6358,7 +6937,7 @@
 							"meta.visible": false
 						},
 						"header": [],
-						"line_type": 2,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
@@ -6385,15 +6964,20 @@
 							"operand_key": "AND"
 						},
 						"content": {
-							"active_actors": [
-								"narrator",
-								"sophie",
-								"heather",
-								"guard",
-								"guard2"
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"black",
+								0,
+								true
 							],
-							"active_actors_title": "character",
-							"content": "[]>narrator:after getting back in SUV in middle of nowhere\n[]>heather: then just one last question.\n[]>guard: ...\n[]>heather: why can't I know Her name?\n[]>guard: She is peculiar about what is done in her name.\n[]>heather: What the fuck does that mea-\n[]>guard: That's all I'm spilling on this topic.\n[]>heather: But-\n[]>guard: Drop it.\n[]>narrator: The wind is knocked from your lungs as your handler slams the gas pedal for a moment.\n[]>narrator: You look up at her in pity.\n[]>guard: Shut.\n[]>heather: ...\n[]>guard: ..."
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "show_cg(black, 0, true)",
+							"meta.validation_status": "OK",
+							"name": "show_cg",
+							"reverse_name": ""
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -6402,7 +6986,7 @@
 							"meta.visible": false
 						},
 						"header": [],
-						"line_type": 0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
@@ -6414,6 +6998,105 @@
 					},
 					{
 						"address": "11.16",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"car_door"
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "play_sfx(car_door)",
+							"meta.validation_status": "OK",
+							"name": "play_sfx",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 16,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "11.17",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								0,
+								3,
+								4,
+								true,
+								"snuff_house",
+								"none"
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "black_fade(0, 3, 4, true, snuff_house, none)",
+							"meta.validation_status": "OK",
+							"name": "black_fade",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 17,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "11.18",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6451,13 +7134,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 16,
+						"meta.line_index": 18,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "11.17",
+						"address": "11.19",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6495,13 +7178,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 17,
+						"meta.line_index": 19,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "11.18",
+						"address": "11.20",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -6539,13 +7222,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 18,
+						"meta.line_index": 20,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 3335,
+				"meta.scroll_vertical": 904,
 				"meta.selected": false,
 				"next": 12,
 				"number": 11,
