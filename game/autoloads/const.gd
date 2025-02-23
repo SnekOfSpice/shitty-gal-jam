@@ -22,6 +22,7 @@ const BACKGROUND_HEATHER_BUNK := "heather_bunk.png"
 const BACKGROUND_HOSTEL := "hostel.png"
 const BACKGROUND_ROAD_NIGHT := "road_night.png"
 const BACKGROUND_SOPHIE_OFFICE := "sophie_office.png"
+const BACKGROUND_SNUFF_HOUSE := "placeholder.png"
 const BACKGROUND_WAREHOUSE := "warehouse.png"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
@@ -38,11 +39,13 @@ const MUSIC_OPENING_SCENE := "Cursed_film.mp3" # https://dova-s.jp/EN/bgm/play18
 const MUSIC_SELF_HARM := "カフェ雨模様.mp3" #https://dova-s.jp/EN/bgm/play5377.html
 const MUSIC_SILENCE := "silence.wav"
 const MUSIC_SUBJUGATION := "Paradise_Found.mp3"
+const MUSIC_TATTOO := "Paradise_Found.mp3"
 const MUSIC_WAKE_UP := "bgm2.mp3" # https://dova-s.jp/EN/bgm/play12349.html
 const MUSIC_WORK := "Paradise_Found.mp3"
 
 const SFX_ROOT := "res://game/sounds/sfx/"
 const SFX_CAR_DOOR := "car_door.wav"
+const SFX_CLICK := "493150__joao_janz__belt-buckle-handling-1_5.wav"
 const SFX_CREDITS_GUNSHOT := "credits sfx.wav"
 const SFX_DOUBLE_SHOT := "doubleshot.wav"
 const SFX_GUNSHOT := "gunshot.wav"

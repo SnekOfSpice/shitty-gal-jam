@@ -1316,6 +1316,8 @@ func capitalize_sentence_beginnings(text:String) -> String:
 func neaten_whitespace(text:String) -> String:
 	text = text.replace(":", ": ")
 	text = text.replace("<", " <")
+	text = text.replace("[", " [")
+	text = text.replace(" []>", "[]>")
 	
 	var contains_dead_whitespace := text.contains("  ")
 	while contains_dead_whitespace:
@@ -1328,5 +1330,11 @@ func neaten_whitespace(text:String) -> String:
 		var doublespace_index = text.find("> ")
 		text = text.erase(doublespace_index + 1)
 		contains_dead_whitespace = text.contains("> ")
+	
+	contains_dead_whitespace = text.contains("] ")
+	while contains_dead_whitespace:
+		var doublespace_index = text.find("] ")
+		text = text.erase(doublespace_index + 1)
+		contains_dead_whitespace = text.contains("] ")
 	
 	return text
