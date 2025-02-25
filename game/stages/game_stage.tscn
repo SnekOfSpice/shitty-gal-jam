@@ -545,6 +545,8 @@ blank_names = Array[String](["narrator"])
 name_map = {
 "guard": "Her Guard",
 "guard2": "Girl with scar",
+"guard3": "Guard Right",
+"guard4": "Guard Left",
 "heather": "Heather"
 }
 name_colors = {

@@ -213,7 +213,7 @@ func _on_help_button_pressed() -> void:
 
 func _on_editor_history_altered(is_altered: bool) -> void:
 	if is_altered:
-		if not title.ends_with("*"):
-			title = str(title, "*")
+		if not title.begins_with("(*) "):
+			title = str("(*) ", title)
 	else:
-		title = title.trim_suffix("*")
+		title = title.trim_prefix("(*) ")
