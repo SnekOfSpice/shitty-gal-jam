@@ -17,6 +17,7 @@ var dialog_box_offset := Vector2.ZERO
 var actor_name := ""
 var cg := ""
 var cg_position := ""
+var base_cg_offset : Vector2
 var is_name_container_visible := false
 var hovering_meta := false
 
@@ -219,6 +220,19 @@ func set_cg(cg_name:String, fade_in_duration:float, cg_root:Control):
 	else:
 		t.tween_property(cg_root, "modulate:a", 1.0, fade_in_duration)
 	
+	
+	var background_size : Vector2 = cg_node.texture.get_size()
+	var overshoot = background_size - Vector2(
+		ProjectSettings.get_setting("display/window/size/viewport_width"),
+		ProjectSettings.get_setting("display/window/size/viewport_height")
+		)
+	var container = cg_node.get_parent() # might be top or bottom
+	if overshoot.x > 0:
+		container.position.x = - overshoot.x * 0.5
+	if overshoot.y > 0:
+		container.position.y = - overshoot.y * 0.5
+	base_cg_offset = container.position
+	
 	cg = cg_name
 
 func set_cg_top(cg_name:String, fade_in_duration:float):
@@ -228,6 +242,10 @@ func set_cg_top(cg_name:String, fade_in_duration:float):
 func set_cg_bottom(cg_name:String, fade_in_duration:float):
 	cg_position = "bottom"
 	set_cg(cg_name, fade_in_duration, find_child("CGBottomContainer"))
+
+func set_cg_offset(offset:Vector2):
+	find_child("CGTopContainer").position = offset + base_cg_offset
+	find_child("CGBottomContainer").position = offset + base_cg_offset
 
 func set_text_style(style:TextStyle):
 	text_style = style

@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 23,
+		"current_page_number": 0,
 		"page_view": 0,
 		"text_size_id": 3
 	},
@@ -766,7 +766,9 @@
 								"sophie",
 								"heather",
 								"guard",
-								"guard2"
+								"guard2",
+								"guard3",
+								"guard4"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator: Black. Cloth. Bagged over your face. Difficulty moving.\n[]>narrator: Shit predicament.\n[]>sophie{sophie-emotion|neutral,heather-emotion|neutral}: Heather, I bring forth to you but one request: <mp>Obedience.\n[]>sophie:A woman's voice. Enunciated. Raspy, yet warm. <mp>Strong enough to calcify your movement. If you even were squirming much before. \n[]>narrator: Any of the thousand questions screaming through your mind do not make it outwards. <mp>Mouth gagged. Taped shut? Something like that.\n[]>sophie: You learn quickly, thank you. <mp>You will get to express yourself shortly.\n[]>narrator: Your arms feel bolted down.\n[]>narrator: After a brief silence, the tarp is lifted.\n[]>narrator: You're greeted to a dingy room. Dying incandescent bulb humming overhead. Air heavy with mold."
@@ -859,7 +861,9 @@
 								"sophie",
 								"heather",
 								"guard",
-								"guard2"
+								"guard2",
+								"guard3",
+								"guard4"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator: When your eyes adjust, the figure stops being a morast-like blob.\n[]>narrator: The light is directed at the table between.\n[]>narrator: Your arms - are - bolted down.\n[]>narrator: Her eyes pierce weight on you as if sensing your fear.\n[]>sophie: More presently, I can see your eyes jitter like there's no tomorrow honey.\n[]>narrator: What the fuck.\n[]>heather: What the fuck.\n[]>sophie: What the fuck indeed.\n[]>sophie: Do not worry, I am no psychic. It is simply a matter of you not being the first one in that chair- By a wide margin.\n[]>sophie: And if you cooperate, you won't have to die, soiling it - And I won't have to clean your half-digested breakfast out of this room. Is that not a win-win, honey?\n[]>narrator: ...\n[]>sophie: I asked you a question. Are we clear on what the stakes are for incooperativeness?\n[]>narrator: Glacially, you begin to hint at a nod.\n[]>narrator: After a while of signaling your understanding, the woman in front of you continues.\n[]>sophie: Good. Then let us begin with negotiations.\n[]>narrator: The rag keeping your mouth shut is loosened. Not cut free. <mp>You breathe in."
@@ -903,7 +907,9 @@
 								"sophie",
 								"heather",
 								"guard",
-								"guard2"
+								"guard2",
+								"guard3",
+								"guard4"
 							],
 							"active_actors_title": "character",
 							"content": "[]>sophie: For now, all you need to know is that you inherited some debts.\n[]>sophie: You will need to reimburse them, to me.\n[]>sophie: As you have already ascertained, you are not to leave this place, for now. First we ought to come to an agreement.\n[]>sophie:You are not a person anymore. You belong to me.\n[]>sophie: And to make you aware of this fact in perpetuitity, I will send you home with a slight modification to what used to be [i]your[/i] body.\n[]>narrator: She accentuates that last part with a finger pointed between your eyes. <mp>Your heart rate quickens. Moreso than before."
@@ -996,7 +1002,9 @@
 								"sophie",
 								"heather",
 								"guard",
-								"guard2"
+								"guard2",
+								"guard3",
+								"guard4"
 							],
 							"active_actors_title": "character",
 							"content": "[]>sophie: Look down at your hand. In a few minutes time it will not have all five fingers anymore.\n[]>narrator: You can't think. Pulse drowning out your thoughts. <mp>The only thing cutting through is her commandeering tone.\n[]>sophie: Pick a finger for us to sever.\n[]>narrator: Words are difficult to produce at the moment.\n[]>sophie: And no worries about going nonverbal, honey. Just stick out the finger you want to say goodbye to the most.\n[]>narrator: Fuckfuckfuckfuckfuckingfuckshitfuck\n[]>narrator: You flex your fingers. Get her to let you keep all of them. Somehow. <mp>Please.\n[]>sophie: If you don't decide, I'll do it for you. <mp>I need another middle finger for my collection, now that I think about it."
@@ -1089,7 +1097,9 @@
 								"sophie",
 								"heather",
 								"guard",
-								"guard2"
+								"guard2",
+								"guard3",
+								"guard4"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator: Quickly, you stick out your index finger to protect your middle one. You need it to tell people to fuck off... <mp>And to... <mp>No you stupid horny brain what is wrong with you.\n[]>narrator: But you also need... Fuck it- You need them all."
@@ -1182,7 +1192,9 @@
 								"sophie",
 								"heather",
 								"guard",
-								"guard2"
+								"guard2",
+								"guard3",
+								"guard4"
 							],
 							"active_actors_title": "character",
 							"content": "[]>sophie: Oh, no fingers? Would you rather we cut at the wrist?\n[]>narrator:You freeze up-\n[]>sophie:Again, in about ten seconds I will drive an axe through your wrist. <mp>Do you want to go home with a stump?\n[]>narrator:Fuckfuckfuck.\n[]>sophie: ...And if you think that I will not follow through, you have still failed to grasp the gravity of the situation.\n[]>narrator: She motions to someone ...Or something... Behind you."
@@ -1275,7 +1287,9 @@
 								"sophie",
 								"heather",
 								"guard",
-								"guard2"
+								"guard2",
+								"guard3",
+								"guard4"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator: Frantically, you splay your hand back out, wiggling your fingers so that they fittingly look like they're in their death throes.\n[]>narrator: You slam your palm down.\n[]>sophie: No need for excessive force.\n[]>narrator: Your heart is bursting now. Head slumps."
@@ -1368,7 +1382,9 @@
 								"sophie",
 								"heather",
 								"guard",
-								"guard2"
+								"guard2",
+								"guard3",
+								"guard4"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator: You stretch out your index finger again. <mp>Reconsider. <mp>R<call:show_cg,hand_ring,0,true>ing finger. Final decision.\n[]>narrator: You look up from your hand. The walls are tiled. A few of them cracked.\n[]>sophie: Look at me.\n[]>narrator:You look at her.\n[]>sophie: Your final choice?\n[]>narrator: You keep eye contact. Motionless.\n[]>sophie: So be it.\n[]>narrator: Her eyes flick a spark up to the girl that has been the machine up and down your hand for this entire process.."
@@ -1508,7 +1524,9 @@
 								"sophie",
 								"heather",
 								"guard",
-								"guard2"
+								"guard2",
+								"guard3",
+								"guard4"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator:The handaxe hits your bone. <mp>After several chops it finally snaps.\n[]>narrator: You expunge noises you never thought possible. <mp>Blood-curdling panicked shriek. <mp>This is horrible and fucked and is that really your finger on the table now? It still feels attached, by virtue of phantom limb.\n[]>sophie: Like I said, we do not half-ass shit. <lc>We have medical staff on site. This will be taken care off, then you will be brought home. <mp>More info in the morning.\n[]>narrator:You are a sobbing, hyperventilating mess.\n[]>narrator:Breathing requires so much oxygen that you might just suffocate in this small room. <mp>Barely any air makes it through the gag."
@@ -1552,7 +1570,9 @@
 								"sophie",
 								"heather",
 								"guard",
-								"guard2"
+								"guard2",
+								"guard3",
+								"guard4"
 							],
 							"active_actors_title": "character",
 							"content": "[]>sophie:I hope I do not have to spell it out that you are not to tell anyone about this in the meantime. \n[]>sophie:If you try to run away, you will be back here in no time.\n[]>sophie:Less gently then. \n[]>sophie:We found you once. And will again. If this were to be the case, I would not be satisfied with one finger. And you sure as hell won't get a say in the matter, got it?\n[]>sophie:You will find more info in your mailbox by tomorrow noon. \n[]>sophie:Call sick into work for the rest of the week and then I will make sure you are well taken care of. <mp>That is not a euphemism."
@@ -1648,7 +1668,9 @@
 								"sophie",
 								"heather",
 								"guard",
-								"guard2"
+								"guard2",
+								"guard3",
+								"guard4"
 							],
 							"active_actors_title": "character",
 							"content": "[]>narrator: The next morning, your alarm blares you awake after much too little sleep.\n[]>narrator: You use your landline to call into work and say your mom died and you need a few days of bereavement.\n[]>narrator: This close after waking up you still don't have feeling everywhere in your body. Holding a phone with one less finger is a challenge however.\n[]>narrator: When you put the receiver down, it stings more. The driver left you with ibuprofen. You slam 1.5times the daily recommended dosage to make it through the process of waking up."
@@ -1671,7 +1693,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 351,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 1,
 				"number": 0,
@@ -12302,7 +12324,7 @@
 						}
 					}
 				],
-				"meta.scroll_vertical": 1619,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 0,
 				"number": 23,
