@@ -54,12 +54,12 @@ bbcode_enabled = true
 text = "[center]This visual novel contains the following:
 
 Gore
+Gun Violence
 Hand Mutilation
-Murder
-Manipulation
 Self-Harm
 Sexual Content
-Suicidal Ideation"
+Suicidal Ideation
+Torture"
 
 [node name="Button" type="Button" parent="."]
 auto_translate_mode = 1

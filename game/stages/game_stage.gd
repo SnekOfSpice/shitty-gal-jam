@@ -329,6 +329,7 @@ func serialize() -> Dictionary:
 	result["character_data"] = character_data
 	result["cg"] = cg
 	result["cg_position"] = cg_position
+	result["base_cg_offset"] = base_cg_offset
 	result["text_container_position"] = find_child("TextContainer1").position
 	result["text_style"] = text_style
 	result["objects"] = $Objects.serialize()
@@ -398,6 +399,7 @@ func deserialize(data:Dictionary):
 	overlay_static.get_material().set_shader_parameter("border_size", 1 - target_static)
 	
 	use_ui(data.get("ui_id", 1))
+	base_cg_offset = data.get("base_cg_offset", Vector2.ZERO)
 
 #func remove_blocker():
 	#blockers -= 1

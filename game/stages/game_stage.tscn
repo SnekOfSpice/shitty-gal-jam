@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=69 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" path="res://addons/diisis/parser/src/line_reader.gd" id="1_h4afo"]
@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://bt3ppk3cjb5ml" path="res://game/characters/sprites/extras/sophie_leash_default.png" id="9_n3hta"]
 [ext_resource type="Texture2D" uid="uid://dhjkugspyp2o" path="res://game/characters/sprites/extras/heather_cuts2_scar_default.png" id="10_2rww1"]
 [ext_resource type="Theme" uid="uid://drk5fhsdjoewf" path="res://game/visuals/theme/diisis_theme.tres" id="11_n0ymb"]
+[ext_resource type="Texture2D" uid="uid://c3fl4ace0703" path="res://game/characters/sprites/extras/heather_post_torture.png" id="11_wovgc"]
 [ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
 [ext_resource type="Texture2D" uid="uid://uagme413djvr" path="res://game/characters/sprites/extras/heather_cuts1_fresh_pain.png" id="13_ooe82"]
 [ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/systems/cheats.tscn" id="13_qackq"]
@@ -183,7 +184,8 @@ extras = {
 "cuts1_scar": ExtResource("8_usdaj"),
 "cuts2_fresh": ExtResource("9_5ofag"),
 "cuts2_scar": ExtResource("10_2rww1"),
-"leash": ExtResource("6_8dvb1")
+"leash": ExtResource("6_8dvb1"),
+"post_torture": ExtResource("11_wovgc")
 },
 "hurt": {
 "collar": ExtResource("5_6oyp5"),
