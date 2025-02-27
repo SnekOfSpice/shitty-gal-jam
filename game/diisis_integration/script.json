@@ -10962,7 +10962,7 @@
 								"guard4"
 							],
 							"active_actors_title": "character",
-							"content": "[]>sophie: Heather.\n[]>narrator: Leash in hand.\n[]>sophie: I had been tragically busy, sweetheart.\n[]>sophie: But I can finally take you out again.\n[]>sophie: I think it is about time for you to deregister your apartment. <mp>I have ample reason to believe you will not need it anymore.\n[]>narrator: That... wasn't already...?\n[]>narrator: Whatever.\n[]>narrator: You got her where you need her to.\n[]>narrator: Pull out the gun.\n[]>heather: I'm not doing shit, you bitch.\n[]>sophie: Oh my. How brave.\n[]>narrator: Absolute stoicism.\n[]>heather: You fucking ruined my life.\n[]>sophie: It is not your life to lead anymore.\n[]>heather: Shut up.\n[]>heather: I will fucking kill you.\n[]>sophie: My, my. that language is so unbecoming. Especially for meat like you.\n[]>narrator:Your shoulders slump when She calls you [i]meat[/i].\n[]>sophie: Tell me Heather. What would that achieve? you are nothing without me anymore.\n[]>sophie: Your friends have stopped thinking of you. let alone try and find you.\n[]>narrator: Such a fucking mocking tone.\n[]>sophie: you have no job, no money, nothing. you mooch off of me. <mp>I make you exist. You would do better not to forget that. \n[]>sophie: I also think.\n[]>sophie: You should not forget about that tracker in your neck.\n[]>narrator: The tension in your shoulders is rapidly slumping.\n[]>sophie: now hand over thay gun to Mommy and you will be all good.\n[]>narrator: She took a few steps forward when you were dissociating.\n[]>narrator: She's right in front of you.\n[]>sophie: I will look for a fitting punishment for your recent brazen outbursts.\n[]>sophie: But do not think me unimpressed.\n[]>sophie: I was half-worried you would snuff yourself out with that thing before long.\n[]>heather: ..."
+							"content": "[]>sophie: Heather.\n[]>narrator: Leash in hand.\n[]>sophie: I had been tragically busy, sweetheart.\n[]>sophie: But I can finally take you out again.\n[]>sophie: I think it is about time for you to deregister your apartment. <mp>I have ample reason to believe you will not need it anymore.\n[]>narrator: That... wasn't already...?\n[]>narrator: Whatever.\n[]>narrator: You got her where you need her to.\n[]>narrator: Pull out the gun."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -10983,6 +10983,196 @@
 					},
 					{
 						"address": "17.4",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"heather_threatens_sophie1",
+								0,
+								true
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "show_cg(heather_threatens_sophie1, 0, true)",
+							"meta.validation_status": "OK",
+							"name": "show_cg",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "17.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2",
+								"guard3",
+								"guard4"
+							],
+							"active_actors_title": "character",
+							"content": "[]>heather: I'm not doing shit, you bitch.\n[]>sophie: Oh my. How brave.\n[]>narrator: Absolute stoicism.\n[]>heather: You fucking ruined my life.\n[]>sophie: It is not your life to lead anymore.\n[]>heather: Shut up.\n[]>heather:I will...\n[]>heather: I will fucking kill you.\n[]>sophie: My, my. <mp>that language is so unbecoming. Especially for meat like you.\n[]>narrator:Your shoulders slump when She calls you [i]meat[/i].\n[]>sophie: Tell me Heather. What would that achieve? you are nothing without me anymore.\n[]>sophie: Your friends have stopped thinking of you. let alone try and find you.\n[]>narrator: Such a fucking mocking tone.\n[]>sophie: you have no job, no money, nothing. you mooch off of me. <mp>I make you exist. You would do better not to forget that. \n[]>sophie: I also think.\n[]>sophie: You should not forget about that tracker in your neck.\n[]>narrator: The tension in your shoulders is rapidly slumping.\n[]>sophie: now hand over thay gun to Mommy and you will be all good."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "17.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [
+								"heather_threatens_sophie2",
+								2,
+								true
+							],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "show_cg(heather_threatens_sophie2, 2, true)",
+							"meta.validation_status": "OK",
+							"name": "show_cg",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 6,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "17.7",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2",
+								"guard3",
+								"guard4"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator: She took a few steps forward when you were dissociating.\n[]>narrator: She's right in front of you.\n[]>sophie: I will look for a fitting punishment for your recent brazen outbursts.\n[]>sophie: But do not think me unimpressed.\n[]>sophie: I was half-worried you would snuff yourself out with that thing before long.\n[]>heather: ..."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 7,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "17.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11022,13 +11212,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						}
 					},
 					{
-						"address": "17.5",
+						"address": "17.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11068,13 +11258,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 829,
+				"meta.scroll_vertical": 1834,
 				"meta.selected": false,
 				"next": 18,
 				"number": 17,
@@ -11116,7 +11306,7 @@
 								"guard4"
 							],
 							"active_actors_title": "character",
-							"content": "[]>sophie:Give me the gun please, honey.\n[]>narrator:Nononono this is all wrong. <mp>This isn't how any of this was supposed to go.\n[]>narrator:Fuck.\n[]>narrator:You are flailing. Mentally.\n[]>narrator:Show anything.\n[]>narrator:Show that you can do [i]any-fucking-thing[/i].\n[]>narrator:You lower the gun.\n[]>narrator:...\n[]>narrator: She grabs the gun.\n[]>narrator: She takes the gun.\n[]>sophie: Good girl.\n[]>narrator:[i]The answer to if you're in a state to think about your actions would be \"no\"...\n[]>narrator:She pats your cheek.\n[]>narrator:[i]...Yet if you had one rational thought left in you...\n[]>narrator:Cups your chin.\n[]>narrator:[i]...You would not do...\n[]>narrator:And spits in your face.\n[]>narrator:[i]...What you're about to do.\n[]>heather{sophie-emotion|annoyed}:Fuck you.\n[]>narrator:Like chambering a bullet.\n[]>heather{sophie-emotion|anger}:...Sophie."
+							"content": "[]>sophie:Give me the gun please, honey.\n[]>narrator:Nononono this is all wrong. <mp>This isn't how any of this was supposed to go.\n[]>narrator:Fuck.\n[]>narrator:You are flailing. Mentally.\n[]>narrator:Show anything.\n[]>narrator:Show that you can do [i]any-fucking-thing[/i].\n[]>narrator:Grip loosens.\n[]>narrator:...\n[]>narrator: She grabs the gun.\n[]>narrator: She takes the gun.\n[]>sophie: Good girl.\n[]>narrator:[i]The answer to if you're in a state to think about your actions would be \"no\"..."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -11155,14 +11345,14 @@
 							"delay_after": 0,
 							"delay_before": 0,
 							"line_reader.args": [
-								"gun_threat_sophie",
+								"heather_threatens_sophie3",
 								0,
-								true
+								false
 							],
 							"line_reader.reverse_args": [],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "show_cg(gun_threat_sophie, 0, true)",
+							"meta.text": "show_cg(heather_threatens_sophie3,0,false)",
 							"meta.validation_status": "OK",
 							"name": "show_cg",
 							"reverse_name": ""
@@ -11211,7 +11401,7 @@
 								"guard4"
 							],
 							"active_actors_title": "character",
-							"content": "[]>sophie:WHO PERMITTED YOU TO SPEAK THAT NAME?"
+							"content": "[]>narrator:She pats your cheek.\n[]>narrator:[i]...Yet if you had one rational thought left in you...\n[]>narrator:Cups your chin.\n[]>narrator:[i]...You would not do...\n[]>narrator:And spits in your face.\n[]>narrator:[i]...What you're about to do.\n[]>heather{sophie-emotion|annoyed}:Fuck you.\n[]>narrator:Like chambering a bullet.\n[]>heather{sophie-emotion|anger}:...Sophie."
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -11249,13 +11439,17 @@
 						"content": {
 							"delay_after": 0,
 							"delay_before": 0,
-							"line_reader.args": [],
+							"line_reader.args": [
+								"gun_threat_sophie",
+								0,
+								true
+							],
 							"line_reader.reverse_args": [],
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "hide_cg()",
+							"meta.text": "show_cg(gun_threat_sophie, 0, true)",
 							"meta.validation_status": "OK",
-							"name": "hide_cg",
+							"name": "show_cg",
 							"reverse_name": ""
 						},
 						"facts": {
@@ -11302,7 +11496,7 @@
 								"guard4"
 							],
 							"active_actors_title": "character",
-							"content": "[]>narrator:that is a loaded gun right against you jaw.\n[]>narrator: fuckfuckfuck.\n[]>narrator: heather you moronic fuckup."
+							"content": "[]>sophie:WHO PERMITTED YOU TO SPEAK THAT NAME?"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -11323,6 +11517,97 @@
 					},
 					{
 						"address": "18.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0,
+							"delay_before": 0,
+							"line_reader.args": [],
+							"line_reader.reverse_args": [],
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "hide_cg()",
+							"meta.validation_status": "OK",
+							"name": "hide_cg",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "18.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"active_actors": [
+								"narrator",
+								"sophie",
+								"heather",
+								"guard",
+								"guard2",
+								"guard3",
+								"guard4"
+							],
+							"active_actors_title": "character",
+							"content": "[]>narrator:that is a loaded gun right against you jaw.\n[]>narrator: fuckfuckfuck.\n[]>narrator: heather you moronic fuckup."
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 6,
+						"meta.selector": {
+							"selected": false
+						}
+					},
+					{
+						"address": "18.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -11362,13 +11647,13 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						}
 					}
 				],
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 84,
 				"meta.selected": false,
 				"next": 19,
 				"number": 18,
