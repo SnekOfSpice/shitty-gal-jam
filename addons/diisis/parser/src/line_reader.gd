@@ -1260,6 +1260,10 @@ func call_from_position(call_position: int):
 	text = text.trim_suffix(">")
 	var parts := text.split(",")
 	var func_name = parts[0]
+	while func_name.begins_with(" "):
+		func_name = func_name.trim_prefix(" ")
+	while func_name.ends_with(" "):
+		func_name = func_name.trim_suffix(" ")
 	parts.remove_at(0)
 	
 	var args := []

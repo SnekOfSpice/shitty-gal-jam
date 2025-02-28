@@ -227,6 +227,7 @@ func set_cg(cg_name:String, fade_in_duration:float, cg_root:Control):
 		ProjectSettings.get_setting("display/window/size/viewport_height")
 		)
 	var container = cg_node.get_parent() # might be top or bottom
+	container.position = Vector2.ZERO
 	if overshoot.x > 0:
 		container.position.x = - overshoot.x * 0.5
 	if overshoot.y > 0:
@@ -399,7 +400,7 @@ func deserialize(data:Dictionary):
 	overlay_static.get_material().set_shader_parameter("border_size", 1 - target_static)
 	
 	use_ui(data.get("ui_id", 1))
-	base_cg_offset = data.get("base_cg_offset", Vector2.ZERO)
+	base_cg_offset = GameWorld.str_to_vec2(data.get("base_cg_offset", Vector2.ZERO))
 
 #func remove_blocker():
 	#blockers -= 1

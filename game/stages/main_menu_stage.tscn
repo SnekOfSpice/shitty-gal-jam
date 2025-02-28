@@ -177,18 +177,18 @@ focus_mode = 0
 text = "Options"
 alignment = 0
 
-[node name="CreditsButton" type="Button" parent="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2"]
-auto_translate_mode = 1
-layout_mode = 2
-focus_mode = 0
-text = "Credits"
-alignment = 0
-
 [node name="CWButton" type="Button" parent="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2"]
 auto_translate_mode = 1
 layout_mode = 2
 focus_mode = 0
 text = "Content Warning"
+alignment = 0
+
+[node name="CreditsButton" type="Button" parent="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2"]
+auto_translate_mode = 1
+layout_mode = 2
+focus_mode = 0
+text = "Credits"
 alignment = 0
 
 [node name="QuitButton" type="Button" parent="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2"]
@@ -315,8 +315,8 @@ text = "Got it"
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer/LoadButton" to="." method="emit_signal" binds= ["load_game"]]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer/EpilogueButton" to="." method="emit_signal" binds= ["start_epilogue"]]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/OptionsButton" to="." method="_on_options_button_pressed"]
-[connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/CWButton" to="." method="_on_cw_button_pressed"]
+[connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/SaveContainer/MarginContainer/Vbox/SaveSlotButton" to="." method="_on_save_slot_button_pressed"]
 [connection signal="pressed" from="CanvasLayer3/SoundCheckOverlay/CenterContainer/VBoxContainer/SoundCheckButton" to="." method="_on_sound_check_button_pressed"]

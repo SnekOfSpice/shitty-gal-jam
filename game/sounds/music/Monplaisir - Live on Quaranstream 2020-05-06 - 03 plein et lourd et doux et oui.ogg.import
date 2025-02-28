@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bdo03uxkslnwa"
+path="res://.godot/imported/Monplaisir - Live on Quaranstream 2020-05-06 - 03 plein et lourd et doux et oui.ogg-d1985687e79fbc4470f652f3c6e228dc.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/Monplaisir - Live on Quaranstream 2020-05-06 - 03 plein et lourd et doux et oui.ogg"
+dest_files=["res://.godot/imported/Monplaisir - Live on Quaranstream 2020-05-06 - 03 plein et lourd et doux et oui.ogg-d1985687e79fbc4470f652f3c6e228dc.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

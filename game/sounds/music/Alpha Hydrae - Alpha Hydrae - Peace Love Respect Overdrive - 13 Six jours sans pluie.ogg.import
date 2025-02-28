@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bhfch34a12q1m"
+path="res://.godot/imported/Alpha Hydrae - Alpha Hydrae - Peace Love Respect Overdrive - 13 Six jours sans pluie.ogg-06c66b5d3504614c300fc6fc749c2370.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/Alpha Hydrae - Alpha Hydrae - Peace Love Respect Overdrive - 13 Six jours sans pluie.ogg"
+dest_files=["res://.godot/imported/Alpha Hydrae - Alpha Hydrae - Peace Love Respect Overdrive - 13 Six jours sans pluie.ogg-06c66b5d3504614c300fc6fc749c2370.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

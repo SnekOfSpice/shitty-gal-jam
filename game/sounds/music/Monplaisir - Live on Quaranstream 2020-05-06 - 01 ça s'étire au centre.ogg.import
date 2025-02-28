@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://rxx81dffl46x"
+path="res://.godot/imported/Monplaisir - Live on Quaranstream 2020-05-06 - 01 ça s'étire au centre.ogg-551ecedfd4dc6a2f30c468c718a61c3d.oggvorbisstr"
+
+[deps]
+
+source_file="res://game/sounds/music/Monplaisir - Live on Quaranstream 2020-05-06 - 01 ça s'étire au centre.ogg"
+dest_files=["res://.godot/imported/Monplaisir - Live on Quaranstream 2020-05-06 - 01 ça s'étire au centre.ogg-551ecedfd4dc6a2f30c468c718a61c3d.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
