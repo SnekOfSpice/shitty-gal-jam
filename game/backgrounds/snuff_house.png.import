@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q3f7vg7emacj"
-path="res://.godot/imported/flare.png-a2fd45ef6d065efc69fe172bb4c5e07b.ctex"
+uid="uid://2djiaue7xp7g"
+path="res://.godot/imported/snuff_house.png-2c9565ea192037c98041931af6467661.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/cg/flare.png"
-dest_files=["res://.godot/imported/flare.png-a2fd45ef6d065efc69fe172bb4c5e07b.ctex"]
+source_file="res://game/backgrounds/snuff_house.png"
+dest_files=["res://.godot/imported/snuff_house.png-2c9565ea192037c98041931af6467661.ctex"]
 
 [params]
 

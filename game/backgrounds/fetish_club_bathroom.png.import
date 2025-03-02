@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q3f7vg7emacj"
-path="res://.godot/imported/flare.png-a2fd45ef6d065efc69fe172bb4c5e07b.ctex"
+uid="uid://be74c1n2inmho"
+path="res://.godot/imported/fetish_club_bathroom.png-37a2ebe8303b599327459dc5ea2ca798.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/cg/flare.png"
-dest_files=["res://.godot/imported/flare.png-a2fd45ef6d065efc69fe172bb4c5e07b.ctex"]
+source_file="res://game/backgrounds/fetish_club_bathroom.png"
+dest_files=["res://.godot/imported/fetish_club_bathroom.png-37a2ebe8303b599327459dc5ea2ca798.ctex"]
 
 [params]
 

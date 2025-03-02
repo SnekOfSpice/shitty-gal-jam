@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q3f7vg7emacj"
-path="res://.godot/imported/flare.png-a2fd45ef6d065efc69fe172bb4c5e07b.ctex"
+uid="uid://dry2tv6dgbqhk"
+path="res://.godot/imported/ending4.png-e3e60b6efd8d4aa2bf1ac1b2ef95f669.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/cg/flare.png"
-dest_files=["res://.godot/imported/flare.png-a2fd45ef6d065efc69fe172bb4c5e07b.ctex"]
+source_file="res://game/cg/ending4.png"
+dest_files=["res://.godot/imported/ending4.png-e3e60b6efd8d4aa2bf1ac1b2ef95f669.ctex"]
 
 [params]
 

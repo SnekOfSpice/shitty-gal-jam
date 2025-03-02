@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q3f7vg7emacj"
-path="res://.godot/imported/flare.png-a2fd45ef6d065efc69fe172bb4c5e07b.ctex"
+uid="uid://b6c71l6778kfa"
+path="res://.godot/imported/heather_threatens_sophie3-1.png-1ac3d8b21d93415b5252e0fed1c06f5b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/cg/flare.png"
-dest_files=["res://.godot/imported/flare.png-a2fd45ef6d065efc69fe172bb4c5e07b.ctex"]
+source_file="res://game/cg/heather_threatens_sophie3-1.png"
+dest_files=["res://.godot/imported/heather_threatens_sophie3-1.png-1ac3d8b21d93415b5252e0fed1c06f5b.ctex"]
 
 [params]
 

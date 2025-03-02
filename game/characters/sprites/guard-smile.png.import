@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q3f7vg7emacj"
-path="res://.godot/imported/flare.png-a2fd45ef6d065efc69fe172bb4c5e07b.ctex"
+uid="uid://kiwy0ob7r32w"
+path="res://.godot/imported/guard-smile.png-649bfb003c4321747f9b12acafeefd58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/cg/flare.png"
-dest_files=["res://.godot/imported/flare.png-a2fd45ef6d065efc69fe172bb4c5e07b.ctex"]
+source_file="res://game/characters/sprites/guard-smile.png"
+dest_files=["res://.godot/imported/guard-smile.png-649bfb003c4321747f9b12acafeefd58.ctex"]
 
 [params]
 
