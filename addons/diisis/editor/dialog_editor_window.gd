@@ -11,6 +11,7 @@ var file_path := ""
 var last_quit_header := ""
 
 signal open_new_file()
+signal closing_editor()
 
 const PREFERENCE_PATH := "user://editor_preferences.cfg"
 
@@ -105,6 +106,7 @@ func save_preferences():
 	config.save(PREFERENCE_PATH)
 
 func close_editor():
+	emit_signal("closing_editor")
 	save_preferences()
 	editor.is_open = false
 	hide()
